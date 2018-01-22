@@ -91,8 +91,8 @@
       <file leaf-file-name="DiscreteFunction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="335">
+              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -803,12 +803,12 @@
       <workItem from="1502901912995" duration="1637000" />
       <workItem from="1502931944407" duration="5265000" />
       <workItem from="1503012557924" duration="19229000" />
-      <workItem from="1516586697421" duration="517000" />
+      <workItem from="1516586697421" duration="561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113311000" />
+    <option name="totallyTimeSpent" value="113355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
@@ -1265,8 +1265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="335">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
