@@ -1,5 +1,5 @@
 # Intellij
-.idea\
+.idea/
 *.iml
 *.iws
 workspace.xml
@@ -18,4 +18,6 @@ workspace.xml
 #PIPE
 #PipeTestFile.xml
 
+.idea/workspace.xml
+.idea/misc.xml
 .idea/workspace.xml

@@ -1,3 +1,7 @@
+GATE(GX, "Pay Washer", TRUE, Jones, RB[D1,D2(D3,D4)], F1(D3,D4))
+
+
+
 STATE(S1, 'START', START)
 STATE(S2, '2', INTERMEDIARY)
 STATE(S3, 'Jones paid £500', INTERMEDIARY)

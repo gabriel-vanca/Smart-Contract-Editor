@@ -36,6 +36,7 @@ public class Constructor {
         this.componentCreatorManager = applicationView.getComponentCreatorManager ();
 
         InputParser inputParser = new InputParser ();
+        inputParser.ParseInputFile();
         ArrayList<InputLine>  ParsedReadDataLinesList = inputParser.getParsedReadDataLinesList();
 
         for(InputLine parsedReadDataLine : ParsedReadDataLinesList) {

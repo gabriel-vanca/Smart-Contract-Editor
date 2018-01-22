@@ -11,13 +11,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.lang.String.*;
+
 public class InputParser {
-
-//    private ArrayList<TransAssertion> TransAssertionList = new ArrayList<>();
-
-//    public ArrayList<TransAssertion> getTransAssertionList() {
-//        return TransAssertionList;
-//    }
 
     private ArrayList<InputLine> ParsedReadDataLinesList = new ArrayList<> ();
 
@@ -25,8 +21,7 @@ public class InputParser {
         return this.ParsedReadDataLinesList;
     }
 
-    public InputParser() {
-
+    public void ParseInputFile() {
         List<String> readDataLinesList =  ReadFile();
         for (String readDataLine:readDataLinesList) {
             InputLine parsedReadDataLine = ParseReadDataLine(readDataLine);
@@ -42,14 +37,14 @@ public class InputParser {
 
     private List<String> ReadFile() {
 
-//        String inputFileName = "input_washer.txt";
-        String inputFileName = "input_washer_newNotation.txt";
+        String inputFileName = "Contracts/input_washer_newNotation.txt";
 
         List<String> readDataLinesList = new ArrayList<> ();
 
         try {
 
-            Stream<String> stream = Files.lines (Paths.get (ClassLoader.getSystemResource (inputFileName)
+            Stream<String> stream;
+            stream = Files.lines (Paths.get (ClassLoader.getSystemResource (inputFileName)
                     .toURI ()));
 
             readDataLinesList = stream
@@ -69,11 +64,12 @@ public class InputParser {
         return readDataLinesList;
     }
 
-    // This functions splits a string by commas with the exception of commas inside quotes (https://stackoverflow.com/questions/1757065/java-splitting-a-comma-separated-string-but-ignoring-commas-in-quotes)
+    // This functions splits a string by commas with the exception of commas inside quotes and in parentheses
+    // (https://stackoverflow.com/questions/1757065/java-splitting-a-comma-separated-string-but-ignoring-commas-in-quotes)
     public static String[] SplitByCommasExceptQuotesAndParentheses(String stringToSplit) {
         String otherThanQuote = " [^\"] ";
-        String quotedString = String.format(" \" %s* \" ", otherThanQuote);
-        String regex = String.format("(?x) "+ // enable comments, ignore white spaces
+        String quotedString = format(" \" %s* \" ", otherThanQuote);
+        String regex = format("(?x) "+ // enable comments, ignore white spaces
                         ",                         "+ // match a comma
                         "(?=                       "+ // start positive look ahead
                         "  (?:                     "+ //   start non-capturing group 1
@@ -83,7 +79,8 @@ public class InputParser {
                         "  %s*                     "+ //   match 'otherThanQuote'
                         "  $                       "+ // match the end of the string
                         ")                         "+ // stop positive look ahead
-                        "(?![^\\(]*\\))            ", // ignore commas in parentheses as well
+                        "(?![^\\(]*\\))            "+ // ignore commas in parentheses as well
+                        "(?![^\\[]*\\])            ", // ignore commas in brackets as well
                 otherThanQuote, quotedString, otherThanQuote);
 
         String[] tokens = stringToSplit.split(regex, -1);
@@ -112,11 +109,11 @@ public class InputParser {
         content = content.replaceAll ("'", "\"");
         content = content.replaceAll ("`", "\"");
 
-        // Replaces all white spaces, except white spaces inside quotes. Takes into consideration escaped quotes. (https://stackoverflow.com/questions/9577930/regular-expression-to-select-all-whitespace-that-isnt-in-quotes)
+        // Replaces all white spaces, except white spaces inside quotes.
+        // Takes into consideration escaped quotes.
+        // (https://stackoverflow.com/questions/9577930/regular-expression-to-select-all-whitespace-that-isnt-in-quotes)
         content = content.replaceAll ("\\s+(?=((\\\\[\\\\\"]|[^\\\\\"])*\"(\\\\[\\\\\"]|[^\\\\\"])*\")*(\\\\[\\\\\"]|[^\\\\\"])*$)", "");
 
-
-      //  parameters = content.split (Pattern.quote (","));
         parameters = SplitByCommasExceptQuotesAndParentheses (content);
 
         return new InputLine (type, parameters);

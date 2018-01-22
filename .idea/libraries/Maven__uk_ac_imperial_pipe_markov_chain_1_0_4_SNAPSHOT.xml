@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: uk.ac.imperial:pipe-markov-chain:1.0.4-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/uk/ac/imperial/pipe-markov-chain/1.0.4-SNAPSHOT/pipe-markov-chain-1.0.4-SNAPSHOT.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/uk/ac/imperial/pipe-markov-chain/1.0.4-SNAPSHOT/pipe-markov-chain-1.0.4-20160805.221836-1.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/uk/ac/imperial/pipe-markov-chain/1.0.4-SNAPSHOT/pipe-markov-chain-1.0.4-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/uk/ac/imperial/pipe-markov-chain/1.0.4-SNAPSHOT/pipe-markov-chain-1.0.4-20160805.221836-1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/uk/ac/imperial/pipe-markov-chain/1.0.4-SNAPSHOT/pipe-markov-chain-1.0.4-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/uk/ac/imperial/pipe-markov-chain/1.0.4-SNAPSHOT/pipe-markov-chain-1.0.4-20160805.221836-1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
