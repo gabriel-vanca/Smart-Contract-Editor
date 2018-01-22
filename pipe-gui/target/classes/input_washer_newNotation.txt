@@ -1,0 +1,27 @@
+STATE(S1, 'START', START)
+STATE(S2, '2', INTERMEDIARY)
+STATE(S3, 'Jones paid £500', INTERMEDIARY)
+STATE(S4, 'DEFAULT: Jones did not pay £500', DEFAULT)
+STATE(S5, 'Smith delivered washer', INTERMEDIARY);
+STATE(S6, 'DEFAULT: Smith did not deliver washer', DEFAULT)
+STATE(S7, 'FINISH', FINISH);
+
+DATE(D1, "Payment due date", 03-MAY-1987)
+DATE(D2, "Delivery due date", 15-MAY-1987)
+
+FUNCTION(F1, "PAY", SMITH, £500)
+FUNCTION(F2, "DELIVER", Jones, Washer)
+
+GATE(G1, "True Gate", TRUE,,,)                  // The last 3 parameters are NULL. Nonetheless, commas are mandatory
+GATE(G2, "Pay Washer", TRUE, Jones, RB(D1), F1)
+GATE(G3, "Pay Washer", FALSE, Jones, RB(D1), F1)
+GATE(G4, "Deliver Washer", TRUE, Smith, RB(D2), F2)
+GATE(G5, "Deliver Washer", FALSE, Smith, RB(D2), F2)
+GATE(G6, "True Gate", TRUE,,,)
+
+TA(S1, S2, G1)
+TA(S2, S3, G2)
+TA(S2, S4, G3)
+TA(S3, S5, G4)
+TA(S3, S6, G5)
+TA(S5, S7, G6)

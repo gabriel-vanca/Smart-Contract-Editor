@@ -1,0 +1,19 @@
+# Intellij
+#.idea/
+#*.iml
+#*.iws
+
+# Mac
+#.DS_Store
+
+# Maven
+#log/
+#target/
+#pipe-gui/dependency-reduced-pom.xml
+
+#ANTLR
+#pipe-core/gen
+
+#PIPE
+#PipeTestFile.xml
+
