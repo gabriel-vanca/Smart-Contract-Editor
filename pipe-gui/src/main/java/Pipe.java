@@ -1,6 +1,6 @@
 import pipe.actions.gui.PipeApplicationModel;
 import pipe.controllers.application.PipeApplicationController;
-import pipe.ucl.constructor.Constructor;
+import pipe.ucl.constructor.controllers.Constructor;
 import pipe.views.PipeApplicationBuilder;
 import pipe.views.PipeApplicationView;
 

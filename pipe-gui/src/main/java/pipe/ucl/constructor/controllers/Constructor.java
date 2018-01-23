@@ -1,4 +1,4 @@
-package pipe.ucl.constructor;
+package pipe.ucl.constructor.controllers;
 
 import pipe.actions.gui.CreateAction;
 import pipe.actions.gui.PipeApplicationModel;
@@ -8,7 +8,7 @@ import pipe.controllers.application.PipeApplicationController;
 import pipe.gui.imperial.pipe.layout.Layout;
 import pipe.gui.imperial.pipe.models.petrinet.*;
 import pipe.gui.imperial.state.StateType;
-import pipe.ucl.models.InputLine;
+import pipe.ucl.constructor.models.InputLine;
 import pipe.views.PipeApplicationBuilder;
 import pipe.views.PipeApplicationView;
 

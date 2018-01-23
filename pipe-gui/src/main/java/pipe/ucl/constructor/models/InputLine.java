@@ -1,4 +1,4 @@
-package pipe.ucl.models;
+package pipe.ucl.constructor.models;
 
 public class InputLine {
     private String type;

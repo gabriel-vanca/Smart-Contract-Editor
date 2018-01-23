@@ -1,6 +1,6 @@
-package pipe.ucl.constructor;
+package pipe.ucl.constructor.controllers;
 
-import pipe.ucl.models.InputLine;
+import pipe.ucl.constructor.models.InputLine;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
