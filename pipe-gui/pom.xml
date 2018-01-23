@@ -302,6 +302,21 @@
             <version>1.5.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.sourceforge.jpowergraph</groupId>
+            <artifactId>jpowergraph-common</artifactId>
+            <version>0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.jpowergraph</groupId>
+            <artifactId>jpowergraph-swing</artifactId>
+            <version>0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.rendersnake</groupId>
+            <artifactId>rendersnake</artifactId>
+            <version>1.9.0</version>
+        </dependency>
 
     </dependencies>
 

@@ -2,7 +2,7 @@ package pipe.gui.imperial.pipe.models.petrinet;
 
 import pipe.gui.imperial.pipe.exceptions.PetriNetComponentException;
 import pipe.gui.imperial.pipe.visitor.component.PetriNetComponentVisitor;
-import pipe.gui.imperial.state.StateType;
+import pipe.ucl.contract.enums.StateType;
 
 import java.util.HashMap;
 import java.util.Iterator;

@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PIPE-gui" />
-        <module name="pipe-module-gui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

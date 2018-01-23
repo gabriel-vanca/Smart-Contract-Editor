@@ -2,11 +2,347 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_high_scale_lib_high_scale_lib_1_1_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_17_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_intellij_forms_rt_5_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jgoodies_jgoodies_common_1_4_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jgoodies_jgoodies_forms_1_6_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_1_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_html_0_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_java_1_1_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jtidy_jtidy_r938.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jpowergraph_jpowergraph_common_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jpowergraph_jpowergraph_swing_0_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_rendersnake_rendersnake_1_9_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_6_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_6_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_6_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_6_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_6_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_6_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_6_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__uk_ac_imperial_pipe_analysis_1_0_4_SNAPSHOT.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__uk_ac_imperial_pipe_core_1_0_4_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__uk_ac_imperial_pipe_core_1_0_4_SNAPSHOT.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__uk_ac_imperial_pipe_markov_chain_1_0_4_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__uk_ac_imperial_pipe_markov_chain_1_0_4_SNAPSHOT.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/main.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/resources/binary_states" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/binary_states" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/resources/binary_transitions" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/binary_transitions" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/resources/simple_vanishing.xml" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/simple_vanishing.xml" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/PIPE-gui.iml" afterPath="$PROJECT_DIR$/pipe-gui/PIPE-gui.iml" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/pom.xml" afterPath="$PROJECT_DIR$/pipe-gui/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/StateType.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/enums/StateType.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/state/StateType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/constructor/controllers/Constructor.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/constructor/controllers/Constructor.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/pipe-module-gui.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/pom.xml" afterPath="$PROJECT_DIR$/pipe-gui/z_old maven/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/binary_states" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/binary_transitions" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/AbstractLayout.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/DimensionInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/GridConstraints.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/GridLayoutManager.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/HorizontalInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/LayoutState.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/Spacer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/SupportCode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/Util.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/com/intellij/uiDesigner/core/VerticalInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/analysis/GSPNAnalysis$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/analysis/GSPNAnalysis$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/analysis/GSPNAnalysis$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/analysis/GSPNAnalysis$TableRow.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/analysis/GSPNAnalysis.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/EntireStateReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/KryoStateIO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/MultiStateReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/StateIOProcessor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/StateMapping.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/StateProcessor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/StateReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/io/StateWriter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/animation/AnimationLogic.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/animation/AnimationUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/animation/Animator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/animation/PetriNetAnimationLogic.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/animation/PetriNetAnimator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/ANormalArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/APetriNet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/APlace.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/ARateParameter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/ATimedTransition.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/AToken.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/AnAbstractTransition.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/AnImmediateTransition.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/AnInhibitorArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/dsl/DSLCreator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/exceptions/InvalidRateException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/exceptions/PetriNetComponentException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/exceptions/PetriNetComponentNotFoundException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/PetriNetIO.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/PetriNetIOImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/PetriNetReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/PetriNetValidationEventHandler$FormattedEvent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/PetriNetValidationEventHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/PetriNetWriter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedAnnotation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedArc$Inscription.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedArcPoint.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedConnectable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedPetriNet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedPlace$InitialMarking.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedPlace.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedRateParameter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedToken.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedTransition$ToolSpecific.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/AdaptedTransition.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/NameDetails.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/OffsetGraphics.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/Point.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/model/PositionGraphics.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/AnnotationAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/ArcAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/ArcPointAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PetriNetAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PlaceAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PointAdapter$AdaptedPoint.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PointAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/RateParameterAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TokenAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TokenSetIntegerAdapter$AdaptedIntegerTokenSet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TokenSetIntegerAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TransitionAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/utils/ConnectableUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/BooleanValueAdapter$AdaptedBoolean.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/BooleanValueAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/IntValueAdapter$IntAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/IntValueAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringAttributeValueAdaptor$AdaptedAttributeString.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringAttributeValueAdaptor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringValueAdapter$AdaptedString.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringValueAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/layout/Layout.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/PetriNetHolder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/manager/PetriNetManager.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/manager/PetriNetManagerImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AbstractArc$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AbstractArc$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AbstractArc$ArcPointChangeListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AbstractArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AbstractConnectable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AbstractPetriNetPubSub.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/Annotation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AnnotationImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AnnotationImplVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/AnnotationVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/Arc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/ArcPoint.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/ArcPointVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/ArcType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/ArcVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/ColoredToken.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/Connectable.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscreteDate.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscreteFunction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscretePlaceVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransitionVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/FunctionalRateParameter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/FunctionalRateParameterVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/InboundArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/InboundInhibitorArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/InboundNormalArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/NormalRate.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/OutboundArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/OutboundNormalArc.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$NameChangeArcListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$NameChangeListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$TokenNameChanger.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponentAddVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponentRemovalVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/Place.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PlaceVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PlaceablePetriNetComponent.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/Rate.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/RateParameter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/RateParameterVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/RateType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/RateVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/Token.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/TokenVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/Transition.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/TransitionVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/name/FileNameVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/name/NameVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/name/NormalNameVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/name/NormalPetriNetName.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/name/PetriNetFileName.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/name/PetriNetName.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/AbstractUniqueNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/ComponentNamer$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/ComponentNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/MultipleNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/NameChangeListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/PetriNetComponentNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/PetriNetNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/PlaceNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/TransitionNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/naming/UniqueNamer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/ComponentListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/EvalVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/FunctionalResults.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/FunctionalWeightParser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/GrammarUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/PetriNetWeightParser$ComponentListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/PetriNetWeightParser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarBaseListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarBaseVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarErrorListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarLexer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$AddOrSubtractContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$CapacityContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$CeilContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$DoubleContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$ExpressionContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$FloorContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$IntegerContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$MultOrDivContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$ParenExpressionContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$PlaceCapacityContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$PlaceColorTokensContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$PlaceTokensContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$ProgramContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$Token_color_numberContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser$Token_numberContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarParser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/RateGrammarVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/StateEvalVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/parsers/UnparsableException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/petrinet/unfold/Expander$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/petrinet/unfold/Expander$Data.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/petrinet/unfold/Expander$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/petrinet/unfold/Expander.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/AllComponentVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/AnnotationCloner.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/ClonePetriNet$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/ClonePetriNet$NameCloner.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/ClonePetriNet$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/ClonePetriNet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/PasteVisitor$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/PasteVisitor$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/PasteVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/PlaceCloner.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/RateParameterCloner.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/TransitionCloner.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/TranslationVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/component/PetriNetComponentVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/connectable/arc/ArcCreatorVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/connectable/arc/ArcSourceVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/connectable/arc/InhibitorSourceVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/pipe/visitor/connectable/arc/NormalArcSourceVisitor.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/AbstractStateSpaceExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/BoundedExplorerUtilities.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/CachingExplorerUtilities.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/CoverabilityExplorerUtilities.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/ExplorerUtilities.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/OnTheFlyVanishingExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/SimpleVanishingExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/StateRateRecord.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/StateSpaceExplorer$StateSpaceExplorerResults.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/StateSpaceExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/TimelessTrapException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/UnboundedExplorerUtilities.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/VanishingExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/parallel/IndividualParallelStateSpaceExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/parallel/MassiveParallelStateSpaceExplorer$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/parallel/MassiveParallelStateSpaceExplorer$MultiStateExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/parallel/MassiveParallelStateSpaceExplorer$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/parallel/MassiveParallelStateSpaceExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/parallel/ParallelStateExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/algorithm/sequential/SequentialStateSpaceExplorer.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/reachability/io/StateSpaceExplorationReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/state/ClassifiedState.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/state/HashedClassifiedState.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/state/HashedState.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/state/HashedStateBuilder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/state/Record.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/state/State.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/state/StateType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/AXEqualsBSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/AbstractSteadyStateSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/GaussSeidelSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelGaussSeidel$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelGaussSeidel$ParallelSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelGaussSeidel$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelGaussSeidel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelJacobiSolver$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelJacobiSolver$ParallelSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelJacobiSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelSteadyStateSolver$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelSteadyStateSolver$CallableSteadyStateSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelSteadyStateSolver$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelSteadyStateSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelSubmitter$ParallelUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/ParallelSubmitter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/SequentialJacobiSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/SteadyStateBuilder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/SteadyStateBuilderImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/algorithm/SteadyStateSolver.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/metrics/TokenMetrics.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/steadystate/metrics/TransitionMetrics.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/utils/ExploredSet$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/utils/ExploredSet$SyntheticClass_1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/utils/ExploredSet$WrappedHash.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/utils/ExploredSet.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/utils/StateUtils$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/utils/StateUtils$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/imperial/utils/StateUtils.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/DirectedTextEdge.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/PIPELineWithTextEdgePainter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/PIPESwingContextMenuListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/PIPESwingToolTipListener.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/ReachabilityGraph$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/ReachabilityGraph$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/ReachabilityGraph$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/ReachabilityGraph$4.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/ReachabilityGraph$5.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/ReachabilityGraph$6.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/ReachabilityGraph.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/TangibleStateNode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/reachability/VanishingStateNode.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/GenerateResultsForm$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/GenerateResultsForm$GoAction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/GenerateResultsForm.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/HTMLPane.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/LoadBinaries.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/StateSpaceLoader$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/StateSpaceLoader$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/StateSpaceLoader$ExplorerCreator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/StateSpaceLoader$Results.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/StateSpaceLoader$VanishingExplorerCreator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/StateSpaceLoader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/pipe/gui/widget/StateSpaceLoaderException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/classes/simple_vanishing.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,7 +394,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.iml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/main.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -68,41 +404,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input_washer.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input_washer_newNotation.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_newNotation.txt">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/z_old maven/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="63" lean-forward="false" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/InputParser.java">
+      <file leaf-file-name="PIPELineWithTextEdgePainter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/PIPELineWithTextEdgePainter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Contract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/Contract.java">
+      <file leaf-file-name="DirectedTextEdge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/DirectedTextEdge.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PIPESwingContextMenuListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/PIPESwingContextMenuListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GSPNAnalysis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/analysis/GSPNAnalysis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="148" column="34" lean-forward="false" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StateType.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/enums/StateType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -114,19 +472,6 @@
             <state relative-caret-position="34">
               <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputLine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/models/InputLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -221,9 +566,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundInhibitorArc.java" />
-        <option value="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AnInhibitorArc.java" />
-        <option value="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PlaceVisitor.java" />
         <option value="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/TransitionVisitor.java" />
         <option value="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/TranslationVisitor.java" />
         <option value="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/PasteVisitor.java" />
@@ -272,6 +614,9 @@
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/InputParser.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/Contract.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/FunctionParameterInterface.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/StateType.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/StateType.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/enums/StateType.java" />
       </list>
     </option>
   </component>
@@ -494,7 +839,110 @@
             <path>
               <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
-              <item name="pipe-module-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="imperial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="imperial" type="462c0819:PsiDirectoryNode" />
+              <item name="state" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ucl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ucl" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ucl" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ucl" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
@@ -526,11 +974,11 @@
       <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-gui\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Gabriel Vanca\Smart-Contract-Editor\pipe-gui\z_old maven" />
       <recent name="D:\OneDrive - Gabriel Vanca\Smart-Contract-Editor\pipe-gui\src\main" />
       <recent name="D:\OneDrive - Gabriel Vanca\Smart-Contract-Editor\pipe-gui\src\main\resources" />
       <recent name="D:\OneDrive - Gabriel Vanca\Smart-Contract-Editor\pipe-gui\src\main\resources\Contracts" />
       <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-module-gui\src\main\java\pipe\gui\imperial" />
-      <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-gui\src\main\java\pipe\imperial\pipe" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -759,12 +1207,12 @@
       <workItem from="1516586697421" duration="3387000" />
       <workItem from="1516643943148" duration="503000" />
       <workItem from="1516644797740" duration="4687000" />
-      <workItem from="1516670196300" duration="444000" />
+      <workItem from="1516670196300" duration="975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121815000" />
+    <option name="totallyTimeSpent" value="122346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -855,30 +1303,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="179" column="39" lean-forward="false" selection-start-line="179" selection-start-column="39" selection-end-line="179" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/arcCreator/InhibitorCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/TransitionAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/Mockito.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/internal/MockitoCore.java" />
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/StateEvalVisitor.java" />
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/EvalVisitor.java" />
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/test/java/pipe/controllers/PetriNetControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1035,8 +1459,8 @@
         <state relative-caret-position="34">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1075,7 +1499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/StateType.java" />
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/State.java" />
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" />
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/simple_vanishing.xml">
@@ -1090,6 +1513,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/z_old maven/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/PIPELineWithTextEdgePainter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/DirectedTextEdge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-module-gui/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/PIPESwingContextMenuListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/analysis/GSPNAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="148" column="34" lean-forward="false" selection-start-line="148" selection-start-column="34" selection-end-line="148" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/enums/StateType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>

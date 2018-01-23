@@ -7,7 +7,7 @@ import pipe.controllers.PetriNetController;
 import pipe.controllers.application.PipeApplicationController;
 import pipe.gui.imperial.pipe.layout.Layout;
 import pipe.gui.imperial.pipe.models.petrinet.*;
-import pipe.gui.imperial.state.StateType;
+import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.views.PipeApplicationBuilder;
 import pipe.views.PipeApplicationView;

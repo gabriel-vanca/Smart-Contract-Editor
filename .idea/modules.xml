@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/PIPE.iml" filepath="$PROJECT_DIR$/PIPE.iml" />
       <module fileurl="file://$PROJECT_DIR$/pipe-gui/PIPE-gui.iml" filepath="$PROJECT_DIR$/pipe-gui/PIPE-gui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pipe-module-gui/pipe-module-gui.iml" filepath="$PROJECT_DIR$/pipe-module-gui/pipe-module-gui.iml" />
     </modules>
   </component>
 </project>
