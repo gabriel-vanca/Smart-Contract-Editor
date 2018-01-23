@@ -3,215 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/Pipe.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/Pipe.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/analysis/GSPNAnalysis.form" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/analysis/GSPNAnalysis.form" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/analysis/GSPNAnalysis.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/analysis/GSPNAnalysis.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/EntireStateReader.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/EntireStateReader.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/KryoStateIO.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/KryoStateIO.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/MultiStateReader.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/MultiStateReader.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/StateIOProcessor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/StateIOProcessor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/StateMapping.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/StateMapping.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/StateProcessor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/StateProcessor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/StateReader.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/StateReader.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/io/StateWriter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/io/StateWriter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/animation/AnimationLogic.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/animation/AnimationLogic.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/animation/AnimationUtils.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/animation/AnimationUtils.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/animation/Animator.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/animation/Animator.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/animation/PetriNetAnimationLogic.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/animation/PetriNetAnimationLogic.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/animation/PetriNetAnimator.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/animation/PetriNetAnimator.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/ANormalArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/ANormalArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/APetriNet.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/APetriNet.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/APlace.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/APlace.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/ARateParameter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/ARateParameter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/ATimedTransition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/ATimedTransition.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AToken.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AToken.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AnAbstractTransition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AnAbstractTransition.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AnImmediateTransition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AnImmediateTransition.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AnInhibitorArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/AnInhibitorArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/dsl/DSLCreator.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/dsl/DSLCreator.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/exceptions/InvalidRateException.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/exceptions/InvalidRateException.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/exceptions/PetriNetComponentException.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/exceptions/PetriNetComponentException.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/exceptions/PetriNetComponentNotFoundException.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/exceptions/PetriNetComponentNotFoundException.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetIO.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetIO.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetIOImpl.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetIOImpl.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetReader.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetReader.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetValidationEventHandler.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetValidationEventHandler.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetWriter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetWriter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedAnnotation.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedAnnotation.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedArcPoint.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedArcPoint.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedConnectable.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedConnectable.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedPetriNet.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedPetriNet.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedPlace.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedPlace.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedRateParameter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedRateParameter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedToken.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedToken.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedTransition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/AdaptedTransition.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/NameDetails.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/NameDetails.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/OffsetGraphics.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/OffsetGraphics.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/Point.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/Point.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/PositionGraphics.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/model/PositionGraphics.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/AnnotationAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/AnnotationAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/ArcAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/ArcAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/ArcPointAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/ArcPointAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PetriNetAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PetriNetAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PlaceAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PlaceAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PointAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/PointAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/RateParameterAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/RateParameterAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TokenAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TokenAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TokenSetIntegerAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TokenSetIntegerAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TransitionAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/modelAdapter/TransitionAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/utils/ConnectableUtils.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/utils/ConnectableUtils.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/BooleanValueAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/BooleanValueAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/IntValueAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/IntValueAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringAttributeValueAdaptor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringAttributeValueAdaptor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringValueAdapter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/adapters/valueAdapter/StringValueAdapter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/layout/Layout.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/layout/Layout.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/PetriNetHolder.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/PetriNetHolder.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/manager/PetriNetManager.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/manager/PetriNetManager.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/manager/PetriNetManagerImpl.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/manager/PetriNetManagerImpl.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractConnectable.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractConnectable.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractPetriNetPubSub.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractPetriNetPubSub.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Annotation.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Annotation.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AnnotationImpl.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AnnotationImpl.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AnnotationImplVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AnnotationImplVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AnnotationVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AnnotationVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Arc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Arc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcPoint.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcPoint.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcPointVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcPointVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcType.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcType.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ArcVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ColoredToken.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/ColoredToken.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Connectable.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Connectable.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteDate.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteDate.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteFunction.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteFunction.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlaceVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlaceVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransitionVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransitionVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/FunctionalRateParameter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/FunctionalRateParameter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/FunctionalRateParameterVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/FunctionalRateParameterVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundInhibitorArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundInhibitorArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundNormalArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundNormalArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/NormalRate.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/NormalRate.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/OutboundArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/OutboundArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/OutboundNormalArc.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/OutboundNormalArc.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNet.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNet.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponent.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponent.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponentAddVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponentAddVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponentRemovalVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponentRemovalVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Place.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Place.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PlaceVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PlaceVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PlaceablePetriNetComponent.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PlaceablePetriNetComponent.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Rate.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Rate.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateParameter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateParameter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateParameterVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateParameterVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateType.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateType.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/RateVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Token.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Token.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/TokenVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/TokenVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Transition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Transition.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/TransitionVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/TransitionVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/FileNameVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/FileNameVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/NameVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/NameVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/NormalNameVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/NormalNameVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/NormalPetriNetName.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/NormalPetriNetName.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/PetriNetFileName.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/PetriNetFileName.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/PetriNetName.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/name/PetriNetName.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/AbstractUniqueNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/AbstractUniqueNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/ComponentNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/ComponentNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/MultipleNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/MultipleNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/NameChangeListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/NameChangeListener.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/PetriNetComponentNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/PetriNetComponentNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/PetriNetNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/PetriNetNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/PlaceNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/PlaceNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/TransitionNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/TransitionNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/naming/UniqueNamer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/UniqueNamer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/ComponentListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/ComponentListener.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/EvalVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/EvalVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/FunctionalResults.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/FunctionalResults.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/FunctionalWeightParser.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/FunctionalWeightParser.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/GrammarUtils.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/GrammarUtils.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/PetriNetWeightParser.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/PetriNetWeightParser.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarBaseListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarBaseListener.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarBaseVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarBaseVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarErrorListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarErrorListener.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarLexer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarLexer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarListener.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarParser.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarParser.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/RateGrammarVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/StateEvalVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/StateEvalVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/parsers/UnparsableException.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/parsers/UnparsableException.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/petrinet/unfold/Expander.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/petrinet/unfold/Expander.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/AllComponentVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/AllComponentVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/AnnotationCloner.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/AnnotationCloner.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/ClonePetriNet.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/ClonePetriNet.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/PasteVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/PasteVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/PlaceCloner.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/PlaceCloner.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/RateParameterCloner.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/RateParameterCloner.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/TransitionCloner.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/TransitionCloner.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/TranslationVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/TranslationVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/component/PetriNetComponentVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/component/PetriNetComponentVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/ArcCreatorVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/ArcCreatorVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/ArcSourceVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/ArcSourceVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/InhibitorSourceVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/InhibitorSourceVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/NormalArcSourceVisitor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/visitor/connectable/arc/NormalArcSourceVisitor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/AbstractStateSpaceExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/AbstractStateSpaceExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/BoundedExplorerUtilities.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/BoundedExplorerUtilities.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/CachingExplorerUtilities.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/CachingExplorerUtilities.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/CoverabilityExplorerUtilities.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/CoverabilityExplorerUtilities.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/ExplorerUtilities.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/ExplorerUtilities.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/OnTheFlyVanishingExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/OnTheFlyVanishingExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/SimpleVanishingExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/SimpleVanishingExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/StateRateRecord.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/StateRateRecord.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/StateSpaceExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/StateSpaceExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/TimelessTrapException.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/TimelessTrapException.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/UnboundedExplorerUtilities.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/UnboundedExplorerUtilities.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/VanishingExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/VanishingExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/parallel/IndividualParallelStateSpaceExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/parallel/IndividualParallelStateSpaceExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/parallel/MassiveParallelStateSpaceExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/parallel/MassiveParallelStateSpaceExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/parallel/ParallelStateExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/parallel/ParallelStateExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/sequential/SequentialStateSpaceExplorer.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/algorithm/sequential/SequentialStateSpaceExplorer.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/reachability/io/StateSpaceExplorationReader.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/reachability/io/StateSpaceExplorationReader.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/state/ClassifiedState.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/ClassifiedState.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/state/HashedClassifiedState.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/HashedClassifiedState.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/state/HashedState.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/HashedState.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/state/HashedStateBuilder.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/HashedStateBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/state/Record.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/Record.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/state/State.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/State.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/state/StateType.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/StateType.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/AXEqualsBSolver.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/AXEqualsBSolver.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/AbstractSteadyStateSolver.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/AbstractSteadyStateSolver.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/GaussSeidelSolver.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/GaussSeidelSolver.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelGaussSeidel.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelGaussSeidel.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelJacobiSolver.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelJacobiSolver.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelSteadyStateSolver.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelSteadyStateSolver.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelSubmitter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/ParallelSubmitter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SequentialJacobiSolver.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SequentialJacobiSolver.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SteadyStateBuilder.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SteadyStateBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SteadyStateBuilderImpl.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SteadyStateBuilderImpl.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SteadyStateSolver.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/algorithm/SteadyStateSolver.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/metrics/TokenMetrics.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/metrics/TokenMetrics.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/steadystate/metrics/TransitionMetrics.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/steadystate/metrics/TransitionMetrics.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/utils/ExploredSet.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/utils/ExploredSet.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/imperial/utils/StateUtils.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/utils/StateUtils.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/DirectedTextEdge.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/DirectedTextEdge.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/PIPELineWithTextEdgePainter.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/PIPELineWithTextEdgePainter.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/PIPESwingContextMenuListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/PIPESwingContextMenuListener.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/PIPESwingToolTipListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/PIPESwingToolTipListener.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/ReachabilityGraph.form" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/ReachabilityGraph.form" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/ReachabilityGraph.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/ReachabilityGraph.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/TangibleStateNode.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/TangibleStateNode.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/reachability/VanishingStateNode.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/reachability/VanishingStateNode.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/GenerateResultsForm.form" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/GenerateResultsForm.form" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/GenerateResultsForm.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/GenerateResultsForm.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/HTMLPane.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/HTMLPane.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/LoadBinaries.form" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/LoadBinaries.form" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/LoadBinaries.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/LoadBinaries.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/StateSpaceLoader.form" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/StateSpaceLoader.form" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/StateSpaceLoader.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/StateSpaceLoader.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/java/pipe/gui/widget/StateSpaceLoaderException.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widget/StateSpaceLoaderException.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/main.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/resources/binary_states" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/binary_states" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/resources/binary_transitions" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/binary_transitions" />
+      <change beforePath="$PROJECT_DIR$/pipe-module-gui/src/main/resources/simple_vanishing.xml" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/simple_vanishing.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -241,7 +36,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Constructor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Constructor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -249,6 +44,26 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple_vanishing.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/simple_vanishing.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/main.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -679,47 +494,7 @@
             <path>
               <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
-              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
-              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
-              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
-              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
               <item name="pipe-module-gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
-              <item name="pipe-module-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
-              <item name="pipe-module-gui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
@@ -751,11 +526,11 @@
       <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-gui\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Gabriel Vanca\Smart-Contract-Editor\pipe-gui\src\main" />
+      <recent name="D:\OneDrive - Gabriel Vanca\Smart-Contract-Editor\pipe-gui\src\main\resources" />
       <recent name="D:\OneDrive - Gabriel Vanca\Smart-Contract-Editor\pipe-gui\src\main\resources\Contracts" />
       <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-module-gui\src\main\java\pipe\gui\imperial" />
       <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-gui\src\main\java\pipe\imperial\pipe" />
-      <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-gui\src\main\java\pipe" />
-      <recent name="D:\Dropbox\Work\UCL Research Intern\PetriNet-Editor\pipe-gui\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -984,12 +759,12 @@
       <workItem from="1516586697421" duration="3387000" />
       <workItem from="1516643943148" duration="503000" />
       <workItem from="1516644797740" duration="4687000" />
-      <workItem from="1516670196300" duration="310000" />
+      <workItem from="1516670196300" duration="444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121681000" />
+    <option name="totallyTimeSpent" value="121815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1080,20 +855,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/ArcPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="713" column="8" lean-forward="false" selection-start-line="713" selection-start-column="8" selection-end-line="713" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/ArcAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="150" column="34" lean-forward="false" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetChangeListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -1317,6 +1078,22 @@
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/StateType.java" />
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/state/State.java" />
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" />
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/simple_vanishing.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/main.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
