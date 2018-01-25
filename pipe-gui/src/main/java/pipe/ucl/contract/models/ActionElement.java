@@ -1,33 +1,41 @@
 package pipe.ucl.contract.models;
 
-import pipe.ucl.contract.interfaces.ActionParameter;
-
 import java.util.ArrayList;
 
 public class ActionElement extends ContractElement {
 
-    protected ArrayList<ActionParameter> parameterList;
+    protected static long NextId = 1;
+
+    protected ArrayList<Object> parameterList;
 
     public ActionElement(String name) {
         super(name);
-        this.parameterList = new ArrayList<ActionParameter>();
+        this.parameterList = new ArrayList<>();
     }
 
-    public ArrayList<ActionParameter> getParameterList() {
+    public ActionElement(String id, String name) {
+        super(id, name);
+        this.parameterList = new ArrayList<>();
+    }
+
+    public ArrayList<Object> getParameterList() {
         return parameterList;
     }
 
-    public void addParameter(ActionParameter parameter) {
+    public void addParameter(Object parameter) {
         parameterList.add(parameter);
     }
 
     @Override
     public String toString() {
-        return null;
+        String string = id + " : " + name;
+        return string;
     }
 
     @Override
     protected String getUniqueId() {
-        return null;
+        String id = "A" + NextId;
+        NextId++;
+        return id;
     }
 }

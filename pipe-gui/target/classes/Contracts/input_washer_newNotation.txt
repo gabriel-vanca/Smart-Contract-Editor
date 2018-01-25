@@ -1,14 +1,10 @@
-GATE(GX, "Pay Washer", TRUE, Jones, RB[D1,D2(D3,D4)], F1(D3,D4))
-
-
-
 STATE(S1, 'START', START)
 STATE(S2, '2', INTERMEDIARY)
 STATE(S3, 'Jones paid £500', INTERMEDIARY)
 STATE(S4, 'DEFAULT: Jones did not pay £500', DEFAULT)
 STATE(S5, 'Smith delivered washer', INTERMEDIARY);
 STATE(S6, 'DEFAULT: Smith did not deliver washer', DEFAULT)
-STATE(S7, 'FINISH', FINISH);
+STATE(S7, 'END', END);
 
 DATE(D1, "Payment due date", 03-MAY-1987)
 DATE(D2, "Delivery due date", 15-MAY-1987)

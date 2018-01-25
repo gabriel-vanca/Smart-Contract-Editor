@@ -10,6 +10,11 @@ public abstract class ContractElement {
         id = getUniqueId();
     }
 
+    public ContractElement(String id, String name) {
+        this.name = name;
+        this.id = id;
+    }
+
     public String getId() {
         return id;
     }

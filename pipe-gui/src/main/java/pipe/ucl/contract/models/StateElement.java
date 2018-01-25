@@ -1,5 +1,6 @@
 package pipe.ucl.contract.models;
 
+import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
@@ -23,7 +24,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
 
     @Override
     protected String getUniqueId() {
-        String id = "P" + NextId;
+        String id = "S" + NextId;
         NextId++;
         return id;
     }
@@ -36,11 +37,13 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         this.type = type;
     }
 
+    @Override
     public DiscretePlace getGraphicObject() {
         return graphicObject;
     }
 
-    public void setGraphicObject(DiscretePlace graphicObject) {
-        this.graphicObject = graphicObject;
+    @Override
+    public void setGraphicObject(AbstractConnectable graphicObject) {
+        this.graphicObject = (DiscretePlace) graphicObject;
     }
 }

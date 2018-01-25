@@ -1,10 +1,10 @@
 package pipe.ucl.contract.interfaces;
 
-import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
+import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 
 public interface GraphicalRepresentation {
 
-    public DiscretePlace getGraphicObject();
+    public AbstractConnectable getGraphicObject();
 
-    public void setGraphicObject(DiscretePlace graphicObject);
+    public void setGraphicObject(AbstractConnectable graphicObject);
 }
