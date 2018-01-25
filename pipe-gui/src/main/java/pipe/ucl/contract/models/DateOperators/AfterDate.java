@@ -1,10 +1,10 @@
 package pipe.ucl.contract.models.DateOperators;
 
-import pipe.ucl.contract.interfaces.GetDateInterface;
+import pipe.ucl.contract.interfaces.GetCalendar;
 
 import java.util.GregorianCalendar;
 
-public class AfterDate implements GetDateInterface{
+public class AfterDate implements GetCalendar {
     @Override
     public GregorianCalendar GetDiscreteDate() {
         return null;

@@ -1,21 +1,21 @@
 package pipe.ucl.contract.models;
 
-import pipe.ucl.contract.interfaces.GetDateInterface;
+import pipe.ucl.contract.interfaces.GetCalendar;
 
 public class DateElement extends ContractElement{
 
-    protected GetDateInterface discreteDate;
+    protected GetCalendar discreteDate;
 
-    public DateElement(String name, GetDateInterface discreteDate) {
+    public DateElement(String name, GetCalendar discreteDate) {
         super(name);
         this.discreteDate = discreteDate;
     }
 
-    public GetDateInterface getDiscreteDate() {
+    public GetCalendar getDiscreteDate() {
         return discreteDate;
     }
 
-    public void setDiscreteDate(GetDateInterface discreteDate) {
+    public void setDiscreteDate(GetCalendar discreteDate) {
         this.discreteDate = discreteDate;
     }
 

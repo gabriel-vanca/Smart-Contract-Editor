@@ -1,22 +1,22 @@
 package pipe.ucl.contract.models.TimeOperators;
 
-import pipe.ucl.contract.interfaces.GetDateInterface;
+import pipe.ucl.contract.interfaces.GetCalendar;
 
 public abstract class TimeOperator {
 
-    protected GetDateInterface initialDate;
-    protected GetDateInterface finalDate;
+    protected GetCalendar initialDate;
+    protected GetCalendar finalDate;
 
-    public TimeOperator(GetDateInterface initialDate, GetDateInterface finalDate) {
+    public TimeOperator(GetCalendar initialDate, GetCalendar finalDate) {
         this.initialDate = initialDate;
         this.finalDate = finalDate;
     }
 
-    public GetDateInterface getInitialDate() {
+    public GetCalendar getInitialDate() {
         return initialDate;
     }
 
-    public GetDateInterface getFinalDate() {
+    public GetCalendar getFinalDate() {
         return finalDate;
     }
 
