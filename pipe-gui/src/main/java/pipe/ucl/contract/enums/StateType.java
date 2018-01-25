@@ -2,8 +2,8 @@ package pipe.ucl.contract.enums;
 
 public enum StateType {
     START,
-    FINISH,
+    END,
     DEFAULT,
     INTERMEDIARY,
-    SANCTION
+    PAUSE
 }
