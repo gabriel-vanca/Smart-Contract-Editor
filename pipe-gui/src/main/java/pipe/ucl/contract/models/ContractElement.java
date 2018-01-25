@@ -5,7 +5,7 @@ public abstract class ContractElement {
     protected String id;
     protected String name;
 
-    ContractElement(String name) {
+    public ContractElement(String name) {
         this.name = name;
         id = getUniqueId();
     }
