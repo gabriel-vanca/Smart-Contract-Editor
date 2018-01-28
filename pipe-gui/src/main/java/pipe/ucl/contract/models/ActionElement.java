@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 public class ActionElement extends ContractElement {
 
-    protected static long NextId = 1;
+    private static long NextId = 1;
+    private static String MainLabel = "A";
+    private static String[] Labels = {"A", "ACTION"};
 
     protected ArrayList<Object> parameterList;
 
@@ -37,5 +39,15 @@ public class ActionElement extends ContractElement {
         String id = "A" + NextId;
         NextId++;
         return id;
+    }
+
+    @Override
+    public String getMainLabel() {
+        return MainLabel;
+    }
+
+    @Override
+    public String[] getLabels() {
+        return Labels;
     }
 }

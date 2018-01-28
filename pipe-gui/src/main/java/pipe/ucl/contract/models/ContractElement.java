@@ -30,4 +30,8 @@ public abstract class ContractElement {
     public abstract String toString();
 
     protected abstract String getUniqueId();
+
+    public abstract String getMainLabel();
+
+    public abstract String[] getLabels();
 }

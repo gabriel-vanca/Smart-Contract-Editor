@@ -4,26 +4,35 @@ import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
+import java.util.ArrayList;
+
 public class GateElement extends ContractElement implements GraphicalRepresentation {
+
+    private static long NextId = 1;
+    private static String MainLabel = "G";
+    private static String[] Labels = {"G", "GATE"};
 
     protected Boolean sign;
     protected EventElement eventElement;
-    protected TimeElement timeElement;
+    protected TimeSpanElement timeSpanElement;
 
     protected DiscreteTransition graphicObject;
 
-    public GateElement(String name, Boolean sign, EventElement eventElement, TimeElement timeElement) {
+    protected ArrayList<StateElement> InitialStates = new ArrayList<>();
+    protected ArrayList<StateElement> FinalStates = new ArrayList<>();
+
+    public GateElement(String name, Boolean sign, EventElement eventElement, TimeSpanElement timeSpanElement) {
         super(name);
         this.sign = sign;
         this.eventElement = eventElement;
-        this.timeElement = timeElement;
+        this.timeSpanElement = timeSpanElement;
     }
 
-    public GateElement(String id, String name, Boolean sign, EventElement eventElement, TimeElement timeElement) {
+    public GateElement(String id, String name, Boolean sign, EventElement eventElement, TimeSpanElement timeSpanElement) {
         super(id, name);
         this.sign = sign;
         this.eventElement = eventElement;
-        this.timeElement = timeElement;
+        this.timeSpanElement = timeSpanElement;
     }
 
     public Boolean getSign() {
@@ -42,22 +51,39 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
         this.eventElement = eventElement;
     }
 
-    public TimeElement getTimeElement() {
-        return timeElement;
+    public TimeSpanElement getTimeSpanElement() {
+        return timeSpanElement;
     }
 
-    public void setTimeElement(TimeElement timeElement) {
-        this.timeElement = timeElement;
+    public void setTimeSpanElement(TimeSpanElement timeSpanElement) {
+        this.timeSpanElement = timeSpanElement;
+    }
+
+    public ArrayList<StateElement> getInitialStates() {
+        return InitialStates;
+    }
+
+    public ArrayList<StateElement> getFinalStates() {
+        return FinalStates;
     }
 
     @Override
     public String toString() {
-        return null;
+        String string = id + " : " + name + " : " + sign;
+        if(eventElement != null) {
+            string += " : " + eventElement.getActor().getName() + " : " + eventElement.getAction().getName();
+        }
+        if(timeSpanElement != null) {
+            string += " : " + timeSpanElement.toString();
+        }
+        return string;
     }
 
     @Override
     protected String getUniqueId() {
-        return null;
+        String id = MainLabel + NextId;
+        NextId++;
+        return id;
     }
 
     @Override
@@ -68,5 +94,15 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
     @Override
     public void setGraphicObject(AbstractConnectable graphicObject) {
         this.graphicObject = (DiscreteTransition) graphicObject;
+    }
+
+    @Override
+    public String getMainLabel() {
+        return MainLabel;
+    }
+
+    @Override
+    public String[] getLabels() {
+        return Labels;
     }
 }
