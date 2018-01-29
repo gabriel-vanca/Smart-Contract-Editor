@@ -1,12 +1,13 @@
 package pipe.ucl.contract.models;
 
+import pipe.ucl.constructor.controllers.LineParser;
 import pipe.ucl.contract.models.TimeOperators.TimeOperator;
 
 public class TimeSpanElement extends ContractElement {
 
     private static long NextId = 1;
-    private static String MainLabel = "TS";
-    private static String[] Labels = {"TS", "TIME-SPAN"};
+    public final static String MainLabel = "TS";
+    public final static String[] Labels = {"TS", "TIME-SPAN"};
 
     protected TimeOperator timeReference;
 
@@ -18,6 +19,13 @@ public class TimeSpanElement extends ContractElement {
     public TimeSpanElement(String id, String name, TimeOperator timeReference) {
         super(id, name);
         this.timeReference = timeReference;
+    }
+
+    public TimeSpanElement(String[] parameters) {
+        super(parameters);
+        if(parameters.length < 3) return;
+        this.timeReference = (TimeOperator) LineParser.GetToken(LineParser.ParseLine(parameters[2]));
+        elementCorrectness = Boolean.TRUE;
     }
 
     @Override
@@ -33,13 +41,4 @@ public class TimeSpanElement extends ContractElement {
         return id;
     }
 
-    @Override
-    public String getMainLabel() {
-        return MainLabel;
-    }
-
-    @Override
-    public String[] getLabels() {
-        return Labels;
-    }
 }

@@ -7,8 +7,9 @@ import pipe.controllers.PetriNetController;
 import pipe.controllers.application.PipeApplicationController;
 import pipe.gui.imperial.pipe.layout.Layout;
 import pipe.gui.imperial.pipe.models.petrinet.*;
-import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.constructor.models.InputLine;
+import pipe.ucl.contract.enums.StateType;
+import pipe.ucl.contract.models.Contract;
 import pipe.views.PipeApplicationBuilder;
 import pipe.views.PipeApplicationView;
 
@@ -27,6 +28,8 @@ public class Constructor {
     PipeApplicationBuilder pipeApplicationBuilder;
     ComponentCreatorManager componentCreatorManager;
 
+    public static Contract MainContract;
+
     public Constructor(PipeApplicationController applicationController, PipeApplicationModel applicationModel, PipeApplicationBuilder pipeApplicationBuilder, PipeApplicationView applicationView) {
         this.applicationController = applicationController;
         this.applicationModel = applicationModel;
@@ -35,9 +38,11 @@ public class Constructor {
         this.applicationView = applicationView;
         this.componentCreatorManager = applicationView.getComponentCreatorManager ();
 
-        InputParser inputParser = new InputParser ();
-        inputParser.ParseInputFile();
-        ArrayList<InputLine>  ParsedReadDataLinesList = inputParser.getParsedReadDataLinesList();
+        InputFileParser inputFileParser = new InputFileParser();
+        inputFileParser.ParseInputFile();
+        ArrayList<InputLine>  ParsedReadDataLinesList = inputFileParser.getParsedReadDataLinesList();
+
+
 
         for(InputLine parsedReadDataLine : ParsedReadDataLinesList) {
             String type = parsedReadDataLine.getType ();
@@ -161,7 +166,7 @@ public class Constructor {
 
         Layout ();
 
-        inputParser.EmptyParsedReadDataLinesList ();
+        inputFileParser.EmptyParsedReadDataLinesList ();
     }
 
     private void Layout() {

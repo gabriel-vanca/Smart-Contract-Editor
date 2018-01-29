@@ -2,6 +2,7 @@ package pipe.ucl.contract.models;
 
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
+import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
 import java.util.ArrayList;
@@ -9,8 +10,8 @@ import java.util.ArrayList;
 public class GateElement extends ContractElement implements GraphicalRepresentation {
 
     private static long NextId = 1;
-    private static String MainLabel = "G";
-    private static String[] Labels = {"G", "GATE"};
+    public final static String MainLabel = "G";
+    public final static String[] Labels = {"G", "GATE"};
 
     protected Boolean sign;
     protected EventElement eventElement;
@@ -33,6 +34,28 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
         this.sign = sign;
         this.eventElement = eventElement;
         this.timeSpanElement = timeSpanElement;
+    }
+
+    public GateElement(String[] parameters) {
+        super(parameters);
+        if (parameters.length < 3) return;
+        this.sign = Boolean.valueOf(parameters[2]);
+        elementCorrectness = Boolean.TRUE;
+        if (parameters.length < 4) return;
+        ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+        for (ContractElement currentContractElement : contractElements) {
+            if (currentContractElement.id.equals(parameters[3])) {
+                this.eventElement = (EventElement) currentContractElement;
+                break;
+            }
+        }
+        if (parameters.length < 5) return;
+        for (ContractElement currentContractElement : contractElements) {
+            if (currentContractElement.id.equals(parameters[4])) {
+                this.timeSpanElement = (TimeSpanElement) currentContractElement;
+                break;
+            }
+        }
     }
 
     public Boolean getSign() {
@@ -96,13 +119,4 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
         this.graphicObject = (DiscreteTransition) graphicObject;
     }
 
-    @Override
-    public String getMainLabel() {
-        return MainLabel;
-    }
-
-    @Override
-    public String[] getLabels() {
-        return Labels;
-    }
 }

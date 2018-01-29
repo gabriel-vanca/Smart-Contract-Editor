@@ -5,14 +5,25 @@ public abstract class ContractElement {
     protected String id;
     protected String name;
 
+    protected Boolean elementCorrectness;
+
     public ContractElement(String name) {
         this.name = name;
         id = getUniqueId();
+        elementCorrectness = Boolean.TRUE;
     }
 
     public ContractElement(String id, String name) {
         this.name = name;
         this.id = id;
+        elementCorrectness = Boolean.TRUE;
+    }
+
+    public ContractElement(String[] parameters) {
+        if(parameters.length < 2)
+            return;
+        this.id = parameters[0];
+        this.name = parameters[1];
     }
 
     public String getId() {
@@ -31,7 +42,7 @@ public abstract class ContractElement {
 
     protected abstract String getUniqueId();
 
-    public abstract String getMainLabel();
-
-    public abstract String[] getLabels();
+    public Boolean getElementCorrectness() {
+        return elementCorrectness;
+    }
 }

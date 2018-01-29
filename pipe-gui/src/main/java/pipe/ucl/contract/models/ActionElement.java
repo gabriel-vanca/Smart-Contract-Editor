@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class ActionElement extends ContractElement {
 
     private static long NextId = 1;
-    private static String MainLabel = "A";
-    private static String[] Labels = {"A", "ACTION"};
+    public final static String MainLabel = "A";
+    public final static String[] Labels = {"A", "ACTION"};
 
     protected ArrayList<Object> parameterList;
 
@@ -18,6 +18,14 @@ public class ActionElement extends ContractElement {
     public ActionElement(String id, String name) {
         super(id, name);
         this.parameterList = new ArrayList<>();
+    }
+
+    public ActionElement(String[] parameters) {
+        super(parameters);
+        for(int index=2; index<parameters.length;index++) {
+            parameterList.add(parameters[index]);
+        }
+        elementCorrectness = Boolean.TRUE;
     }
 
     public ArrayList<Object> getParameterList() {
@@ -36,18 +44,9 @@ public class ActionElement extends ContractElement {
 
     @Override
     protected String getUniqueId() {
-        String id = "A" + NextId;
+        String id = MainLabel + NextId;
         NextId++;
         return id;
     }
 
-    @Override
-    public String getMainLabel() {
-        return MainLabel;
-    }
-
-    @Override
-    public String[] getLabels() {
-        return Labels;
-    }
 }

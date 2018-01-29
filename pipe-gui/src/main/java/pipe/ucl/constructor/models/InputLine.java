@@ -1,6 +1,7 @@
 package pipe.ucl.constructor.models;
 
 public class InputLine {
+
     private String type;
     private String[] parameterList;
 
@@ -25,4 +26,6 @@ public class InputLine {
     public String getType() {
         return type;
     }
+
+
 }

@@ -3,8 +3,8 @@ package pipe.ucl.contract.models;
 public class PartyElement extends ContractElement {
 
     private static long NextId = 1;
-    private static String MainLabel = "P";
-    private static String[] Labels = {"P", "PARTY"};
+    public final static String MainLabel = "P";
+    public final static String[] Labels = {"P", "PARTY"};
 
     PartyElement(String name) {
         super(name);
@@ -12,6 +12,11 @@ public class PartyElement extends ContractElement {
 
     PartyElement(String id, String name) {
         super(id, name);
+    }
+
+    public PartyElement(String[] parameters) {
+        super(parameters);
+        elementCorrectness = Boolean.TRUE;
     }
 
     @Override
@@ -25,15 +30,4 @@ public class PartyElement extends ContractElement {
     public String toString() {
         return id + " : " + name;
     }
-
-    @Override
-    public String getMainLabel() {
-        return MainLabel;
-    }
-
-    @Override
-    public String[] getLabels() {
-        return Labels;
-    }
-    
 }

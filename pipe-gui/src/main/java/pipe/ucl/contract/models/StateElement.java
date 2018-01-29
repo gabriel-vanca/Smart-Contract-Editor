@@ -3,21 +3,20 @@ package pipe.ucl.contract.models;
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.ucl.contract.enums.StateType;
-import pipe.ucl.contract.interfaces.GetCalendar;
+import pipe.ucl.contract.interfaces.GetDiscreteTime;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
 
-public class StateElement extends ContractElement implements GraphicalRepresentation, GetCalendar {
+public class StateElement extends ContractElement implements GraphicalRepresentation, GetDiscreteTime {
 
     protected StateType type;
     private static long NextId = 1;
-    private static String MainLabel = "S";
-    private static String[] Labels = {"S", "STATE"};
+    public final static String MainLabel = "S";
+    public final static String[] Labels = {"S", "STATE"};
     protected DiscretePlace graphicObject;
 
-    protected GregorianCalendar discreteDate;
+    protected DiscreteTimeElement discreteTime;
 
     protected ArrayList<GateElement> InitialGate = new ArrayList<>();
 
@@ -26,6 +25,17 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     StateElement(String name, StateType type) {
         super(name);
         this.type = type;
+        // todo it will need to generate a discrete date
+    }
+
+    public StateElement(String[] parameters) {
+        super(parameters);
+        if(parameters.length < 3) return;
+        this.type = StateType.valueOf(parameters[2]);
+        
+        String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
+        this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
+        elementCorrectness = Boolean.TRUE;
     }
 
     @Override
@@ -67,22 +77,13 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         this.graphicObject = (DiscretePlace) graphicObject;
     }
 
-    public void setDiscreteDate(GregorianCalendar discreteDate) {
-        this.discreteDate = discreteDate;
+    public void setdiscreteTime(DiscreteTimeElement discreteTime) {
+        this.discreteTime = discreteTime;
     }
 
     @Override
-    public GregorianCalendar GetDiscreteDate() {
-        return null;
+    public DiscreteTimeElement GetDiscreteTime() {
+        return discreteTime;
     }
 
-    @Override
-    public String getMainLabel() {
-        return MainLabel;
-    }
-
-    @Override
-    public String[] getLabels() {
-        return Labels;
-    }
 }

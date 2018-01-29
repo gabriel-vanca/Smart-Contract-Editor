@@ -1,33 +1,18 @@
 package pipe.ucl.contract.models;
 
-import pipe.ucl.contract.interfaces.GetCalendar;
+import pipe.ucl.constructor.controllers.LineParser;
+import pipe.ucl.contract.interfaces.GetDiscreteTime;
 
-import java.util.GregorianCalendar;
-
-public class EventElement extends ContractElement implements GetCalendar {
+public class EventElement extends ContractElement implements GetDiscreteTime {
 
     private static long NextId = 1;
-    private static String MainLabel = "E";
-    private static String[] Labels = {"E", "EVENT"};
+    public final static String MainLabel = "E";
+    public final static String[] Labels = {"E", "EVENT"};
 
     protected PartyElement actor;
     protected ActionElement action;
-
-    protected GregorianCalendar discreteTime;
-
-    public EventElement(String name, PartyElement actor, ActionElement action, GregorianCalendar discreteTime) {
-        super(name);
-        this.actor = actor;
-        this.action = action;
-        this.discreteTime = discreteTime;
-    }
-
-    public EventElement(String id, String name, PartyElement actor, ActionElement action, GregorianCalendar discreteTime) {
-        super(id, name);
-        this.actor = actor;
-        this.action = action;
-        this.discreteTime = discreteTime;
-    }
+    protected DiscreteTimeElement discreteTime;
+//    protected GregorianCalendar discreteTime;
 
     public EventElement(String name, PartyElement actor, ActionElement action) {
         super(name);
@@ -35,10 +20,35 @@ public class EventElement extends ContractElement implements GetCalendar {
         this.action = action;
     }
 
+    public EventElement(String id, String name, PartyElement actor, ActionElement action, DiscreteTimeElement discreteTime) {
+        super(id, name);
+        this.actor = actor;
+        this.action = action;
+        this.discreteTime = discreteTime;
+    }
+
+    public EventElement(String name, PartyElement actor, ActionElement action, DiscreteTimeElement discreteTime) {
+        super(name);
+        this.actor = actor;
+        this.action = action;
+        this.discreteTime = discreteTime;
+    }
+
     public EventElement(String id, String name, PartyElement actor, ActionElement action) {
         super(id, name);
         this.actor = actor;
         this.action = action;
+    }
+
+    public EventElement(String[] parameters) {
+        super(parameters);
+        if(parameters.length < 4) return;
+        this.actor = (PartyElement) LineParser.GetToken(LineParser.ParseLine(parameters[2]));
+        this.action = (ActionElement) LineParser.GetToken(LineParser.ParseLine(parameters[3]));
+
+        String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
+        this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
+        elementCorrectness = Boolean.TRUE;
     }
 
     public void setParty(PartyElement actor) {
@@ -57,12 +67,12 @@ public class EventElement extends ContractElement implements GetCalendar {
         this.action = action;
     }
 
-    public void setDiscreteTime(GregorianCalendar discreteTime) {
+    public void setDiscreteTime(DiscreteTimeElement discreteTime) {
         this.discreteTime = discreteTime;
     }
 
     @Override
-    public GregorianCalendar GetDiscreteDate() {
+    public DiscreteTimeElement GetDiscreteTime() {
         return null;
     }
 
@@ -83,13 +93,4 @@ public class EventElement extends ContractElement implements GetCalendar {
         return id;
     }
 
-    @Override
-    public String getMainLabel() {
-        return MainLabel;
-    }
-
-    @Override
-    public String[] getLabels() {
-        return Labels;
-    }
 }

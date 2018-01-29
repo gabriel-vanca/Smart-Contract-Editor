@@ -1,22 +1,46 @@
 package pipe.ucl.contract.models.TimeOperators;
 
-import pipe.ucl.contract.interfaces.GetCalendar;
+import pipe.ucl.constructor.controllers.Constructor;
+import pipe.ucl.contract.interfaces.GetDiscreteTime;
+import pipe.ucl.contract.models.ContractElement;
+
+import java.util.ArrayList;
 
 public abstract class TimeOperator {
 
-    protected GetCalendar initialDate;
-    protected GetCalendar finalDate;
+    protected GetDiscreteTime initialDate;
+    protected GetDiscreteTime finalDate;
 
-    public TimeOperator(GetCalendar initialDate, GetCalendar finalDate) {
+    public TimeOperator(GetDiscreteTime initialDate, GetDiscreteTime finalDate) {
         this.initialDate = initialDate;
         this.finalDate = finalDate;
     }
 
-    public GetCalendar getInitialDate() {
+    public TimeOperator(String[] parameters) {
+        if(parameters.length < 2)
+            return;
+
+        ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+        for (ContractElement currentContractElement : contractElements) {
+            if (currentContractElement.getId().equals(parameters[0])) {
+                this.initialDate = (GetDiscreteTime) currentContractElement;
+                break;
+            }
+        }
+        for (ContractElement currentContractElement : contractElements) {
+            if (currentContractElement.getId().equals(parameters[1])) {
+                this.finalDate = (GetDiscreteTime) currentContractElement;
+                break;
+            }
+        }
+    }
+
+
+    public GetDiscreteTime getInitialDate() {
         return initialDate;
     }
 
-    public GetCalendar getFinalDate() {
+    public GetDiscreteTime getFinalDate() {
         return finalDate;
     }
 

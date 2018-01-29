@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Contract {
 
     private String name;
+
     private ArrayList<ContractElement> ContractElementsList;
 
     Contract(String name) {
@@ -19,4 +20,9 @@ public class Contract {
     public void setName(String name) {
         this.name = name;
     }
+
+    public ArrayList<ContractElement> getContractElementsList() {
+        return ContractElementsList;
+    }
+
 }
