@@ -1,7 +1,9 @@
 package pipe.ucl.contract.models;
 
-import pipe.ucl.constructor.controllers.LineParser;
+import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
+
+import java.util.ArrayList;
 
 public class EventElement extends ContractElement implements GetDiscreteTime {
 
@@ -43,8 +45,22 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
     public EventElement(String[] parameters) {
         super(parameters);
         if(parameters.length < 4) return;
-        this.actor = (PartyElement) LineParser.GetToken(LineParser.ParseLine(parameters[2]));
-        this.action = (ActionElement) LineParser.GetToken(LineParser.ParseLine(parameters[3]));
+
+        ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+
+        for (ContractElement currentContractElement : contractElements) {
+            if (currentContractElement.id.equals(parameters[2])) {
+                this.actor = (PartyElement) currentContractElement;
+                break;
+            }
+        }
+
+        for (ContractElement currentContractElement : contractElements) {
+            if (currentContractElement.id.equals(parameters[3])) {
+                this.action = (ActionElement) currentContractElement;
+                break;
+            }
+        }
 
         String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
         this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);

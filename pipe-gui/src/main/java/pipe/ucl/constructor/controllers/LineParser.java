@@ -125,10 +125,16 @@ public class LineParser {
 
     public static Object GetToken (InputLine inputLine) {
 
+        if(inputLine == null)
+            return null;
+
         String inputType = inputLine.getType().substring(0);
         String[] inputParameters = inputLine.getParameterList();
 
-        if(inputParameters.length < 2)
+        if(inputType == null || inputLine.equals("") || inputLine.equals(" "))
+            return null;
+
+        if(inputParameters == null || inputParameters.length < 2)
             return inputType;
 
         // Type should be upper case for easier checking
@@ -143,6 +149,7 @@ public class LineParser {
         if(Arrays.asList(TimeSpanElement.Labels).contains(inputType)) return new TimeSpanElement(inputParameters);
         if(Arrays.asList(RDuring.Labels).contains(inputType)) return new RDuring(inputParameters);
         if(Arrays.asList(RThroughout.Labels).contains(inputType)) return new RThroughout(inputParameters);
+        if(Arrays.asList(TransAssertion.Labels).contains(inputType)) return new TransAssertion(inputParameters);
 
         return inputType;
     }

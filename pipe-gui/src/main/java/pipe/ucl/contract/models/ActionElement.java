@@ -22,6 +22,7 @@ public class ActionElement extends ContractElement {
 
     public ActionElement(String[] parameters) {
         super(parameters);
+        this.parameterList = new ArrayList<>();
         for(int index=2; index<parameters.length;index++) {
             parameterList.add(parameters[index]);
         }

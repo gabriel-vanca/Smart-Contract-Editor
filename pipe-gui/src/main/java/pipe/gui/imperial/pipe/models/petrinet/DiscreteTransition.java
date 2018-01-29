@@ -28,7 +28,7 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
     private boolean enabled = false;
     private String time;
     private String actor;
-    private DiscreteFunction action;
+    private String action;
     private Boolean sign;
 
     public DiscreteTransition(String id, String name) {
@@ -39,7 +39,7 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         super (id, id);
     }
 
-    public DiscreteTransition(String id, String name, String actor, DiscreteFunction action, String time, Boolean sign) {
+    public DiscreteTransition(String id, String name, String actor, String action, String time, Boolean sign) {
         super (id, name);
         this.actor = actor;
         this.action = action;
@@ -53,7 +53,7 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         this.priority = priority;
     }
 
-    public DiscreteTransition(String id, String name, pipe.gui.imperial.pipe.models.petrinet.Rate rate, int priority, String actor, DiscreteFunction action, String time, Boolean sign) {
+    public DiscreteTransition(String id, String name, pipe.gui.imperial.pipe.models.petrinet.Rate rate, int priority, String actor, String action, String time, Boolean sign) {
         super (id, name);
         this.rate = rate;
         this.priority = priority;
@@ -363,11 +363,11 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         this.actor = actor;
     }
 
-    public DiscreteFunction getAction() {
+    public String getAction() {
         return action;
     }
 
-    public void setAction(DiscreteFunction action) {
+    public void setAction(String action) {
         this.action = action;
     }
 

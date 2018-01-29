@@ -13,6 +13,8 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
     public final static String MainLabel = "G";
     public final static String[] Labels = {"G", "GATE"};
 
+    DiscreteTransition discreteGate;
+
     protected Boolean sign;
     protected EventElement eventElement;
     protected TimeSpanElement timeSpanElement;
@@ -41,21 +43,36 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
         if (parameters.length < 3) return;
         this.sign = Boolean.valueOf(parameters[2]);
         elementCorrectness = Boolean.TRUE;
-        if (parameters.length < 4) return;
+        if (parameters.length < 4)
+        {
+            graphicObject = Constructor.AddGate (id, name, sign, null, null, null);
+            return;
+        }
+        elementCorrectness = Boolean.FALSE;
         ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
         for (ContractElement currentContractElement : contractElements) {
             if (currentContractElement.id.equals(parameters[3])) {
                 this.eventElement = (EventElement) currentContractElement;
+                elementCorrectness = Boolean.TRUE;
                 break;
             }
         }
-        if (parameters.length < 5) return;
+        if (parameters.length < 5)
+        {
+            graphicObject = Constructor.AddGate (id, name, sign, null, null, eventElement.getName());
+            return;
+        }
+        elementCorrectness = Boolean.FALSE;
         for (ContractElement currentContractElement : contractElements) {
             if (currentContractElement.id.equals(parameters[4])) {
                 this.timeSpanElement = (TimeSpanElement) currentContractElement;
+                elementCorrectness = Boolean.TRUE;
                 break;
             }
         }
+
+        graphicObject = Constructor.AddGate (id, name, sign, "", timeSpanElement.getName(), eventElement.getName());
+
     }
 
     public Boolean getSign() {

@@ -2,6 +2,7 @@ package pipe.ucl.contract.models;
 
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
+import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
@@ -14,6 +15,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     private static long NextId = 1;
     public final static String MainLabel = "S";
     public final static String[] Labels = {"S", "STATE"};
+
     protected DiscretePlace graphicObject;
 
     protected DiscreteTimeElement discreteTime;
@@ -21,6 +23,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     protected ArrayList<GateElement> InitialGate = new ArrayList<>();
 
     protected ArrayList<GateElement> FinalGate = new ArrayList<>();
+
 
     StateElement(String name, StateType type) {
         super(name);
@@ -36,6 +39,9 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
         this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
         elementCorrectness = Boolean.TRUE;
+
+        graphicObject = Constructor.AddState (id, name,  type);
+
     }
 
     @Override

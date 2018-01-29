@@ -22,6 +22,8 @@ public class InputFileParser {
     public void ParseInputFile() {
         List<String> readDataLinesList = ReadFile();
         for (String readDataLine : readDataLinesList) {
+            if(readDataLine == "")
+                continue;
             InputLine parsedReadDataLine = LineParser.ParseLine(readDataLine);
             if (parsedReadDataLine == null)
                 continue;
@@ -36,7 +38,7 @@ public class InputFileParser {
 
     private List<String> ReadFile() {
 
-        String inputFileName = "Contracts/input_washer_newNotation.txt";
+        String inputFileName = "Contracts/input_washer_January18.txt";
 
         List<String> readDataLinesList = new ArrayList<>();
 

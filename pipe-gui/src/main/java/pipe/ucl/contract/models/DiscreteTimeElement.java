@@ -13,7 +13,8 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
     private static long NextId = 1;
     public final static String MainLabel = "DT";
     public final static String[] Labels = {"DT", "DISCRETE-TIME"};
-    public final static DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+//    public final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy hh:mm");
+public final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
 
     protected GregorianCalendar discreteTime;
     protected GetDiscreteTime dateOperator;

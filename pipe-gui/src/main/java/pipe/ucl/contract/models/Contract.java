@@ -8,7 +8,7 @@ public class Contract {
 
     private ArrayList<ContractElement> ContractElementsList;
 
-    Contract(String name) {
+    public Contract(String name) {
         this.name = name;
         ContractElementsList = new ArrayList<ContractElement>();
     }
