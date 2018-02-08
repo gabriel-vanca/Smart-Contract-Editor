@@ -2,7 +2,7 @@ package pipe.gui.imperial.pipe.models.petrinet;
 
 import pipe.gui.imperial.pipe.exceptions.PetriNetComponentException;
 import pipe.gui.imperial.pipe.visitor.component.PetriNetComponentVisitor;
-import pipe.ucl.contract.enums.StateType;
+import pipe.ucl.contract.models.StateElement;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -11,25 +11,23 @@ import java.util.Map;
 public final class DiscretePlace extends AbstractConnectable implements Place {
    private double markingXOffset = 0.0D;
    private double markingYOffset = 0.0D;
-   protected StateType stateType;
    private int capacity = 0;
    private Map tokenCounts = new HashMap();
    private String time;
+   private StateElement stateElement;
    
 
-   public DiscretePlace(String id, String name, StateType stateType) {
+   public DiscretePlace(String id, String name, StateElement stateElement) {
       super(id, name);
-      this.stateType = stateType;
+      this.stateElement = stateElement;
    }
 
    public DiscretePlace(String id) {
       super(id, id);
-      this.stateType = null;
    }
 
    public DiscretePlace(String id, String name) {
       super(id, name);
-      this.stateType = null;
    }
 
    public DiscretePlace(DiscretePlace place) {
@@ -37,15 +35,26 @@ public final class DiscretePlace extends AbstractConnectable implements Place {
       this.capacity = place.capacity;
       this.markingXOffset = place.markingXOffset;
       this.markingYOffset = place.markingYOffset;
+      this.stateElement = place.stateElement;
+   }
+
+   public StateElement getStateElement() {
+      return stateElement;
    }
 
    @Override
    public String toString() {
-       String string = this.id;
-       if(this.name != null && this.name.length() > 0)
-           string += ":" + this.name;
 
-       return string;
+      if (stateElement != null) {
+         return stateElement.toString();
+      }
+
+      String string = this.id;
+      if (this.name != null && this.name.length() > 0)
+         string += ":" + this.name;
+
+      return string;
+
    }
 
    public String getTime(){

@@ -5,6 +5,7 @@ import pipe.gui.imperial.pipe.parsers.PetriNetWeightParser;
 import pipe.gui.imperial.pipe.parsers.StateEvalVisitor;
 import pipe.gui.imperial.pipe.visitor.component.PetriNetComponentVisitor;
 import pipe.gui.imperial.state.State;
+import pipe.ucl.contract.models.GateElement;
 
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Point2D;
@@ -26,10 +27,7 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
     private boolean infiniteServer = false;
     private int angle = 0;
     private boolean enabled = false;
-    private String time;
-    private String actor;
-    private String action;
-    private Boolean sign;
+    private GateElement gateElement;
 
     public DiscreteTransition(String id, String name) {
         super (id, name);
@@ -39,12 +37,9 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         super (id, id);
     }
 
-    public DiscreteTransition(String id, String name, String actor, String action, String time, Boolean sign) {
+    public DiscreteTransition(String id, String name, GateElement gateElement) {
         super (id, name);
-        this.actor = actor;
-        this.action = action;
-        this.time = time;
-        this.sign = sign;
+        this.gateElement = gateElement;
     }
 
     public DiscreteTransition(String id, String name, pipe.gui.imperial.pipe.models.petrinet.Rate rate, int priority) {
@@ -53,14 +48,11 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         this.priority = priority;
     }
 
-    public DiscreteTransition(String id, String name, pipe.gui.imperial.pipe.models.petrinet.Rate rate, int priority, String actor, String action, String time, Boolean sign) {
+    public DiscreteTransition(String id, String name, pipe.gui.imperial.pipe.models.petrinet.Rate rate, int priority, GateElement gateElement) {
         super (id, name);
         this.rate = rate;
         this.priority = priority;
-        this.actor = actor;
-        this.action = action;
-        this.time = time;
-        this.sign = sign;
+        this.gateElement = gateElement;
     }
 
     public DiscreteTransition(DiscreteTransition transition) {
@@ -70,26 +62,23 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         this.timed = transition.timed;
         this.rate = transition.rate;
         this.priority = transition.priority;
-        this.actor = transition.actor;
-        this.action = transition.action;
-        this.sign = transition.sign;
+        this.gateElement = transition.gateElement;
+    }
+
+    public GateElement getGateElement() {
+        return gateElement;
     }
 
     @Override
     public String toString() {
+
+        if(gateElement != null) {
+            return gateElement.toString();
+        }
+
         String string = this.id;
         if (this.name != null && this.name.length () > 0)
             string += ":" + this.name;
-//        string += ":";
-        if (this.sign == Boolean.FALSE)
-            string += ":!";
-        if (this.actor != null && this.actor.length () > 0)
-            string += ":" + this.actor;
-        if (this.action != null && this.action.toString ().length () > 0)
-            string += ":" + this.action;
-        if (this.time != null && this.time.length () > 0)
-            string += ":" + this.time;
-
         return string;
     }
 
@@ -353,38 +342,6 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
 
     public boolean isEnabled() {
         return this.enabled;
-    }
-
-    public String getAuthor() {
-        return actor;
-    }
-
-    public void setAuthor(String actor) {
-        this.actor = actor;
-    }
-
-    public String getAction() {
-        return action;
-    }
-
-    public void setAction(String action) {
-        this.action = action;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
-
-    public Boolean getSign() {
-        return sign;
-    }
-
-    public void setSign(Boolean sign) {
-        this.sign = sign;
     }
 
 }

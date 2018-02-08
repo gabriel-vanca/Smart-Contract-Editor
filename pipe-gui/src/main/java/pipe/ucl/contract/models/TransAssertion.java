@@ -1,13 +1,9 @@
 package pipe.ucl.contract.models;
 
-import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
-import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
 import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.constructor.controllers.LineParser;
 
 import java.util.ArrayList;
-
-import static pipe.ucl.constructor.controllers.Constructor.AddArc;
 
 public class TransAssertion {
 
@@ -15,6 +11,7 @@ public class TransAssertion {
     public final static String[] Labels = {"TA", "TRANS-ASSERTION"};
 
     public TransAssertion (String[] parameters) {
+
         if (parameters.length != 3) {
             System.out.println("ERROR: Token < " + MainLabel + " > has an incompatible number of parameters. Line was ignored.");
             return;
@@ -33,17 +30,17 @@ public class TransAssertion {
             }
         }
 
-        if(gateElement == null)
+        if(gateElement == null){
+            System.out.println("ERROR: Token < " + MainLabel + " > references an undefined gate. Line was ignored.");
             return;
+        }
 
-        DiscreteTransition gate = gateElement.getGraphicObject();
+//        DiscreteTransition gate = gateElement.getGraphicObject();
 
         for (String beginState : beginStates) {
             for (ContractElement currentContractElement : contractElements) {
                 if (currentContractElement.id.equals(beginState)) {
-                    StateElement stateElement = (StateElement) currentContractElement;
-                    DiscretePlace beginStateObject = stateElement.getGraphicObject();
-                    AddArc(beginStateObject, gate);
+                    gateElement.addBeginState((StateElement) currentContractElement);
                     break;
                 }
             }
@@ -52,9 +49,7 @@ public class TransAssertion {
         for (String endState : endStates) {
             for (ContractElement currentContractElement : contractElements) {
                 if (currentContractElement.id.equals(endState)) {
-                    StateElement stateElement = (StateElement) currentContractElement;
-                    DiscretePlace endStateObject = stateElement.getGraphicObject();
-                    AddArc(gate, endStateObject);
+                    gateElement.addEndState((StateElement) currentContractElement);
                     break;
                 }
             }

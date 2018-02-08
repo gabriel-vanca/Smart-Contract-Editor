@@ -1,13 +1,16 @@
 package pipe.ucl.contract.models;
 
+import pipe.controllers.PetriNetController;
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
+import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class StateElement extends ContractElement implements GraphicalRepresentation, GetDiscreteTime {
 
@@ -20,10 +23,8 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
 
     protected DiscreteTimeElement discreteTime;
 
-    protected ArrayList<GateElement> InitialGate = new ArrayList<>();
-
-    protected ArrayList<GateElement> FinalGate = new ArrayList<>();
-
+    protected ArrayList<GateElement> SourceGates = new ArrayList<>();
+    protected ArrayList<GateElement> DestinationGates = new ArrayList<>();
 
     StateElement(String name, StateType type) {
         super(name);
@@ -40,8 +41,35 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
         elementCorrectness = Boolean.TRUE;
 
-        graphicObject = Constructor.AddState (id, name,  type);
+        graphicObject = instantiateGraphicObject();
+    }
 
+    protected DiscretePlace instantiateGraphicObject() {
+        DiscretePlace place = null;
+
+        try {
+
+            PetriNetController petriNetController = Constructor.getPetriNetController();
+
+            if(id == null || id == "")
+            {
+                id = petriNetController.getUniquePlaceName ();
+            }
+
+            place = new DiscretePlace (id, name, this);
+
+            int randomX = ThreadLocalRandom.current ().nextInt (10, 1270);
+            int randomY = ThreadLocalRandom.current ().nextInt (10, 675);
+            place.setX (randomX);
+            place.setY (randomY);
+
+            PetriNet petriNet = petriNetController.getPetriNet ();
+            petriNet.addPlace (place);
+        } catch (Exception e) {
+            System.out.println ("ERROR: Could not add new state due to following error: " + e.toString ());
+        }
+
+        return place;
     }
 
     @Override
@@ -65,12 +93,20 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         this.type = type;
     }
 
-    public ArrayList<GateElement> getInitialGate() {
-        return InitialGate;
+    public ArrayList<GateElement> getSourceGates() {
+        return SourceGates;
     }
 
-    public ArrayList<GateElement> getFinalGate() {
-        return FinalGate;
+    public ArrayList<GateElement> getDestinationGates() {
+        return DestinationGates;
+    }
+
+    public void addSourceGate(GateElement gateElement) {
+        SourceGates.add(gateElement);
+    }
+
+    public void addDestinationGate(GateElement gateElement) {
+        DestinationGates.add(gateElement);
     }
 
     @Override

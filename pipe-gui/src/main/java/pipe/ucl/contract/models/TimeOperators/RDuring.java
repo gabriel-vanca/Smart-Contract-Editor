@@ -31,6 +31,13 @@ public class RDuring extends TimeOperator {
         }
     }
 
+    @Override
+    public String toString() {
+        if(conditionalEvent != null)
+            return MainLabel + "(" + initialDate + ", " + finalDate + " , " + conditionalEvent + ")";
+        return MainLabel + "(" + initialDate + ", " + finalDate + ")";
+    }
+
     public EventElement getConditionalEvent() {
         return conditionalEvent;
     }

@@ -44,4 +44,6 @@ public abstract class TimeOperator {
         return finalDate;
     }
 
+    public abstract String toString();
+
 }

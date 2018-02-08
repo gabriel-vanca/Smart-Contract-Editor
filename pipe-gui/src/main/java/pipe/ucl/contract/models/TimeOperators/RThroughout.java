@@ -14,4 +14,9 @@ public class RThroughout  extends TimeOperator {
     public RThroughout(String[] parameters) {
         super(parameters);
     }
+
+    @Override
+    public String toString() {
+        return MainLabel + "(" + initialDate + ", " + finalDate + ")";
+    }
 }

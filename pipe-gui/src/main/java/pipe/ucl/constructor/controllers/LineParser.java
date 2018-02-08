@@ -114,15 +114,6 @@ public class LineParser {
         return new InputLine(inputString, null);
     }
 
-//    public static Object GetContractElementOrString (InputLine inputLine) {
-//
-//        ContractElement contractElement = GetContractElement(inputLine);
-//        if (contractElement == null)
-//            return (String) inputLine.getType();
-//        else
-//            return contractElement;
-//    }
-
     public static Object GetToken (InputLine inputLine) {
 
         if(inputLine == null)

@@ -1,6 +1,7 @@
 package pipe.ucl.contract.models;
 
 import pipe.ucl.constructor.controllers.LineParser;
+import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 
 import java.text.DateFormat;
@@ -30,6 +31,8 @@ public final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
     public DiscreteTimeElement(String[] parameters) {
         super(parameters);
         if (parameters.length < 3) return;
+
+        // First we check for a discrete date (GregorianCalendar)
         try {
             DATE_FORMAT.setLenient(false);
             Date date = DATE_FORMAT.parse(parameters[2]);
@@ -46,8 +49,12 @@ public final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
             return;
 
         discreteTime = null;
+
+        // Now we check for a date operator
+
         try {
-            this.dateOperator = (GetDiscreteTime) LineParser.GetToken(LineParser.ParseLine(parameters[2]));
+            InputLine parsedObject = LineParser.ParseLine(parameters[2]);
+            this.dateOperator = (GetDiscreteTime) LineParser.GetToken(parsedObject);
             elementCorrectness = Boolean.TRUE;
         } catch (Exception e) {
             e.printStackTrace();

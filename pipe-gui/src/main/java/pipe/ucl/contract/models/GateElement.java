@@ -1,11 +1,17 @@
 package pipe.ucl.contract.models;
 
+import pipe.controllers.PetriNetController;
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
+import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
+import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
+
+import static pipe.ucl.constructor.controllers.Constructor.AddArc;
 
 public class GateElement extends ContractElement implements GraphicalRepresentation {
 
@@ -40,39 +46,75 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
 
     public GateElement(String[] parameters) {
         super(parameters);
-        if (parameters.length < 3) return;
-        this.sign = Boolean.valueOf(parameters[2]);
-        elementCorrectness = Boolean.TRUE;
-        if (parameters.length < 4)
-        {
-            graphicObject = Constructor.AddGate (id, name, sign, null, null, null);
-            return;
-        }
-        elementCorrectness = Boolean.FALSE;
-        ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
-        for (ContractElement currentContractElement : contractElements) {
-            if (currentContractElement.id.equals(parameters[3])) {
-                this.eventElement = (EventElement) currentContractElement;
-                elementCorrectness = Boolean.TRUE;
-                break;
-            }
-        }
-        if (parameters.length < 5)
-        {
-            graphicObject = Constructor.AddGate (id, name, sign, null, null, eventElement.getName());
-            return;
-        }
-        elementCorrectness = Boolean.FALSE;
-        for (ContractElement currentContractElement : contractElements) {
-            if (currentContractElement.id.equals(parameters[4])) {
-                this.timeSpanElement = (TimeSpanElement) currentContractElement;
-                elementCorrectness = Boolean.TRUE;
-                break;
+
+        if (parameters.length > 2) {
+
+            this.sign = Boolean.valueOf(parameters[2]);
+            elementCorrectness = Boolean.TRUE;
+
+            if (parameters.length > 3) {
+                elementCorrectness = Boolean.FALSE;
+                ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+                for (ContractElement currentContractElement : contractElements) {
+                    if (currentContractElement.id.equals(parameters[3])) {
+                        this.eventElement = (EventElement) currentContractElement;
+                        elementCorrectness = Boolean.TRUE;
+                        break;
+                    }
+                }
+                if (parameters.length > 4) {
+                    elementCorrectness = Boolean.FALSE;
+                    for (ContractElement currentContractElement : contractElements) {
+                        if (currentContractElement.id.equals(parameters[4])) {
+                            this.timeSpanElement = (TimeSpanElement) currentContractElement;
+                            elementCorrectness = Boolean.TRUE;
+                            break;
+                        }
+                    }
+                }
             }
         }
 
-        graphicObject = Constructor.AddGate (id, name, sign, "", timeSpanElement.getName(), eventElement.getName());
+        graphicObject = instantiateGraphicObject();
+    }
 
+    protected DiscreteTransition instantiateGraphicObject() {
+        try{
+
+            PetriNetController petriNetController = Constructor.getPetriNetController();
+
+            if(id == null || id == "") {
+                id = petriNetController.getUniqueTransitionName ();
+            }
+            DiscreteTransition transition = new DiscreteTransition (id, name, this);
+
+            int randomX = ThreadLocalRandom.current ().nextInt (10, 1270);
+            int randomY = ThreadLocalRandom.current ().nextInt (10, 675);
+            transition.setX(randomX);
+            transition.setY(randomY);
+            transition.setTimed(Boolean.TRUE);
+
+            PetriNet petriNet = petriNetController.getPetriNet();
+            petriNet.addTransition(transition);
+            return transition;
+        } catch(Exception e) {
+            System.out.println ("ERROR: Could not add new gate due to following error: " + e.toString ());
+        }
+        return null;
+    }
+
+    public void addBeginState(StateElement stateElement) {
+        InitialStates.add(stateElement);
+        stateElement.addDestinationGate(this);
+        DiscretePlace beginStateObject = stateElement.getGraphicObject();
+        AddArc(beginStateObject, this.graphicObject);
+    }
+
+    public void addEndState(StateElement stateElement) {
+        FinalStates.add(stateElement);
+        stateElement.addSourceGate(this);
+        DiscretePlace endStateObject = stateElement.getGraphicObject();
+        AddArc(this.graphicObject, endStateObject);
     }
 
     public Boolean getSign() {
@@ -114,7 +156,7 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
             string += " : " + eventElement.getActor().getName() + " : " + eventElement.getAction().getName();
         }
         if(timeSpanElement != null) {
-            string += " : " + timeSpanElement.toString();
+            string += " : " + timeSpanElement.getId();
         }
         return string;
     }

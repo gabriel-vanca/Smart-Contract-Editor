@@ -1,3 +1,6 @@
+PARTY(P1, "Jones")
+PARTY(P2, "Smith")
+
 STATE(S1, 'START', START)
 STATE(S2, '2', INTERMEDIARY)
 STATE(S3, 'Jones paid £500', INTERMEDIARY)
@@ -6,25 +9,27 @@ STATE(S5, 'Smith delivered washer', INTERMEDIARY);
 STATE(S6, 'DEFAULT: Smith did not deliver washer', DEFAULT)
 STATE(S7, 'END', END);
 
-DISCRETE-TIME(DT1, "Purchase Date", 01/05/1987)        // We need a purchase date
+/*
+   We will consider the beginning of the contract
+   as need the purchase date
+ */
+
+DISCRETE-TIME(DT1, "Purchase Date", S1)
 DISCRETE-TIME(DT2, "Payment due date", 03/05/1987)
 DISCRETE-TIME(DT3, "Delivery due date", 15/05/1987)
 
 ACTION(A1, "PAY", SMITH, £500)
 ACTION(A2, "DELIVER", Jones, Washer)
 
-PARTY(P1, "Jones")
-PARTY(P2, "Smith")
-
-EVENT(E1, "Pay Washer", P1, A1)
+EVENT(E1, "Pay for Washer", P1, A1)
 EVENT(E2, "Deliver Washer", P2, A2)
 
 TIME-SPAN(TS1, "Payment Deadline", RD(DT1,DT2))
 TIME-SPAN(TS2, "Delivery Deadline", RD(E1,DT3))
 
 GATE(G1, "True Gate", TRUE)
-GATE(G2, "Pay Washer", TRUE, E1, TS1)
-GATE(G3, "Pay Washer", FALSE, E1, TS1)
+GATE(G2, "Pay for Washer", TRUE, E1, TS1)
+GATE(G3, "Pay for Washer", FALSE, E1, TS1)
 GATE(G4, "Deliver Washer", TRUE, E2, TS2)
 GATE(G5, "Deliver Washer", FALSE, E2, TS2)
 GATE(G6, "True Gate", TRUE)
