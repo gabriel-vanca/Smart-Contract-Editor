@@ -107,6 +107,8 @@ public class TransitionEditorPanel extends javax.swing.JPanel {
      */
     private final JLabel weightRateLabel = new JLabel();
 
+//    private final JLabel fullInfoLabel = new JLabel();
+
 
     /**
      * Transitions weight/rate value, can either be user defined or the value of a rate parameter, or a user defined rate
@@ -272,6 +274,14 @@ public class TransitionEditorPanel extends javax.swing.JPanel {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         transitionEditorPanel.add(nameTextField, gridBagConstraints);
+
+//        weightRateLabel.setText("Full Info:");
+//        gridBagConstraints = new java.awt.GridBagConstraints();
+//        gridBagConstraints.gridx = 0;
+//        gridBagConstraints.gridy = 1;
+//        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+//        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+//        transitionEditorPanel.add(fullInfoLabel, gridBagConstraints);
 
         weightRateLabel.setText("Constant Rate:");
         gridBagConstraints = new java.awt.GridBagConstraints();

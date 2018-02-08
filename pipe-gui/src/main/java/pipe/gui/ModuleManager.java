@@ -4,12 +4,12 @@ import com.google.common.collect.ImmutableSet;
 import com.google.common.reflect.ClassPath;
 import pipe.constants.GUIConstants;
 import pipe.controllers.application.PipeApplicationController;
-import pipe.gui.plugin.GuiModule;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
+import pipe.gui.plugin.GuiModule;
 
 import javax.swing.*;
 import javax.swing.tree.*;
-import java.awt.Component;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -110,6 +110,7 @@ public class ModuleManager {
 
         // create the root node
         DefaultMutableTreeNode root = new DefaultMutableTreeNode("Analysis Module Manager");
+
 
         // create root children
         loadModules = new DefaultMutableTreeNode("Available Modules");

@@ -7,6 +7,12 @@ public abstract class ContractElement {
 
     protected Boolean elementCorrectness;
 
+    public ContractElement() {
+        String unique = getUniqueId();
+        id = name = unique;
+        elementCorrectness = Boolean.TRUE;
+    }
+
     public ContractElement(String name) {
         this.name = name;
         id = getUniqueId();

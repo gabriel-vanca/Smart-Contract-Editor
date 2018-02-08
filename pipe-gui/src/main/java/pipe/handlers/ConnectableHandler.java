@@ -37,13 +37,17 @@ public class ConnectableHandler<T extends Connectable>
     public void mousePressed(MouseEvent e) {
         super.mousePressed(e);
 
-        if (e.isPopupTrigger()) {
-            JPopupMenu menu = getPopup(e);
-            menu.show(e.getComponent(), 0, 0);
-        } else if (e.getButton() == MouseEvent.BUTTON1) {
+        try {
+            if (e.isPopupTrigger()) {
+                JPopupMenu menu = getPopup(e);
+                menu.show(e.getComponent(), 0, 0);
+            } else if (e.getButton() == MouseEvent.BUTTON1) {
 
-            CreateAction selectedAction = applicationModel.getSelectedAction();
-            selectedAction.doConnectableAction(component, petriNetController);
+                CreateAction selectedAction = applicationModel.getSelectedAction();
+                selectedAction.doConnectableAction(component, petriNetController);
+            }
+        } catch (Exception err) {
+
         }
     }
 

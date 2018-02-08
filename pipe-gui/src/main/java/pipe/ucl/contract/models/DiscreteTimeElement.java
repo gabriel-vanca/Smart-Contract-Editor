@@ -4,18 +4,27 @@ import pipe.ucl.constructor.controllers.LineParser;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 
 public class DiscreteTimeElement extends ContractElement implements GetDiscreteTime {
 
     private static long NextId = 1;
     public final static String MainLabel = "DT";
     public final static String[] Labels = {"DT", "DISCRETE-TIME"};
-//    public final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy hh:mm");
-public final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
+    public static final List<String> DATE_FORMAT =
+            Arrays.asList(
+                    "yyyy",
+                    "yyyy-MM",
+                    "yyyy-MM-dd",
+                    "yyyy-MM-dd 'at' HH",
+                    "yyyy-MM-dd 'at' HH:mm",
+                    "yyyy-MM-dd 'at' HH:mm:ss",
+                    "yyyy-MM-dd 'at' HH:mm:ss.SSS"
+            );
 
     protected GregorianCalendar discreteTime;
     protected GetDiscreteTime dateOperator;
@@ -28,30 +37,41 @@ public final static DateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
         super(id, name);
     }
 
+    public DiscreteTimeElement(GregorianCalendar gregorianCalendar) {
+        super();
+        discreteTime = gregorianCalendar;
+    }
+
     public DiscreteTimeElement(String[] parameters) {
         super(parameters);
         if (parameters.length < 3) return;
 
         // First we check for a discrete date (GregorianCalendar)
+        for (String dateFormat : DATE_FORMAT) {
+
+            SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat(dateFormat);
+            SIMPLE_DATE_FORMAT.setLenient(false);
+
+            try {
+                Date date = SIMPLE_DATE_FORMAT.parse(parameters[2]);
+                discreteTime = new GregorianCalendar();
+                discreteTime.setLenient(false);
+                discreteTime.setTime(date);
+            } catch (Exception e) {
+                elementCorrectness = Boolean.FALSE;
+            }
+        }
+
         try {
-            DATE_FORMAT.setLenient(false);
-            Date date = DATE_FORMAT.parse(parameters[2]);
-            discreteTime = new GregorianCalendar();
-            discreteTime.setLenient(false);
-            discreteTime.setTime(date);
             discreteTime.getTime();
             elementCorrectness = Boolean.TRUE;
-        } catch (Exception e) {
-            e.printStackTrace();
+            return;
+        } catch (Exception e)        {
             elementCorrectness = Boolean.FALSE;
         }
-        if(elementCorrectness == Boolean.TRUE)
-            return;
-
-        discreteTime = null;
 
         // Now we check for a date operator
-
+        discreteTime = null;
         try {
             InputLine parsedObject = LineParser.ParseLine(parameters[2]);
             this.dateOperator = (GetDiscreteTime) LineParser.GetToken(parsedObject);

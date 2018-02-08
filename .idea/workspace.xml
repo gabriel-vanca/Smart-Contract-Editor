@@ -3,30 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNet.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNet.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/Pipe.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/Pipe.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/PipeApplicationModel.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/PipeApplicationModel.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/ModuleManager.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/ModuleManager.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widgets/TransitionEditorPanel.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widgets/TransitionEditorPanel.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/handlers/ConnectableHandler.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/handlers/ConnectableHandler.java" />
       <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java" />
       <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RThroughout.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RThroughout.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/TimeOperator.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/TimeOperator.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TransAssertion.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TransAssertion.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationBuilder.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java" />
       <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$NameChangeArcListener.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$NameChangeArcListener.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$NameChangeListener.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$NameChangeListener.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$SyntheticClass_1.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$SyntheticClass_1.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$TokenNameChanger.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet$TokenNameChanger.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/imperial/pipe/models/petrinet/PetriNet.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/constructor/controllers/Constructor.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/constructor/controllers/Constructor.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/GateElement.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/GateElement.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/StateElement.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/StateElement.class" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TransAssertion.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TransAssertion.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/Contracts/input_washer_January18.txt" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/Contracts/input_washer_January18.txt" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/Pipe$1.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/Pipe$1.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/actions/gui/PipeApplicationModel.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/actions/gui/PipeApplicationModel.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/ModuleManager$RemoveModuleAction.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/ModuleManager$RemoveModuleAction.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/ModuleManager$TreeHandler.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/ModuleManager$TreeHandler.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/ModuleManager.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/gui/ModuleManager.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/handlers/ConnectableHandler.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/handlers/ConnectableHandler.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/constructor/controllers/LineParser.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/constructor/controllers/LineParser.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/ContractElement.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/ContractElement.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DateOperators/AfterTime.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DateOperators/AfterTime.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DateOperators/BeforeTime.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DateOperators/BeforeTime.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DiscreteTimeElement.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DiscreteTimeElement.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TimeOperators/RDuring.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TimeOperators/RDuring.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TimeOperators/RThroughout.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TimeOperators/RThroughout.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TimeOperators/TimeOperator.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/TimeOperators/TimeOperator.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationBuilder.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationBuilder.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$3.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$3.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$4.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$4.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$5.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$5.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$6.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView$6.class" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/views/PipeApplicationView.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,80 +66,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GateElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="113" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4642#4643#0" expanded="true" />
-                <element signature="e#4669#4670#0" expanded="true" />
-                <element signature="e#4710#4711#0" expanded="true" />
-                <element signature="e#4742#4743#0" expanded="true" />
-                <element signature="e#4787#4788#0" expanded="true" />
-                <element signature="e#4822#4823#0" expanded="true" />
-                <element signature="e#4884#4885#0" expanded="true" />
-                <element signature="e#4932#4933#0" expanded="true" />
-                <element signature="e#4983#4984#0" expanded="true" />
-                <element signature="e#5021#5022#0" expanded="true" />
-                <element signature="e#5092#5093#0" expanded="true" />
-                <element signature="e#5146#5147#0" expanded="true" />
-                <element signature="e#5203#5204#0" expanded="true" />
-                <element signature="e#5239#5240#0" expanded="true" />
-                <element signature="e#5294#5295#0" expanded="true" />
-                <element signature="e#5328#5329#0" expanded="true" />
-                <element signature="e#5920#5921#0" expanded="true" />
-                <element signature="e#5956#5957#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DiscreteTimeElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+            <state relative-caret-position="430">
+              <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
               <folding>
-                <element signature="e#2135#2136#0" expanded="true" />
-                <element signature="e#2162#2163#0" expanded="true" />
-                <element signature="e#2212#2213#0" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2314#2315#0" expanded="true" />
-                <element signature="e#2362#2363#0" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1104#1105#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#2708#2709#0" expanded="true" />
+                <element signature="e#2735#2736#0" expanded="true" />
+                <element signature="e#2785#2786#0" expanded="true" />
+                <element signature="e#2820#2821#0" expanded="true" />
+                <element signature="e#2887#2888#0" expanded="true" />
+                <element signature="e#2935#2936#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetDiscreteTime.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/GetDiscreteTime.java">
+      <file leaf-file-name="TransitionEditorPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widgets/TransitionEditorPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="527">
+              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeOperator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/TimeOperator.java">
+      <file leaf-file-name="ContractElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="204">
+              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RThroughout.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RThroughout.java">
+      <file leaf-file-name="AfterTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding>
-                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#1924#1925#0" expanded="true" />
+                <element signature="e#2011#2012#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,64 +123,64 @@
       <file leaf-file-name="RDuring.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="102">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransAssertion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TransAssertion.java">
+      <file leaf-file-name="BeforeTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateFormat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/text/DateFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LineParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-595">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StateElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="92" lean-forward="true" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
+            <state relative-caret-position="578">
+              <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3017#3018#0" expanded="true" />
-                <element signature="e#3051#3052#0" expanded="true" />
-                <element signature="e#3110#3111#0" expanded="true" />
-                <element signature="e#3149#3150#0" expanded="true" />
-                <element signature="e#3207#3208#0" expanded="true" />
-                <element signature="e#3251#3252#0" expanded="true" />
-                <element signature="e#3314#3315#0" expanded="true" />
-                <element signature="e#3363#3364#0" expanded="true" />
-                <element signature="e#3424#3425#0" expanded="true" />
-                <element signature="e#3460#3461#0" expanded="true" />
-                <element signature="e#3680#3681#0" expanded="true" />
-                <element signature="e#3728#3729#0" expanded="true" />
-                <element signature="e#3794#3795#0" expanded="true" />
-                <element signature="e#3829#3830#0" expanded="true" />
+                <element signature="e#1976#1977#0" expanded="true" />
+                <element signature="e#2062#2063#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScheduleTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/ScheduleTime.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatusBar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/StatusBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModuleManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/ModuleManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constructor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+              <folding>
+                <element signature="e#2998#3087#0" expanded="false" />
+                <element signature="e#4271#4399#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -214,20 +199,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(Transition.class)</find>
-      <find>mock(Transition.class)</find>
-      <find>Transition transition = mock(Transition.class)</find>
-      <find>Transition.class</find>
-      <find>Place.class</find>
-      <find>inboundArcs.pu</find>
-      <find>get</find>
-      <find>getSign()</find>
-      <find>S</find>
-      <find>tranAssertionList</find>
-      <find>index</find>
-      <find>transAssertionString</find>
-      <find>Place</find>
-      <find>places</find>
       <find>addPropertyChangeListener</find>
       <find>date</find>
       <find>Date</find>
@@ -244,9 +215,22 @@
       <find>GetGate</find>
       <find>addState</find>
       <find>addgate</find>
+      <find>pipe: platform</find>
+      <find>new PipeApplicationModel</find>
+      <find>About PIPE</find>
+      <find>authors</find>
+      <find>ShowHideInfoAction</find>
+      <find>analysis module</find>
+      <find>2</find>
+      <find>analysis</find>
+      <find>refres</find>
+      <find>DATE_FORMAT</find>
+      <find>getModuleTree()</find>
+      <find>transition edi</find>
+      <find>weightRateLabel</find>
+      <find>nameTextField</find>
     </findStrings>
     <replaceStrings>
-      <replace>import pipe.imperial.pipe.</replace>
       <replace>import pipe.imperial.state</replace>
       <replace>import pipe.imperial.utils</replace>
       <replace>import pipe.imperial.io</replace>
@@ -276,6 +260,7 @@
       <replace>Object</replace>
       <replace>END</replace>
       <replace>discreteTime</replace>
+      <replace>SIMPLE_DATE_FORMAT</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Gabriel Vanca\.m2\repository\uk\ac\imperial\pipe-core\1.0.4-SNAPSHOT\pipe-core-1.0.4-SNAPSHOT.jar!\uk\ac\imperial\pipe</dir>
@@ -293,13 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/StateType.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/StateType.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/enums/StateType.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/DateReferenceInterface.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteDate.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/CalendarInterface.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateElements/AfterDateElement.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateElements/DiscreteDateElement.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/GetDateInterface.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateElements/AfterDate.java" />
@@ -320,10 +298,7 @@
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/InputParser.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/models/InputLine.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/PartyElement.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/GetDiscreteDate.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/ScheduleTime.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/GetDiscreteTime.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/Contract.java" />
@@ -335,15 +310,25 @@
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TransAssertion.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNet.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeSpanElement.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/TimeOperator.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RThroughout.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/PipeApplicationModel.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/Pipe.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationBuilder.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/handlers/ConnectableHandler.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/ModuleManager.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widgets/TransitionEditorPanel.java" />
       </list>
     </option>
   </component>
@@ -386,9 +371,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
-    <option name="width" value="1294" />
+    <option name="width" value="1580" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -1062,12 +1047,12 @@
       <workItem from="1516840177536" duration="13574000" />
       <workItem from="1517168317908" duration="27369000" />
       <workItem from="1517789001296" duration="1465000" />
-      <workItem from="1517975228879" duration="11866000" />
+      <workItem from="1517975228879" duration="23723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177718000" />
+    <option name="totallyTimeSpent" value="189575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1079,7 +1064,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1091,56 +1076,26 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19157393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10326087" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10326087" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65063596" sideWeight="0.49130434" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20349762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32949126" sideWeight="0.50869566" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3807631" sideWeight="0.50869566" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19166666" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40978262" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32762313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112583" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12241653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1150,7 +1105,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="165" />
+      <option name="time" value="181" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1173,56 +1128,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractConnectable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/naming/UniqueNamer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/PlaceAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="62" column="43" lean-forward="false" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="147" column="18" lean-forward="false" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/TransitionVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Transition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/TokenVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1261,39 +1166,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/ScheduleTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#674#675#0" expanded="false" />
-            <element signature="e#699#700#0" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#797#798#0" expanded="false" />
-            <element signature="e#829#830#0" expanded="false" />
-            <element signature="e#961#962#0" expanded="false" />
-            <element signature="e#1002#1003#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/InputFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1302,14 +1174,6 @@
             <element signature="e#502#503#0" expanded="false" />
             <element signature="e#553#554#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ActionElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1346,14 +1210,6 @@
             <element signature="e#2849#2850#0" expanded="false" />
             <element signature="e#2876#2877#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/Pipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1469,52 +1325,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding>
-            <element signature="e#2389#2390#0" expanded="true" />
-            <element signature="e#2430#2431#0" expanded="true" />
-            <element signature="e#3000#3089#0" expanded="false" />
-            <element signature="e#4273#4401#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
           <folding>
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2438#2439#0" expanded="true" />
-            <element signature="e#4915#4916#0" expanded="true" />
-            <element signature="e#4940#4941#0" expanded="true" />
-            <element signature="e#4969#4970#0" expanded="true" />
-            <element signature="e#4994#4995#0" expanded="true" />
-            <element signature="e#5816#5817#0" expanded="true" />
-            <element signature="e#5843#5844#0" expanded="true" />
-            <element signature="e#5875#5876#0" expanded="true" />
-            <element signature="e#5911#5912#0" expanded="true" />
-            <element signature="e#6172#6173#0" expanded="true" />
-            <element signature="e#6204#6205#0" expanded="true" />
-            <element signature="e#6242#6243#0" expanded="true" />
-            <element signature="e#6274#6275#0" expanded="true" />
-            <element signature="e#7183#7184#0" expanded="true" />
-            <element signature="e#7232#7233#0" expanded="true" />
-            <element signature="e#7273#7274#0" expanded="true" />
-            <element signature="e#7315#7316#0" expanded="true" />
-            <element signature="e#10317#10318#0" expanded="true" />
-            <element signature="e#10350#10351#0" expanded="true" />
-            <element signature="e#10554#10555#0" expanded="true" />
-            <element signature="e#10587#10588#0" expanded="true" />
-            <element signature="e#10804#10805#0" expanded="true" />
-            <element signature="e#10831#10832#0" expanded="true" />
-            <element signature="e#10867#10868#0" expanded="true" />
-            <element signature="e#10894#10895#0" expanded="true" />
-            <element signature="e#11560#11561#0" expanded="true" />
-            <element signature="e#11595#11596#0" expanded="true" />
+            <element signature="e#2404#2405#0" expanded="false" />
+            <element signature="e#2438#2439#0" expanded="false" />
+            <element signature="e#4915#4916#0" expanded="false" />
+            <element signature="e#4940#4941#0" expanded="false" />
+            <element signature="e#4969#4970#0" expanded="false" />
+            <element signature="e#4994#4995#0" expanded="false" />
+            <element signature="e#5816#5817#0" expanded="false" />
+            <element signature="e#5843#5844#0" expanded="false" />
+            <element signature="e#5875#5876#0" expanded="false" />
+            <element signature="e#5911#5912#0" expanded="false" />
+            <element signature="e#6172#6173#0" expanded="false" />
+            <element signature="e#6204#6205#0" expanded="false" />
+            <element signature="e#6242#6243#0" expanded="false" />
+            <element signature="e#6274#6275#0" expanded="false" />
+            <element signature="e#7183#7184#0" expanded="false" />
+            <element signature="e#7232#7233#0" expanded="false" />
+            <element signature="e#7273#7274#0" expanded="false" />
+            <element signature="e#7315#7316#0" expanded="false" />
+            <element signature="e#10317#10318#0" expanded="false" />
+            <element signature="e#10350#10351#0" expanded="false" />
+            <element signature="e#10554#10555#0" expanded="false" />
+            <element signature="e#10587#10588#0" expanded="false" />
+            <element signature="e#10804#10805#0" expanded="false" />
+            <element signature="e#10831#10832#0" expanded="false" />
+            <element signature="e#10867#10868#0" expanded="false" />
+            <element signature="e#10894#10895#0" expanded="false" />
+            <element signature="e#11560#11561#0" expanded="false" />
+            <element signature="e#11595#11596#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1523,22 +1366,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1556,50 +1383,6 @@
         <state relative-caret-position="266">
           <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/GetDiscreteTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4642#4643#0" expanded="true" />
-            <element signature="e#4669#4670#0" expanded="true" />
-            <element signature="e#4710#4711#0" expanded="true" />
-            <element signature="e#4742#4743#0" expanded="true" />
-            <element signature="e#4787#4788#0" expanded="true" />
-            <element signature="e#4822#4823#0" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4932#4933#0" expanded="true" />
-            <element signature="e#4983#4984#0" expanded="true" />
-            <element signature="e#5021#5022#0" expanded="true" />
-            <element signature="e#5092#5093#0" expanded="true" />
-            <element signature="e#5146#5147#0" expanded="true" />
-            <element signature="e#5203#5204#0" expanded="true" />
-            <element signature="e#5239#5240#0" expanded="true" />
-            <element signature="e#5294#5295#0" expanded="true" />
-            <element signature="e#5328#5329#0" expanded="true" />
-            <element signature="e#5920#5921#0" expanded="true" />
-            <element signature="e#5956#5957#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1627,17 +1410,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java">
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ActionElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+        <state relative-caret-position="385">
+          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RThroughout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-            <element signature="e#2212#2213#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2314#2315#0" expanded="true" />
-            <element signature="e#2362#2363#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1650,21 +1437,201 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java">
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="446">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RThroughout.java">
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/PipeApplicationModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="67" column="11" lean-forward="true" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="31" />
           <folding>
-            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#1728#1729#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/Pipe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="432" column="41" lean-forward="false" selection-start-line="432" selection-start-column="41" selection-end-line="432" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/handlers/ConnectableHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4642#4643#0" expanded="true" />
+            <element signature="e#4669#4670#0" expanded="true" />
+            <element signature="e#4710#4711#0" expanded="true" />
+            <element signature="e#4742#4743#0" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#4822#4823#0" expanded="true" />
+            <element signature="e#4884#4885#0" expanded="true" />
+            <element signature="e#4932#4933#0" expanded="true" />
+            <element signature="e#4983#4984#0" expanded="true" />
+            <element signature="e#5021#5022#0" expanded="true" />
+            <element signature="e#5092#5093#0" expanded="true" />
+            <element signature="e#5146#5147#0" expanded="true" />
+            <element signature="e#5203#5204#0" expanded="true" />
+            <element signature="e#5239#5240#0" expanded="true" />
+            <element signature="e#5294#5295#0" expanded="true" />
+            <element signature="e#5328#5329#0" expanded="true" />
+            <element signature="e#5920#5921#0" expanded="true" />
+            <element signature="e#5956#5957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <element signature="e#18787#18788#0" expanded="true" />
+            <element signature="e#18836#18837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+          <folding>
+            <element signature="e#2998#3087#0" expanded="false" />
+            <element signature="e#4271#4399#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/StatusBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="106" column="22" lean-forward="true" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/ModuleManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/ScheduleTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/interfaces/GetDiscreteTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="e#1924#1925#0" expanded="true" />
+            <element signature="e#2011#2012#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="e#1976#1977#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+          <folding>
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#2708#2709#0" expanded="true" />
+            <element signature="e#2735#2736#0" expanded="true" />
+            <element signature="e#2785#2786#0" expanded="true" />
+            <element signature="e#2820#2821#0" expanded="true" />
+            <element signature="e#2887#2888#0" expanded="true" />
+            <element signature="e#2935#2936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widgets/TransitionEditorPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1725,6 +1692,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

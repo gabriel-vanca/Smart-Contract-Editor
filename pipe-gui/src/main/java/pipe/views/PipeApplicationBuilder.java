@@ -308,7 +308,7 @@ public final class PipeApplicationBuilder {
         JMenu helpMenu = new JMenu("Help");
         helpMenu.setMnemonic('H');
 
-        JMenuItem aboutItem = helpMenu.add("About PIPE");
+        JMenuItem aboutItem = helpMenu.add("About SCE");
         // Help - About is implemented
         aboutItem.addActionListener(view);
         // differently

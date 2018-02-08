@@ -30,28 +30,28 @@ public class Constructor {
     public Constructor(PipeApplicationController applicationController, PipeApplicationModel applicationModel, PipeApplicationBuilder pipeApplicationBuilder, PipeApplicationView applicationView) {
         this.applicationController = applicationController;
         this.applicationModel = applicationModel;
-        this.petriNetController = applicationController.getActivePetriNetController ();
+        this.petriNetController = applicationController.getActivePetriNetController();
         this.pipeApplicationBuilder = pipeApplicationBuilder;
         this.applicationView = applicationView;
-        this.componentCreatorManager = applicationView.getComponentCreatorManager ();
+        this.componentCreatorManager = applicationView.getComponentCreatorManager();
 
         InputFileParser inputFileParser = new InputFileParser();
         inputFileParser.ParseInputFile();
-        ArrayList<InputLine>  ParsedReadDataLinesList = inputFileParser.getParsedReadDataLinesList();
+        ArrayList<InputLine> ParsedReadDataLinesList = inputFileParser.getParsedReadDataLinesList();
 
         MainContract = new Contract("Test Contract");
 
-        for(InputLine parsedReadDataLine : ParsedReadDataLinesList) {
-            Object token =  LineParser.GetToken(parsedReadDataLine);
-            if(token == null || token.equals(""))
+        for (InputLine parsedReadDataLine : ParsedReadDataLinesList) {
+            Object token = LineParser.GetToken(parsedReadDataLine);
+            if (token == null || token.equals(""))
                 continue;
-            if(ContractElement.class.isInstance(token))
-                MainContract.getContractElementsList().add((ContractElement)token);
+            if (ContractElement.class.isInstance(token))
+                MainContract.getContractElementsList().add((ContractElement) token);
         }
 
-        Layout ();
+        Layout();
 
-        inputFileParser.EmptyParsedReadDataLinesList ();
+        inputFileParser.EmptyParsedReadDataLinesList();
 
     }
 

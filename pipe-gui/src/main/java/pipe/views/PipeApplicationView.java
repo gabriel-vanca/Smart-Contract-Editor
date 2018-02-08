@@ -63,7 +63,7 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
     ComponentCreatorManager componentCreatorManager;
 
-    private final JSplitPane moduleAndAnimationHistoryFrame;
+    private  JSplitPane moduleAndAnimationHistoryFrame;
 
     private final JTabbedPane frameForPetriNetTabs = new JTabbedPane();
 
@@ -166,6 +166,7 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
         setZoomChangeListener();
     }
+
 
     public void setUndoListener(UndoableEditListener listener) {
         undoListener = listener;
@@ -380,18 +381,36 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        JOptionPane.showMessageDialog(this, "PIPE: Platform Independent Petri Net Ediror\n\n" + "Authors:\n" +
+        JOptionPane.showMessageDialog(this,
+                "SCE: Smart Contract Editor is a repurposing of the initial PIPE: Platform Independent Petri Net Editor tool \n"
+                        +
+                        "and it was made by Gabriel Vanca from University College London (UCL) for his BSc. Dissertation:\n"
+                        +
+                        "\"The Use of Smart Contracts in Banking and Financial Services.\"\n\n"
+                        +
+                        "The initial PIPE tool has been authored by the following people:\n\n"
+                        +
                         "2003: Jamie Bloom, Clare Clark, Camilla Clifford, Alex Duncan, Haroun Khan and Manos Papantoniou\n"
                         +
                         "2004: Tom Barnwell, Michael Camacho, Matthew Cook, Maxim Gready, Peter Kyme and Michail Tsouchlaris\n"
                         +
-                        "2005: Nadeem Akharware\n" + "????: Tim Kimber, Ben Kirby, Thomas Master, Matthew Worthington\n"
+                        "2005: Nadeem Akharware\n"
                         +
-                        "????: Pere Bonet Bonet (Universitat de les Illes Balears)\n" +
-                        "????: Marc Meli\u00E0 Aguil\u00F3 (Universitat de les Illes Balears)\n" +
-                        "2010: Alex Charalambous (Imperial College London)\n" +
-                        "2011: Jan Vlasak (Imperial College London)\n\n" + "http://pipe2.sourceforge.net/",
-                "About PIPE", JOptionPane.INFORMATION_MESSAGE
+                        "????: Tim Kimber, Ben Kirby, Thomas Master, Matthew Worthington\n"
+                        +
+                        "????: Pere Bonet Bonet, Marc Meli\u00E0 Aguil\u00F3 (Universitat de les Illes Balears)\n"
+                        +
+                        "2010: Alex Charalambous (Imperial College London)\n"
+                        +
+                        "2011: Jan Vlasak (Imperial College London)\n"
+                        +
+                        "2016: Sarah Tattersall, Steve Doubleday\n\n"
+                        +
+                        "The source and documentation for PIPE 5 is available at http://sarahtattersall.github.io/PIPE/ \n"
+
+                ,
+
+                "About SCE", JOptionPane.INFORMATION_MESSAGE
         );
     }
 
