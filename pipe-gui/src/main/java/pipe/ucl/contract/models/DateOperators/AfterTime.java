@@ -11,11 +11,11 @@ public class AfterTime implements GetDiscreteTime {
     public final static String[] Labels = {"AFT", "AFTER"};
 
     protected GetDiscreteTime referenceTime;
-    protected GregorianCalendar differencialTime;
+    protected GregorianCalendar differentialTime;
 
-    public AfterTime(GetDiscreteTime referenceTime, GregorianCalendar differencialTime) {
+    public AfterTime(GetDiscreteTime referenceTime, GregorianCalendar differentialTime) {
         this.referenceTime = referenceTime;
-        this.differencialTime = differencialTime;
+        this.differentialTime = differentialTime;
     }
 
     @Override
@@ -24,13 +24,13 @@ public class AfterTime implements GetDiscreteTime {
 
         try {
             referenceTimeCal = referenceTime.GetDiscreteTime().GetCalendarTime();
-            referenceTimeCal.add(GregorianCalendar.YEAR, differencialTime.get(GregorianCalendar.YEAR));
-            referenceTimeCal.add(GregorianCalendar.MONTH, differencialTime.get(GregorianCalendar.MONTH));
-            referenceTimeCal.add(GregorianCalendar.DAY_OF_MONTH, differencialTime.get(GregorianCalendar.DAY_OF_MONTH));
-            referenceTimeCal.add(GregorianCalendar.HOUR_OF_DAY, differencialTime.get(GregorianCalendar.HOUR_OF_DAY));
-            referenceTimeCal.add(GregorianCalendar.MINUTE, differencialTime.get(GregorianCalendar.MINUTE));
-            referenceTimeCal.add(GregorianCalendar.SECOND, differencialTime.get(GregorianCalendar.SECOND));
-            referenceTimeCal.add(GregorianCalendar.MILLISECOND, differencialTime.get(GregorianCalendar.MILLISECOND));
+            referenceTimeCal.add(GregorianCalendar.YEAR, differentialTime.get(GregorianCalendar.YEAR));
+            referenceTimeCal.add(GregorianCalendar.MONTH, differentialTime.get(GregorianCalendar.MONTH));
+            referenceTimeCal.add(GregorianCalendar.DAY_OF_MONTH, differentialTime.get(GregorianCalendar.DAY_OF_MONTH));
+            referenceTimeCal.add(GregorianCalendar.HOUR_OF_DAY, differentialTime.get(GregorianCalendar.HOUR_OF_DAY));
+            referenceTimeCal.add(GregorianCalendar.MINUTE, differentialTime.get(GregorianCalendar.MINUTE));
+            referenceTimeCal.add(GregorianCalendar.SECOND, differentialTime.get(GregorianCalendar.SECOND));
+            referenceTimeCal.add(GregorianCalendar.MILLISECOND, differentialTime.get(GregorianCalendar.MILLISECOND));
         } catch (Exception err) {
             System.out.print("Error when getting " + MainLabel + " value: " + err);
         }
@@ -41,6 +41,6 @@ public class AfterTime implements GetDiscreteTime {
     }
 
     public String toString() {
-        return MainLabel + "(" + referenceTime  + ", " + differencialTime + ")";
+        return MainLabel + "(" + referenceTime  + ", " + differentialTime + ")";
     }
 }

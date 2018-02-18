@@ -19,5 +19,5 @@ public class RDuring extends TimeOperator {
     public String toString() {
         return MainLabel + "(" + initialDate + ", " + finalDate + ")";
     }
-    
+
 }
