@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DateOperators/AfterTime.class" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/pipe/ucl/contract/models/DateOperators/AfterTime.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +33,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DiscreteTimeElement.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GateElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/EventElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="587">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiscreteTimeElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -53,21 +73,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input_washer_January18.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt">
+      <file leaf-file-name="ActionElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ActionElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="385">
+              <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContractElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ContractElement.java">
+      <file leaf-file-name="StateElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="68">
+              <caret line="14" column="92" lean-forward="true" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input_washer_January18.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,16 +143,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiscreteDate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteDate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BeforeTime.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -132,26 +152,6 @@
                 <element signature="e#1976#1977#0" expanded="true" />
                 <element signature="e#2062#2063#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScheduleTime.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/ScheduleTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModuleManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/ModuleManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1018,12 +1018,12 @@
       <workItem from="1517168317908" duration="27369000" />
       <workItem from="1517789001296" duration="1465000" />
       <workItem from="1517975228879" duration="26007000" />
-      <workItem from="1518967021183" duration="3305000" />
+      <workItem from="1518967021183" duration="6426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195164000" />
+    <option name="totallyTimeSpent" value="198285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1036,7 +1036,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1059,7 +1058,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27782193" sideWeight="0.50869566" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27782193" sideWeight="0.50869566" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1150,28 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/EventElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2410#2411#0" expanded="false" />
-            <element signature="e#2444#2445#0" expanded="false" />
-            <element signature="e#2482#2483#0" expanded="false" />
-            <element signature="e#2510#2511#0" expanded="false" />
-            <element signature="e#2550#2551#0" expanded="false" />
-            <element signature="e#2579#2580#0" expanded="false" />
-            <element signature="e#2630#2631#0" expanded="false" />
-            <element signature="e#2666#2667#0" expanded="false" />
-            <element signature="e#2735#2736#0" expanded="false" />
-            <element signature="e#2783#2784#0" expanded="false" />
-            <element signature="e#2849#2850#0" expanded="false" />
-            <element signature="e#2876#2877#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/Contract.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1205,6 +1182,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="52" lean-forward="false" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,6 +1239,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,38 +1315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="92" lean-forward="true" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3017#3018#0" expanded="false" />
-            <element signature="e#3051#3052#0" expanded="false" />
-            <element signature="e#3110#3111#0" expanded="false" />
-            <element signature="e#3149#3150#0" expanded="false" />
-            <element signature="e#3207#3208#0" expanded="false" />
-            <element signature="e#3251#3252#0" expanded="false" />
-            <element signature="e#3314#3315#0" expanded="false" />
-            <element signature="e#3363#3364#0" expanded="false" />
-            <element signature="e#3424#3425#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3680#3681#0" expanded="false" />
-            <element signature="e#3728#3729#0" expanded="false" />
-            <element signature="e#3794#3795#0" expanded="false" />
-            <element signature="e#3829#3830#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ActionElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1449,14 +1396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widgets/TransitionEditorPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
@@ -1493,14 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1550,6 +1481,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/EventElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1565,6 +1504,38 @@
             <element signature="e#2887#2888#0" expanded="true" />
             <element signature="e#2935#2936#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/ActionElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="92" lean-forward="true" selection-start-line="14" selection-start-column="92" selection-end-line="14" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
