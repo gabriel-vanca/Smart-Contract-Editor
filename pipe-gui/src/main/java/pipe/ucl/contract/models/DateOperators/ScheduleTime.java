@@ -9,5 +9,10 @@ public class ScheduleTime implements GetDiscreteTime {
         return null;
     }
 
+    @Override
+    public String GetDiscreteTimeString() {
+        return null;
+    }
+
     //TODO: To be implemented
 }

@@ -4,6 +4,7 @@ import pipe.ucl.constructor.controllers.LineParser;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -86,6 +87,32 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
         return this;
     }
 
+    @Override
+    public String GetDiscreteTimeString() {
+
+        if (discreteTime != null) {
+
+            try {
+
+                DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss.SSS");
+                formatter.setLenient(false);
+
+                return formatter.format(discreteTime.getTime());
+
+            } catch (Exception err) {
+                System.out.print("Error when getting " + MainLabel + " value: " + err);
+            }
+
+        }
+
+
+        if (dateOperator.GetDiscreteTime() != null) {
+            discreteTime = dateOperator.GetDiscreteTime().GetCalendarTime();
+        }
+        return dateOperator.GetDiscreteTimeString();
+
+    }
+
     public GregorianCalendar GetCalendarTime() {
         return discreteTime;
     }
@@ -96,7 +123,7 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
 
     @Override
     public String toString() {
-        String string = id + " : " + name + " : " + discreteTime;
+        String string = id + " : " + name + " : " + toString();;
         return string;
     }
 

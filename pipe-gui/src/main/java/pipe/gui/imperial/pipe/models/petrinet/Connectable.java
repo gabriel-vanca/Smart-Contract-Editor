@@ -24,4 +24,5 @@ public interface Connectable extends PlaceablePetriNetComponent {
 
     boolean isEndPoint();
 
+    String toLongString();
 }

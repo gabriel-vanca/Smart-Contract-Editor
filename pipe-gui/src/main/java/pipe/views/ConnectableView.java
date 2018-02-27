@@ -25,26 +25,26 @@ public abstract class ConnectableView<T extends Connectable> extends AbstractPet
      */
     protected TextLabel textLabel;
 
-    private final AbstractConnectableController<T> componentController;
+        private final AbstractConnectableController<T> componentController;
 
-    /**
-     * Shape of the place on the Petri net
-     */
-    protected Shape shape;
+        /**
+         * Shape of the place on the Petri net
+         */
+        protected Shape shape;
 
-    /**
-     * Constructor
-     * @param id
-     * @param model
-     * @param controller
-     * @param parent
-     * @param shape
-     */
-    ConnectableView(String id, T model, PetriNetController controller, AbstractConnectableController<T> componentController, Container parent, Shape shape) {
-        super(id, model, controller, parent);
-        this.componentController = componentController;
-        this.shape = shape;
-        setLocation(model.getX(), model.getY());
+        /**
+         * Constructor
+         * @param id
+         * @param model
+         * @param controller
+         * @param parent
+         * @param shape
+         */
+        ConnectableView(String id, T model, PetriNetController controller, AbstractConnectableController<T> componentController, Container parent, Shape shape) {
+            super(id, model, controller, parent);
+            this.componentController = componentController;
+            this.shape = shape;
+            setLocation(model.getX(), model.getY());
 
         int x = (int) (model.getX() + model.getNameXOffset());
         int y = (int) (model.getX() + model.getNameXOffset());

@@ -172,6 +172,11 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         return true;
     }
 
+    @Override
+    public String toLongString() {
+        return gateElement.toLongString();
+    }
+
     public int getPriority() {
         return this.priority;
     }

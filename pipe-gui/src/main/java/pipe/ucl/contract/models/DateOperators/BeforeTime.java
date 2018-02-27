@@ -3,6 +3,8 @@ package pipe.ucl.contract.models.DateOperators;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 import pipe.ucl.contract.models.DiscreteTimeElement;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
 public class BeforeTime implements GetDiscreteTime {
@@ -11,11 +13,11 @@ public class BeforeTime implements GetDiscreteTime {
     public final static String[] Labels = {"BFR", "BEFORE"};
 
     protected GetDiscreteTime referenceTime;
-    protected GregorianCalendar differencialTime;
+    protected GregorianCalendar differentialTime;
 
-    public BeforeTime(GetDiscreteTime referenceTime, GregorianCalendar differencialTime) {
+    public BeforeTime(GetDiscreteTime referenceTime, GregorianCalendar differentialTime) {
         this.referenceTime = referenceTime;
-        this.differencialTime = differencialTime;
+        this.differentialTime = differentialTime;
     }
 
     @Override
@@ -24,13 +26,17 @@ public class BeforeTime implements GetDiscreteTime {
 
         try {
             referenceTimeCal = referenceTime.GetDiscreteTime().GetCalendarTime();
-            referenceTimeCal.add(GregorianCalendar.YEAR * (-1), differencialTime.get(GregorianCalendar.YEAR));
-            referenceTimeCal.add(GregorianCalendar.MONTH * (-1), differencialTime.get(GregorianCalendar.MONTH));
-            referenceTimeCal.add(GregorianCalendar.DAY_OF_MONTH * (-1), differencialTime.get(GregorianCalendar.DAY_OF_MONTH));
-            referenceTimeCal.add(GregorianCalendar.HOUR_OF_DAY * (-1), differencialTime.get(GregorianCalendar.HOUR_OF_DAY));
-            referenceTimeCal.add(GregorianCalendar.MINUTE * (-1), differencialTime.get(GregorianCalendar.MINUTE));
-            referenceTimeCal.add(GregorianCalendar.SECOND * (-1), differencialTime.get(GregorianCalendar.SECOND));
-            referenceTimeCal.add(GregorianCalendar.MILLISECOND * (-1), differencialTime.get(GregorianCalendar.MILLISECOND));
+
+            if(referenceTimeCal == null)
+                return null;
+
+            referenceTimeCal.add(GregorianCalendar.YEAR * (-1), differentialTime.get(GregorianCalendar.YEAR));
+            referenceTimeCal.add(GregorianCalendar.MONTH * (-1), differentialTime.get(GregorianCalendar.MONTH));
+            referenceTimeCal.add(GregorianCalendar.DAY_OF_MONTH * (-1), differentialTime.get(GregorianCalendar.DAY_OF_MONTH));
+            referenceTimeCal.add(GregorianCalendar.HOUR_OF_DAY * (-1), differentialTime.get(GregorianCalendar.HOUR_OF_DAY));
+            referenceTimeCal.add(GregorianCalendar.MINUTE * (-1), differentialTime.get(GregorianCalendar.MINUTE));
+            referenceTimeCal.add(GregorianCalendar.SECOND * (-1), differentialTime.get(GregorianCalendar.SECOND));
+            referenceTimeCal.add(GregorianCalendar.MILLISECOND * (-1), differentialTime.get(GregorianCalendar.MILLISECOND));
         } catch (Exception err) {
             System.out.print("Error when getting " + MainLabel + " value: " + err);
         }
@@ -40,8 +46,29 @@ public class BeforeTime implements GetDiscreteTime {
         return new DiscreteTimeElement(referenceTimeCal);
     }
 
+    @Override
+    public String GetDiscreteTimeString() {
+
+        DiscreteTimeElement discreteTime = GetDiscreteTime();
+
+        if(discreteTime != null)
+            return discreteTime.toString();
+        else
+            return toString();
+    }
+
     public String toString() {
-        return MainLabel + "(" + referenceTime  + ", " + differencialTime+ ")";
+
+        try {
+            DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'and' HH:mm:ss.SSS");
+            formatter.setLenient(false);
+
+            return MainLabel + "(" + referenceTime.GetDiscreteTimeString() + ", " + formatter.format(differentialTime.getTime()) + ")";
+        } catch (Exception err) {
+            System.out.print("Error when getting " + MainLabel + " value: " + err);
+        }
+
+        return "";
     }
 
 }

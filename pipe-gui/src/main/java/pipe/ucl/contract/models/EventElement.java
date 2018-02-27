@@ -14,7 +14,6 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
     protected PartyElement actor;
     protected ActionElement action;
     protected DiscreteTimeElement discreteTime;
-//    protected GregorianCalendar discreteTime;
 
     public EventElement(String name, PartyElement actor, ActionElement action) {
         super(name);
@@ -62,8 +61,8 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
             }
         }
 
-        String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
-        this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
+//        String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
+//        this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
         elementCorrectness = Boolean.TRUE;
     }
 
@@ -89,7 +88,15 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
 
     @Override
     public DiscreteTimeElement GetDiscreteTime() {
-        return null;
+        return discreteTime;
+    }
+
+    @Override
+    public String GetDiscreteTimeString() {
+        if(discreteTime != null)
+            return discreteTime.toString();
+        else
+            return id;
     }
 
     @Override

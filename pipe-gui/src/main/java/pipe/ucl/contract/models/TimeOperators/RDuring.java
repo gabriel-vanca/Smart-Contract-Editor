@@ -17,7 +17,7 @@ public class RDuring extends TimeOperator {
 
     @Override
     public String toString() {
-        return MainLabel + "(" + initialDate + ", " + finalDate + ")";
+        return MainLabel + "(" + initialDate.GetDiscreteTimeString() + ", " + finalDate.GetDiscreteTimeString() + ")";
     }
 
 }

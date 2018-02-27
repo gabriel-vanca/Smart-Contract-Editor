@@ -153,10 +153,34 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
     public String toString() {
         String string = id + " : " + name + " : " + sign;
         if(eventElement != null) {
-            string += " : " + eventElement.getActor().getName() + " : " + eventElement.getAction().getName();
+            string += " : " + eventElement.getId();
         }
         if(timeSpanElement != null) {
             string += " : " + timeSpanElement.getId();
+        }
+        return string;
+    }
+
+    public String toLongString() {
+        String string = id + " : " + name + " : " + sign;
+        if(eventElement != null) {
+            string += " : " + eventElement.getActor().getName() + " : " + eventElement.getAction().getName();
+            ArrayList<Object> parametersList = eventElement.getAction().getParameterList();
+            if(parametersList.size() != 0) {
+
+                string += "(";
+
+                for (int index = 0; index < parametersList.size(); index++) {
+                    string += parametersList.get(index).toString() +", ";
+                }
+
+                string = string.substring(0, string.length() - 2);
+                string += ")";
+
+            }
+        }
+        if(timeSpanElement != null) {
+            string += " : " + timeSpanElement.timeReference.toString();
         }
         return string;
     }

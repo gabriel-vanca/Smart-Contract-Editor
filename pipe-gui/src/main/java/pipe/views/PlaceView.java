@@ -84,13 +84,18 @@ public class PlaceView extends ConnectableView<Place> {
         Rectangle bounds = shape.getBounds();
         g2.translate(bounds.getWidth()/2, bounds.getHeight()/2);
 
-        if (hasCapacity()) {
-            g2.setStroke(new BasicStroke(2.0f));
-            setToolTipText("k = " + model.getCapacity());
-        } else {
-            g2.setStroke(new BasicStroke(1.0f));
-            setToolTipText("k = \u221E");
-        }
+        //Tool tip for states
+        g2.setStroke(new BasicStroke(1.2f));
+        setToolTipText(model.toLongString());
+
+//        if (hasCapacity()) {
+//            g2.setStroke(new BasicStroke(2.0f));
+//            setToolTipText("k = " + model.getCapacity());
+//        } else {
+//            g2.setStroke(new BasicStroke(1.0f));
+//            setToolTipText("k = \u221E");
+//        }
+
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         if (isSelected() && !ignoreSelection) {

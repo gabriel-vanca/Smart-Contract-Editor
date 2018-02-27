@@ -122,6 +122,10 @@ public class TransitionView extends ConnectableView<Transition> {
         g2.translate(rect.getWidth()/2, rect.getHeight()/2);
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
+        //Tool tip for gates
+        g2.setStroke(new BasicStroke(1.2f));
+        setToolTipText(model.toLongString());
+
 
         if (isSelected() && !ignoreSelection) {
             g2.setColor(GUIConstants.SELECTION_FILL_COLOUR);
@@ -174,7 +178,10 @@ public class TransitionView extends ConnectableView<Transition> {
             g2.draw(shape);
             g2.fill(shape);
         }
-        //        changeToolTipText();
+//                changeToolTipText();
+
+
+
     }
 
     /**

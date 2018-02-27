@@ -37,8 +37,8 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         if(parameters.length < 3) return;
         this.type = StateType.valueOf(parameters[2]);
         
-        String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
-        this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
+//        String discreteTimeId = this.id + "_" + DiscreteTimeElement.MainLabel;
+//        this.discreteTime = new DiscreteTimeElement(discreteTimeId, discreteTimeId);
         elementCorrectness = Boolean.TRUE;
 
         graphicObject = instantiateGraphicObject();
@@ -76,6 +76,10 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     public String toString() {
         String string = id + " : " + name + " : " + type;
         return string;
+    }
+
+    public String toLongString() {
+        return toString();
     }
 
     @Override
@@ -126,6 +130,14 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     @Override
     public DiscreteTimeElement GetDiscreteTime() {
         return discreteTime;
+    }
+
+    @Override
+    public String GetDiscreteTimeString() {
+        if(discreteTime != null)
+            return discreteTime.toString();
+        else
+            return id;
     }
 
 }
