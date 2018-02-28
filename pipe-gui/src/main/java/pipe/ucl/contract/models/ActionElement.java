@@ -7,6 +7,7 @@ public class ActionElement extends ContractElement {
     private static long NextId = 1;
     public final static String MainLabel = "A";
     public final static String[] Labels = {"A", "ACTION"};
+    public final static String MainFullLabel = "ACTION";
 
     protected ArrayList<Object> parameterList;
 
@@ -49,5 +50,11 @@ public class ActionElement extends ContractElement {
         NextId++;
         return id;
     }
+
+    @Override
+    public String getMainFullLabel() {
+            return MainFullLabel;
+    }
+
 
 }

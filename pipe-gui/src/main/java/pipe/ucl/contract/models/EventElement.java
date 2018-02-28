@@ -3,13 +3,14 @@ package pipe.ucl.contract.models;
 import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class EventElement extends ContractElement implements GetDiscreteTime {
 
     private static long NextId = 1;
     public final static String MainLabel = "E";
     public final static String[] Labels = {"E", "EVENT"};
+    public final static String MainFullLabel = "EVENT";
 
     protected PartyElement actor;
     protected ActionElement action;
@@ -45,7 +46,7 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
         super(parameters);
         if(parameters.length < 4) return;
 
-        ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+        List<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
 
         for (ContractElement currentContractElement : contractElements) {
             if (currentContractElement.id.equals(parameters[2])) {
@@ -114,6 +115,11 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
         String id = MainLabel + NextId;
         NextId++;
         return id;
+    }
+
+    @Override
+    public String getMainFullLabel() {
+        return MainFullLabel;
     }
 
 }

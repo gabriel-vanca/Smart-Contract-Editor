@@ -3,12 +3,13 @@ package pipe.ucl.contract.models;
 import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.constructor.controllers.LineParser;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class TransAssertion {
 
     public final static String MainLabel = "TA";
     public final static String[] Labels = {"TA", "TRANS-ASSERTION"};
+    public final static String MainFullLabel = "TRANS-ASSERTION";
 
     public TransAssertion (String[] parameters) {
 
@@ -22,7 +23,7 @@ public class TransAssertion {
 
         GateElement gateElement = null ;
 
-        ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+        List<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
         for (ContractElement currentContractElement : contractElements) {
             if (currentContractElement.id.equals(parameters[2])) {
                 gateElement = (GateElement) currentContractElement;
@@ -54,5 +55,9 @@ public class TransAssertion {
                 }
             }
         }
+    }
+
+    public String getMainFullLabel() {
+        return MainFullLabel;
     }
 }

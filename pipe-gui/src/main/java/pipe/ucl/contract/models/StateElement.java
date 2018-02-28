@@ -18,6 +18,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     private static long NextId = 1;
     public final static String MainLabel = "S";
     public final static String[] Labels = {"S", "STATE"};
+    public final static String MainFullLabel = "STATE";
 
     protected DiscretePlace graphicObject;
 
@@ -138,6 +139,11 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
             return discreteTime.toString();
         else
             return id;
+    }
+
+    @Override
+    public String getMainFullLabel() {
+        return MainFullLabel;
     }
 
 }

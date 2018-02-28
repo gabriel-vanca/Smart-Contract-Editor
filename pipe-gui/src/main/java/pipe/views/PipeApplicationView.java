@@ -7,14 +7,19 @@ import pipe.constants.GUIConstants;
 import pipe.controllers.PetriNetController;
 import pipe.controllers.SelectionManager;
 import pipe.controllers.application.PipeApplicationController;
-import pipe.gui.*;
-import pipe.handlers.PetriNetMouseHandler;
-import pipe.utilities.gui.GuiUtils;
+import pipe.gui.AnimationHistoryView;
+import pipe.gui.PetriNetTab;
+import pipe.gui.PipeResourceLocator;
+import pipe.gui.StatusBar;
 import pipe.gui.imperial.pipe.exceptions.PetriNetComponentNotFoundException;
 import pipe.gui.imperial.pipe.models.manager.PetriNetManagerImpl;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.gui.imperial.pipe.models.petrinet.Token;
 import pipe.gui.imperial.pipe.models.petrinet.name.PetriNetName;
+import pipe.handlers.PetriNetMouseHandler;
+import pipe.ucl.gui.ContractTreeManager;
+import pipe.ucl.gui.ConsoleFrameManager;
+import pipe.utilities.gui.GuiUtils;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -23,10 +28,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.UndoableEditListener;
 import javax.swing.text.BadLocationException;
-
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowListener;
@@ -35,6 +37,7 @@ import java.beans.PropertyChangeListener;
 import java.io.File;
 import java.net.URL;
 import java.util.*;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -60,10 +63,13 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
      * Zoom managager
      */
     private final ZoomManager zoomManager;
+    private final JSplitPane contractTreePetriNetPane;
+
+    private JSplitPane mainPane;
 
     ComponentCreatorManager componentCreatorManager;
 
-    private  JSplitPane moduleAndAnimationHistoryFrame;
+    private  JSplitPane contractTreeFrame;
 
     private final JTabbedPane frameForPetriNetTabs = new JTabbedPane();
 
@@ -143,19 +149,55 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
         this.setForeground(java.awt.Color.BLACK);
         this.setBackground(java.awt.Color.WHITE);
 
-        ModuleManager moduleManager = new ModuleManager(this, applicationController);
-        JTree moduleTree = moduleManager.getModuleTree();
-        moduleAndAnimationHistoryFrame = new JSplitPane(JSplitPane.VERTICAL_SPLIT, moduleTree, null);
-        moduleAndAnimationHistoryFrame.setContinuousLayout(true);
-        moduleAndAnimationHistoryFrame.setDividerSize(0);
-        JSplitPane pane =
-                new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, moduleAndAnimationHistoryFrame, frameForPetriNetTabs);
-        pane.setContinuousLayout(true);
-        pane.setOneTouchExpandable(true);
+//        ModuleManager moduleManager = new ModuleManager(this, applicationController);
+        ContractTreeManager contractTreeManager = new ContractTreeManager(null);
+        JTree contractTree = contractTreeManager.getModuleTree(); //moduleManager.getModuleTree();
+//        contractTreeFrame = new JSplitPane(JSplitPane.VERTICAL_SPLIT, contractTree, null);
+//        contractTreeFrame.setContinuousLayout(true);
+//        contractTreeFrame.setDividerSize(0);
+//      
+//  contractTreeFrame
+        
+        contractTreePetriNetPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, contractTree, frameForPetriNetTabs);
+
+        contractTreePetriNetPane.setContinuousLayout(true);
+        contractTreePetriNetPane.setOneTouchExpandable(true);
         // avoid multiple borders
-        pane.setBorder(null);
-        pane.setDividerSize(8);
-        getContentPane().add(pane);
+//        pane.setBorder(null);
+        contractTreePetriNetPane.setDividerSize(12);
+        
+//        JTextPane txtfld;
+//        txtfld = new JTextPane( ); //initialized--size is string length
+
+        ConsoleFrameManager consoleFrameManager = new ConsoleFrameManager();
+
+        
+        mainPane =
+                new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, contractTreePetriNetPane, consoleFrameManager.getQuerryPane());
+
+        mainPane.setContinuousLayout(true);
+        mainPane.setOneTouchExpandable(true);
+        // avoid multiple borders
+//        pane.setBorder(null);
+        mainPane.setDividerSize(10);
+
+        SwingUtilities.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
+                mainPane.setDividerLocation(0.8);
+
+                SwingUtilities.invokeLater(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        contractTreePetriNetPane.setDividerLocation(0.14);
+                    }
+                });
+            }
+        });
+
+        getContentPane().add(mainPane);
 
         setVisible(true);
         applicationModel.setMode(GUIConstants.SELECT);
@@ -300,9 +342,9 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
     void removeAnimationViewPlane() {
         if (scroller != null) {
-            moduleAndAnimationHistoryFrame.remove(scroller);
-            moduleAndAnimationHistoryFrame.setDividerLocation(0);
-            moduleAndAnimationHistoryFrame.setDividerSize(0);
+            contractTreeFrame.remove(scroller);
+            contractTreeFrame.setDividerLocation(0);
+            contractTreeFrame.setDividerSize(0);
         }
     }
 
@@ -314,10 +356,10 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
         scroller = new JScrollPane(animationHistoryView);
         scroller.setBorder(new EmptyBorder(0, 0, 0, 0));
 
-        moduleAndAnimationHistoryFrame.setBottomComponent(scroller);
+        contractTreeFrame.setBottomComponent(scroller);
 
-        moduleAndAnimationHistoryFrame.setDividerLocation(0.5);
-        moduleAndAnimationHistoryFrame.setDividerSize(8);
+        contractTreeFrame.setDividerLocation(0.5);
+        contractTreeFrame.setDividerSize(8);
     }
 
     public void setToolBar(JToolBar toolBar) {
@@ -526,6 +568,22 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
     public ComponentCreatorManager getComponentCreatorManager() {
         return this.componentCreatorManager;
+    }
+
+    public JSplitPane getMainPaneLeft() {
+        return (JSplitPane) mainPane.getLeftComponent();
+    }
+
+    public JSplitPane getMainPaneRight() {
+        return (JSplitPane) mainPane.getRightComponent();
+    }
+
+    public void setMainPaneRight(JSplitPane pane) {
+        mainPane.setRightComponent(pane);
+    }
+
+    public void setMainPane(JSplitPane mainPane) {
+        this.mainPane = mainPane;
     }
 }
 

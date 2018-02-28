@@ -4,9 +4,7 @@ import pipe.gui.imperial.pipe.layout.Layout;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 
 import javax.swing.*;
-import java.awt.Component;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
 
 public class LayoutForm {
     private final static String HIERARCHICAL = "Hierarchical";
@@ -47,23 +45,30 @@ public class LayoutForm {
     private final ChangeAction changeAction;
 
     public LayoutForm(PetriNet petriNet, ChangeAction changeAction) {
+
+//        Layout.layoutHierarchical (petriNet, 40,
+//                50,50, 350, SwingConstants.NORTH);
+
         this.changeAction = changeAction;
-        hierarchicalPanel.setVisible(true);
-        organicPanel.setVisible(false);
-        intraCellSpacingSlider.setValue(150);
+
+//        return;
+
+//        hierarchicalPanel.setVisible(true);
+//        organicPanel.setVisible(false);
+//        intraCellSpacingSlider.setValue(150);
         this.petriNet = petriNet;
-        layoutButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                layoutPetriNet();
-            }
-        });
-        comboBox1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                displaySettings();
-            }
-        });
+//        layoutButton.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                layoutPetriNet();
+//            }
+//        });
+//        comboBox1.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                displaySettings();
+//            }
+//        });
     }
 
     private void layoutPetriNet() {

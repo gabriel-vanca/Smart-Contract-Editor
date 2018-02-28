@@ -5,6 +5,7 @@ public class PartyElement extends ContractElement {
     private static long NextId = 1;
     public final static String MainLabel = "P";
     public final static String[] Labels = {"P", "PARTY"};
+    public final static String MainFullLabel = "PARTY";
 
     PartyElement(String name) {
         super(name);
@@ -29,5 +30,10 @@ public class PartyElement extends ContractElement {
     @Override
     public String toString() {
         return id + " : " + name;
+    }
+
+    @Override
+    public String getMainFullLabel() {
+        return MainFullLabel;
     }
 }

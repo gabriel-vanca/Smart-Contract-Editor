@@ -9,6 +9,7 @@ import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static pipe.ucl.constructor.controllers.Constructor.AddArc;
@@ -18,6 +19,7 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
     private static long NextId = 1;
     public final static String MainLabel = "G";
     public final static String[] Labels = {"G", "GATE"};
+    public final static String MainFullLabel = "GATE";
 
     DiscreteTransition discreteGate;
 
@@ -54,7 +56,7 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
 
             if (parameters.length > 3) {
                 elementCorrectness = Boolean.FALSE;
-                ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+                List<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
                 for (ContractElement currentContractElement : contractElements) {
                     if (currentContractElement.id.equals(parameters[3])) {
                         this.eventElement = (EventElement) currentContractElement;
@@ -200,6 +202,11 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
     @Override
     public void setGraphicObject(AbstractConnectable graphicObject) {
         this.graphicObject = (DiscreteTransition) graphicObject;
+    }
+
+    @Override
+    public String getMainFullLabel() {
+        return MainFullLabel;
     }
 
 }

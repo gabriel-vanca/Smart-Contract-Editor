@@ -5,6 +5,7 @@ import pipe.ucl.constructor.models.InputLine;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,20 @@ import java.util.stream.Stream;
 
 public class InputFileParser {
 
+    private final String inputFileLocation;
+    private Path fileName;
+    private Path filePath;
     private ArrayList<InputLine> ParsedReadDataLinesList = new ArrayList<>();
+
+    public InputFileParser(String inputFileLocation) {
+        this.inputFileLocation = inputFileLocation;
+        try {
+            filePath = Paths.get(ClassLoader.getSystemResource(inputFileLocation).toURI());
+            fileName = filePath.getFileName();
+        } catch (URISyntaxException e) {
+            System.out.println("ERROR while reading input file: " + e);
+        }
+    }
 
     public ArrayList<InputLine> getParsedReadDataLinesList() {
         return this.ParsedReadDataLinesList;
@@ -37,23 +51,19 @@ public class InputFileParser {
     }
 
     private List<String> ReadFile() {
-
-        String inputFileName = "Contracts/input_washer_January18.txt";
+        
 
         List<String> readDataLinesList = new ArrayList<>();
 
         try {
 
             Stream<String> stream;
-            stream = Files.lines(Paths.get(ClassLoader.getSystemResource(inputFileName)
-                    .toURI()));
+            stream = Files.lines(filePath);
 
             readDataLinesList = stream
                     .collect(Collectors.toList());
 
         } catch (IOException e) {
-            System.out.println("ERROR while reading input file: " + e);
-        } catch (URISyntaxException e) {
             System.out.println("ERROR while reading input file: " + e);
         } catch (Exception e) {
             System.out.println("ERROR while reading input file: " + e);
@@ -65,4 +75,11 @@ public class InputFileParser {
     }
 
 
+    public String getFileName() {
+        return fileName.toString();
+    }
+    
+    public String getFileNameWithoutExtension() {
+        return getFileName().replaceFirst("[.][^.]+$", "");
+    }
 }

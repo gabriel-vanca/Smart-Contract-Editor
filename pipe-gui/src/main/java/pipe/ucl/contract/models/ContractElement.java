@@ -51,4 +51,8 @@ public abstract class ContractElement {
     public Boolean getElementCorrectness() {
         return elementCorrectness;
     }
+
+    public abstract String getMainFullLabel();
+
+
 }

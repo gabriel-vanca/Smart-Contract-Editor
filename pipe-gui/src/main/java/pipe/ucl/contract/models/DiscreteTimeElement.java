@@ -16,6 +16,8 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
     private static long NextId = 1;
     public final static String MainLabel = "DT";
     public final static String[] Labels = {"DT", "DISCRETE-TIME"};
+    public final static String MainFullLabel = "DISCRETE-TIME";
+
     public static final List<String> DATE_FORMAT =
             Arrays.asList(
                     "yyyy",
@@ -123,7 +125,7 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
 
     @Override
     public String toString() {
-        String string = id + " : " + name + " : " + toString();;
+        String string = id + " : " + name + " : " + GetDiscreteTimeString();
         return string;
     }
 
@@ -132,5 +134,10 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
         String id = MainLabel + NextId;
         NextId++;
         return id;
+    }
+
+    @Override
+    public String getMainFullLabel() {
+        return MainFullLabel;
     }
 }

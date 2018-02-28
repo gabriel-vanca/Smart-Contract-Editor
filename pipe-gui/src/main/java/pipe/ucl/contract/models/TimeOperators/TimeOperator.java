@@ -4,7 +4,7 @@ import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 import pipe.ucl.contract.models.ContractElement;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public abstract class TimeOperator {
 
@@ -20,7 +20,7 @@ public abstract class TimeOperator {
         if(parameters.length < 2)
             return;
 
-        ArrayList<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+        List<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
         for (ContractElement currentContractElement : contractElements) {
             if (currentContractElement.getId().equals(parameters[0])) {
                 this.initialDate = (GetDiscreteTime) currentContractElement;

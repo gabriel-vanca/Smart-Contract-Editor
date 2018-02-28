@@ -35,18 +35,23 @@ public class Constructor {
         this.applicationView = applicationView;
         this.componentCreatorManager = applicationView.getComponentCreatorManager();
 
-        InputFileParser inputFileParser = new InputFileParser();
+        String inputFileLocation = "Contracts/input_washer_January18.txt";
+
+        InputFileParser inputFileParser = new InputFileParser(inputFileLocation);
         inputFileParser.ParseInputFile();
         ArrayList<InputLine> ParsedReadDataLinesList = inputFileParser.getParsedReadDataLinesList();
 
-        MainContract = new Contract("Test Contract");
+        MainContract = new Contract(inputFileParser.getFileNameWithoutExtension() + " Contract");
+
+        applicationView.getMainPaneLeft().setLeftComponent(MainContract.getContractTreeManager().getModuleTree());
+        applicationView.setMainPaneRight(MainContract.getConsoleFrameManager().getQuerryPane());
 
         for (InputLine parsedReadDataLine : ParsedReadDataLinesList) {
             Object token = LineParser.GetToken(parsedReadDataLine);
             if (token == null || token.equals(""))
                 continue;
             if (ContractElement.class.isInstance(token))
-                MainContract.getContractElementsList().add((ContractElement) token);
+                MainContract.addContractElement((ContractElement) token);
         }
 
         Layout();
@@ -59,7 +64,7 @@ public class Constructor {
         return petriNetController;
     }
 
-    private void Layout() {
+    public static void Layout() {
         Layout.layoutHierarchical (petriNetController.getPetriNet (), 40,
                 50,50, 350, SwingConstants.NORTH);
 //        componentCreatorManager..changed(petriNet);

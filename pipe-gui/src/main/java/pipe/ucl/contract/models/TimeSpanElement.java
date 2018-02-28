@@ -8,6 +8,7 @@ public class TimeSpanElement extends ContractElement {
     private static long NextId = 1;
     public final static String MainLabel = "TS";
     public final static String[] Labels = {"TS", "TIME-SPAN"};
+    public final static String MainFullLabel = "TIME-SPAN";
 
     protected TimeOperator timeReference;
 
@@ -39,6 +40,11 @@ public class TimeSpanElement extends ContractElement {
         String id = MainLabel + NextId;
         NextId++;
         return id;
+    }
+
+    @Override
+    public String getMainFullLabel() {
+        return MainFullLabel;
     }
 
 }
