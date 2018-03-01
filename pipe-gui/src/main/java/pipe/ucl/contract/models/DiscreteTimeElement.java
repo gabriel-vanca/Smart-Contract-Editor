@@ -123,6 +123,20 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
         this.discreteTime = discreteTime;
     }
 
+    public static String ConvertGregorialCalendarToString(GregorianCalendar _gregorianCalendar) {
+
+        try {
+            DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss.SSS");
+            formatter.setLenient(false);
+
+            return formatter.format(_gregorianCalendar.getTime());
+        }
+        catch (Exception err) {
+            System.out.println(err);
+            return "ERROR";
+        }
+    }
+
     @Override
     public String toString() {
         String string = id + " : " + name + " : " + GetDiscreteTimeString();

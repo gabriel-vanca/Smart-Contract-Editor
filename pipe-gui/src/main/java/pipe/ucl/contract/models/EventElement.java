@@ -87,6 +87,10 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
         this.discreteTime = discreteTime;
     }
 
+    public void SetDiscreteTime(DiscreteTimeElement _discreteTime) {
+        discreteTime = _discreteTime;
+    }
+
     @Override
     public DiscreteTimeElement GetDiscreteTime() {
         return discreteTime;

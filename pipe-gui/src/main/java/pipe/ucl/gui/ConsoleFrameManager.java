@@ -1,6 +1,11 @@
 package pipe.ucl.gui;
 
+import pipe.ucl.constructor.controllers.ConsoleManager;
+import pipe.ucl.contract.models.Contract;
+
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ConsoleFrameManager {
 
@@ -9,39 +14,60 @@ public class ConsoleFrameManager {
 
     private JButton btnCompute;
 
-    private JLabel querryLabel;
+    private JTextArea consoleOutput;
 
-    private JTextArea querryField;
+    private JTextArea consoleInput;
 
+    private Contract contract;
 
-    public ConsoleFrameManager() {
+    public Contract getContract() {
+        return contract;
+    }
 
-        querryPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, new JLabel(""),
-                new JSplitPane(JSplitPane.VERTICAL_SPLIT, new JTextArea(), new JButton("Compute")));
+    public ConsoleFrameManager(Contract _contract)
+    {
+        this.contract = _contract;
 
-        querryLabel = (JLabel) querryPane.getTopComponent();
-        submissionPane = (JSplitPane) querryPane.getBottomComponent();
-        querryField = (JTextArea) submissionPane.getTopComponent();
-        btnCompute = (JButton) submissionPane.getBottomComponent();
+        consoleInput =  new JTextArea("");
+        consoleInput.setEditable(true);
+        consoleInput.setLineWrap(true);
+        consoleInput.setWrapStyleWord(true);
+        JScrollPane jScrollPane1ConsoleInput = new JScrollPane(consoleInput);
 
-//        btnCompute.setBounds(60, 400, 220, 30);
-//        btnCompute.setSize(new Dimension(40, 40));
+        consoleOutput =  new JTextArea("");
+        consoleOutput.setEditable(false);
+        consoleOutput.setLineWrap(true);
+        consoleOutput.setWrapStyleWord(true);
+        JScrollPane jScrollPane1ConsoleOutput = new JScrollPane(consoleOutput);
 
-        querryPane.setContinuousLayout(true);
-        querryPane.setOneTouchExpandable(true);
-        querryPane.setDividerSize(6);
+        btnCompute = new JButton("Compute");
+        btnCompute.addActionListener(new ActionListener() {
 
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Compute();
+            }
+        });
+
+        submissionPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, jScrollPane1ConsoleInput, btnCompute);
         submissionPane.setContinuousLayout(true);
         submissionPane.setOneTouchExpandable(true);
         submissionPane.setDividerSize(6);
 
-        querryLabel.setVerticalAlignment(JLabel.TOP);
+        querryPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT,jScrollPane1ConsoleOutput, submissionPane);
+        querryPane.setContinuousLayout(true);
+        querryPane.setOneTouchExpandable(true);
+        querryPane.setDividerSize(6);
+
+        if(contract == null) {
+            return;
+        }
 
         SwingUtilities.invokeLater(new Runnable() {
 
             @Override
             public void run() {
-                querryPane.setDividerLocation(0.65);
+                querryPane.setDividerLocation(0.70);
                 SwingUtilities.invokeLater(new Runnable() {
 
                     @Override
@@ -62,14 +88,7 @@ public class ConsoleFrameManager {
 //        pnlButton.add(btnCompute);
 //        add(pnlButton);
 //
-//        btnCompute.addActionListener(new ActionListener() {
-//
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                System.out.println("OUtput to console");
-//
-//            }
-//        });
+
 //
 //
 //        setTitle("Simple example");
@@ -81,15 +100,30 @@ public class ConsoleFrameManager {
 //        setDefaultCloseOperation(HIDE_ON_CLOSE);
     }
 
+    private void Compute() {
+
+        addLineToLabel("Computing...");
+        addLineToLabel("");
+
+        String results = ConsoleManager.Compute(this);
+
+        addLineToLabel(results);
+        addLineToLabel("");
+    }
+
     public void addLineToLabel(String textToAdd) {
-        String existingText = querryLabel.getText();
-        querryLabel.setText(existingText+textToAdd+"\n");
+        String existingText = consoleOutput.getText();
+        consoleOutput.setText(existingText+textToAdd+"\n");
+    }
+
+    public String getTextFromConsoleInput() {
+        return consoleInput.getText();
     }
 
 
 //    public void addLineToLabel(String textToAdd) {
-//        String existingText = querryLabel.getText();
-//        querryLabel.setText(existingText+textToAdd);
+//        String existingText = consoleOutput.getText();
+//        consoleOutput.setText(existingText+textToAdd);
 //    }
 
     public JSplitPane getQuerryPane() {
@@ -104,11 +138,11 @@ public class ConsoleFrameManager {
         return btnCompute;
     }
 
-    public JLabel getQuerryLabel() {
-        return querryLabel;
+    public JTextArea getConsoleOutput() {
+        return consoleOutput;
     }
 
-    public JTextArea getQuerryField() {
-        return querryField;
+    public JTextArea getConsoleInput() {
+        return consoleInput;
     }
 }

@@ -19,6 +19,8 @@ public class InputFileParser {
     private Path filePath;
     private ArrayList<InputLine> ParsedReadDataLinesList = new ArrayList<>();
 
+    private List<String> readDataLinesList;
+
     public InputFileParser(String inputFileLocation) {
         this.inputFileLocation = inputFileLocation;
         try {
@@ -34,7 +36,7 @@ public class InputFileParser {
     }
 
     public void ParseInputFile() {
-        List<String> readDataLinesList = ReadFile();
+        readDataLinesList = ReadFile();
         for (String readDataLine : readDataLinesList) {
             if(readDataLine == "")
                 continue;
@@ -48,10 +50,10 @@ public class InputFileParser {
 
     public void EmptyParsedReadDataLinesList() {
         ParsedReadDataLinesList.clear();
+        readDataLinesList.clear();
     }
 
     private List<String> ReadFile() {
-        
 
         List<String> readDataLinesList = new ArrayList<>();
 
@@ -74,11 +76,15 @@ public class InputFileParser {
         return readDataLinesList;
     }
 
+    public List<String> getReadDataLinesList() {
+        return readDataLinesList;
+    }
+
 
     public String getFileName() {
         return fileName.toString();
     }
-    
+
     public String getFileNameWithoutExtension() {
         return getFileName().replaceFirst("[.][^.]+$", "");
     }

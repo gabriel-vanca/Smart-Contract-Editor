@@ -139,7 +139,7 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
         this.setIconImage(new ImageIcon(getImageURL("icon")).getImage());
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        this.setSize(screenSize.width * 80 / 100, screenSize.height * 80 / 100);
+        this.setSize(screenSize.width * 90 / 100, screenSize.height * 85 / 100);
         this.setLocationRelativeTo(null);
 
         // Status bar...
@@ -169,7 +169,7 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 //        JTextPane txtfld;
 //        txtfld = new JTextPane( ); //initialized--size is string length
 
-        ConsoleFrameManager consoleFrameManager = new ConsoleFrameManager();
+        ConsoleFrameManager consoleFrameManager = new ConsoleFrameManager(null);
 
         
         mainPane =

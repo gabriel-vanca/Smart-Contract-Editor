@@ -1,3 +1,5 @@
+CONTRACT("Washer Acquisition Contract", 1987-04-27, 1987-05-15)
+
 PARTY(P1, "Jones")
 PARTY(P2, "Smith")
 

@@ -41,17 +41,33 @@ public class Constructor {
         inputFileParser.ParseInputFile();
         ArrayList<InputLine> ParsedReadDataLinesList = inputFileParser.getParsedReadDataLinesList();
 
-        MainContract = new Contract(inputFileParser.getFileNameWithoutExtension() + " Contract");
+        MainContract = new Contract(inputFileParser.getFileNameWithoutExtension());
 
         applicationView.getMainPaneLeft().setLeftComponent(MainContract.getContractTreeManager().getModuleTree());
         applicationView.setMainPaneRight(MainContract.getConsoleFrameManager().getQuerryPane());
+
+        MainContract.getConsoleFrameManager().addLineToLabel("");
+        MainContract.getConsoleFrameManager().addLineToLabel("Contract parsing has started");
+        MainContract.getConsoleFrameManager().addLineToLabel("");
+
+        for (String readLine :inputFileParser.getReadDataLinesList()) {
+            MainContract.getConsoleFrameManager().addLineToLabel(readLine);
+        }
+
+        MainContract.getConsoleFrameManager().addLineToLabel("");
+        MainContract.getConsoleFrameManager().addLineToLabel("Contract parsing is complete");
+        MainContract.getConsoleFrameManager().addLineToLabel("");
 
         for (InputLine parsedReadDataLine : ParsedReadDataLinesList) {
             Object token = LineParser.GetToken(parsedReadDataLine);
             if (token == null || token.equals(""))
                 continue;
-            if (ContractElement.class.isInstance(token))
+            if (Contract.class.isInstance(token)) {
+                MainContract.setContractProperties((Contract) token);
+            }
+            if (ContractElement.class.isInstance(token)) {
                 MainContract.addContractElement((ContractElement) token);
+            }
         }
 
         Layout();

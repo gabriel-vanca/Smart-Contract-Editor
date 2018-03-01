@@ -72,19 +72,23 @@ public class LayoutForm {
     }
 
     private void layoutPetriNet() {
-        String selectedItem = comboBox1.getSelectedItem().toString();
-        switch (selectedItem) {
-            case ORGANIC:
-                Layout.layoutOrganic(petriNet, forceConstantSlider.getValue(), minDistanceSlider.getValue());
-                break;
-            case HIERARCHICAL:
-                int orientation = getOrientation();
-                Layout.layoutHierarchical(petriNet, rankSpacingSlider.getValue(),
-                        interHierarchySlider.getValue(),
-                        parallelEdgeSlider.getValue(), intraCellSpacingSlider.getValue(), orientation);
-                break;
+        try {
+            String selectedItem = comboBox1.getSelectedItem().toString();
+            switch (selectedItem) {
+                case ORGANIC:
+                    Layout.layoutOrganic(petriNet, forceConstantSlider.getValue(), minDistanceSlider.getValue());
+                    break;
+                case HIERARCHICAL:
+                    int orientation = getOrientation();
+                    Layout.layoutHierarchical(petriNet, rankSpacingSlider.getValue(),
+                            interHierarchySlider.getValue(),
+                            parallelEdgeSlider.getValue(), intraCellSpacingSlider.getValue(), orientation);
+                    break;
+            }
+            changeAction.changed(petriNet);
+        } catch (Exception e) {
+            System.out.println(e);
         }
-        changeAction.changed(petriNet);
     }
 
     private int getOrientation() {

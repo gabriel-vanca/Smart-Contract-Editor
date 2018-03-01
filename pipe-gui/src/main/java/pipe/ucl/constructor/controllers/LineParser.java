@@ -34,17 +34,15 @@ public class LineParser {
         return tokens;
     }
 
-    public static InputLine ParseLine(String inputString) {
-
-        String type;
-        String[] parameters;
-        String content;
-
+    public static String NormaliseQuotes(String inputString) {
         inputString = inputString.replaceAll("'", "\"");
         inputString = inputString.replaceAll("’", "\"");
         inputString = inputString.replaceAll("'", "\"");
         inputString = inputString.replaceAll("`", "\"");
+        return inputString;
+    }
 
+    public static String RemoveWhiteSpacesAndCommentExceptInsideQuotes(String inputString) {
         // Removes all white spaces, except white spaces inside quotes.
         // Takes into consideration escaped quotes.
         // (https://stackoverflow.com/questions/9577930/regular-expression-to-select-all-whitespace-that-isnt-in-quotes)
@@ -53,6 +51,20 @@ public class LineParser {
         // Removes all comments
         // (https://blog.ostermiller.org/find-comment)
         inputString = inputString.replaceAll("(/\\*([^*]|[\\r\\n]|(\\*+([^*/]|[\\r\\n])))*\\*+/)|(//.*)", "");
+
+
+        return inputString;
+    }
+
+    public static InputLine ParseLine(String inputString) {
+
+        String type;
+        String[] parameters;
+        String content;
+
+       inputString = NormaliseQuotes(inputString);
+       inputString = RemoveWhiteSpacesAndCommentExceptInsideQuotes(inputString);
+
 
         int indexBegin;
         int indexEnd;
@@ -131,6 +143,7 @@ public class LineParser {
         // Type should be upper case for easier checking
         inputType = inputType.toUpperCase();
 
+        if(Arrays.asList(Contract.Labels).contains(inputType)) return new Contract(inputParameters);
         if(Arrays.asList(ActionElement.Labels).contains(inputType)) return new ActionElement(inputParameters);
         if(Arrays.asList(DiscreteTimeElement.Labels).contains(inputType)) return new DiscreteTimeElement(inputParameters);
         if(Arrays.asList(EventElement.Labels).contains(inputType)) return new EventElement(inputParameters);

@@ -47,4 +47,7 @@ public class TimeSpanElement extends ContractElement {
         return MainFullLabel;
     }
 
+    public TimeOperator getTimeReference() {
+        return timeReference;
+    }
 }
