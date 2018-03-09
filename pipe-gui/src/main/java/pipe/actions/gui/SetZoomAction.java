@@ -45,8 +45,8 @@ public class SetZoomAction extends GuiAction {
      */
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
-        String selection = (String) applicationView.zoomComboBox.getSelectedItem();
-        validateAndZoom(selection);
+//        String selection = (String) applicationView.zoomComboBox.getSelectedItem();
+//        validateAndZoom(selection);
     }
 
     /**
@@ -64,7 +64,7 @@ public class SetZoomAction extends GuiAction {
 
         if (Integer.parseInt(validatedSelection) < GUIConstants.ZOOM_MIN
                 || Integer.parseInt(validatedSelection) > GUIConstants.ZOOM_MAX) {
-            applicationView.zoomComboBox.setSelectedItem("");
+//            applicationView.zoomComboBox.setSelectedItem("");
             return;
         }
 

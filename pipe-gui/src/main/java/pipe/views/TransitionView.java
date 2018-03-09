@@ -119,6 +119,7 @@ public class TransitionView extends ConnectableView<Transition> {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
         Rectangle rect = shape.getBounds();
+//        rect.setSize(((int) rect.getWidth() + 10), ((int) rect.getHeight()));
         g2.translate(rect.getWidth()/2, rect.getHeight()/2);
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
@@ -199,5 +200,6 @@ public class TransitionView extends ConnectableView<Transition> {
     public void addToContainer(Container container) {
         addLabelToContainer(container);
     }
+
 
 }

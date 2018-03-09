@@ -37,10 +37,11 @@ public class Contract {
     }
 
     public Contract(String[] inputParameters) {
-        if(inputParameters.length < 3)
+        if (inputParameters.length < 3)
             return;
 
         name = inputParameters[0];
+
 
         String[] discreteTimeElementWrapper = new String[3];
         discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "CONTRACT";
@@ -48,8 +49,12 @@ public class Contract {
         discreteTimeElementWrapper[2] = inputParameters[1];
         contractStartTime = new DiscreteTimeElement(discreteTimeElementWrapper);
 
-        discreteTimeElementWrapper[2] = inputParameters[2];
-        contractEndTime = new DiscreteTimeElement(discreteTimeElementWrapper);
+        if (inputParameters[2].toUpperCase().equals("N/A")) {
+            contractEndTime = new DiscreteTimeElement();
+        } else {
+            discreteTimeElementWrapper[2] = inputParameters[2];
+            contractEndTime = new DiscreteTimeElement(discreteTimeElementWrapper);
+        }
     }
 
     public String getName() {
@@ -58,6 +63,7 @@ public class Contract {
 
     public void setName(String name) {
         this.name = name;
+        contractTreeManager.Rename(name);
     }
 
     public List<ContractElement> getContractElementsList() {
@@ -92,7 +98,20 @@ public class Contract {
 
     public void setContractProperties(Contract _contract) {
         this.name = _contract.getName();
+        contractTreeManager.Rename(name);
         this.contractStartTime = _contract.contractStartTime;
         this.contractEndTime = _contract.contractEndTime;
+    }
+
+    public DiscreteTimeElement getContractStartTime() {
+        return contractStartTime;
+    }
+
+    public DiscreteTimeElement getContractEndTime() {
+        return contractEndTime;
+    }
+
+    public void setContractEndTime(DiscreteTimeElement contractEndTime) {
+        this.contractEndTime = contractEndTime;
     }
 }

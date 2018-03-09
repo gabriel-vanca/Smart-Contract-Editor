@@ -33,20 +33,20 @@ public class PetriNet {
    public static final String DELETE_TOKEN_CHANGE_MESSAGE = "deleteToken";
    public static final String NEW_RATE_PARAMETER_CHANGE_MESSAGE = "newRateParameter";
    public static final String DELETE_RATE_PARAMETER_CHANGE_MESSAGE = "deleteRateParameter";
-   protected final PropertyChangeSupport changeSupport;
-   private final FunctionalWeightParser functionalWeightParser;
-   private final PetriNetComponentVisitor deleteVisitor;
-   private final HashMap<String, DiscreteTransition> transitionsMap;
-   private final HashMap<String, DiscretePlace> placesMap;
-   private final Map tokens;
-   private final HashMap<String, InboundArc> inboundArcs;
-   private final HashMap<String, OutboundArc> outboundArcs;
-   private final Map rateParameters;
-   private final Map annotations;
-   private final Multimap transitionOutboundArcs;
-   private final Multimap transitionInboundArcs;
-   private final Map componentMaps;
-   private final PetriNetComponentVisitor addVisitor;
+   protected  PropertyChangeSupport changeSupport;
+   private  FunctionalWeightParser functionalWeightParser;
+   private  PetriNetComponentVisitor deleteVisitor;
+   private  HashMap<String, DiscreteTransition> transitionsMap;
+   private  HashMap<String, DiscretePlace> placesMap;
+   private  Map tokens;
+   private  HashMap<String, InboundArc> inboundArcs;
+   private  HashMap<String, OutboundArc> outboundArcs;
+   private  Map rateParameters;
+   private  Map annotations;
+   private  Multimap transitionOutboundArcs;
+   private  Multimap transitionInboundArcs;
+   private  Map componentMaps;
+   private  PetriNetComponentVisitor addVisitor;
    public String pnmlName;
    private PetriNetName petriNetName;
    private boolean validated;
@@ -75,6 +75,23 @@ public class PetriNet {
       this.validated = false;
       this.initialiseIdMap();
    }
+
+//   public void ReInitialisePetriNet() {
+//
+//      this.transitionsMap = new HashMap();
+//      this.placesMap = new HashMap();
+//      this.tokens = new HashMap();
+//      this.inboundArcs = new HashMap();
+//      this.outboundArcs = new HashMap();
+//      this.rateParameters = new HashMap();
+//      this.annotations = new HashMap();
+//      this.transitionOutboundArcs = HashMultimap.create();
+//      this.transitionInboundArcs = HashMultimap.create();
+//      this.componentMaps = new HashMap();
+//      this.pnmlName = "";
+//      this.validated = false;
+//      this.initialiseIdMap();
+//   }
 
    private void initialiseIdMap() {
       this.componentMaps.put(DiscretePlace.class, this.placesMap);

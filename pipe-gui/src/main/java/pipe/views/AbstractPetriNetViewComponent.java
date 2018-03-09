@@ -4,8 +4,7 @@ import pipe.controllers.PetriNetController;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNetComponent;
 
 import javax.swing.*;
-import java.awt.Container;
-import java.awt.Rectangle;
+import java.awt.*;
 
 
 /**
@@ -172,5 +171,9 @@ public abstract class AbstractPetriNetViewComponent<T extends PetriNetComponent>
      */
     public final boolean isSelected() {
         return petriNetController.isSelected(model);
+    }
+
+    public final Color getMark() {
+        return petriNetController.getMark(model);
     }
 }

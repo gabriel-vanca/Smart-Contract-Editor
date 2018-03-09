@@ -259,6 +259,7 @@ public class PetriNetTab extends JLayeredPane implements Observer, Printable {
         repaint();
     }
 
+
     /**
      *
      * @return Grid displayed on the canvas

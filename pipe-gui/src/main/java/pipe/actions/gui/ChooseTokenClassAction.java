@@ -1,12 +1,9 @@
 package pipe.actions.gui;
 
-import pipe.controllers.PetriNetController;
 import pipe.controllers.application.PipeApplicationController;
 import pipe.views.PipeApplicationView;
-import pipe.gui.imperial.pipe.exceptions.PetriNetComponentNotFoundException;
 
 import java.awt.event.ActionEvent;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -49,12 +46,13 @@ public class ChooseTokenClassAction extends GuiAction {
      */
     @Override
     public void actionPerformed(ActionEvent evt) {
-        String currentSelection = (String) pipeApplicationView.tokenClassComboBox.getSelectedItem();
-        PetriNetController petriNetController = applicationController.getActivePetriNetController();
-        try {
-            petriNetController.selectToken(currentSelection);
-        } catch (PetriNetComponentNotFoundException e) {
-            LOGGER.log(Level.SEVERE, e.getMessage());
-        }
+        //UCL removes
+//        String currentSelection = (String) pipeApplicationView.tokenClassComboBox.getSelectedItem();
+//        PetriNetController petriNetController = applicationController.getActivePetriNetController();
+//        try {
+//            petriNetController.selectToken(currentSelection);
+//        } catch (PetriNetComponentNotFoundException e) {
+//            LOGGER.log(Level.SEVERE, e.getMessage());
+//        }
     }
 }

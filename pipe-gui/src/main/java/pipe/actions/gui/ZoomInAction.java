@@ -32,8 +32,8 @@ public class ZoomInAction extends GuiAction {
     public void actionPerformed(ActionEvent actionEvent) {
         GuiUtils.displayErrorMessage(null,
                 "Zooming in/out is currently not supported in this version.\n Please file an issue if it is particularly important to you.");
-        //        if (zoomManager.canZoomIn()) {
-        //            zoomManager.zoomIn();
-        //        }
+//                if (zoomManager.canZoomIn()) {
+//                    zoomManager.zoomIn();
+//                }
     }
 }

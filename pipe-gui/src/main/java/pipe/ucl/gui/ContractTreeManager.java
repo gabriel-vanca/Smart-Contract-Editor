@@ -11,6 +11,7 @@ public class ContractTreeManager {
 
     private final DefaultMutableTreeNode treeRoot;
     private DefaultTreeModel contractJTreeModel;
+
     private JTree contractJTree;
 
     private Contract contract;
@@ -32,6 +33,11 @@ public class ContractTreeManager {
         contractJTreeModel = (DefaultTreeModel) contractJTree.getModel();
     }
 
+    public void Rename(String name) {
+        treeRoot.setUserObject(name);
+        contractJTreeModel.nodeChanged(treeRoot);
+    }
+
     public JTree getModuleTree() {
         return contractJTree;
     }
@@ -42,6 +48,10 @@ public class ContractTreeManager {
 
     public void setContract(Contract contract) {
         this.contract = contract;
+    }
+
+    public JTree getContractJTree() {
+        return contractJTree;
     }
 
     public void addNewContractElement(ContractElement contractElement) {

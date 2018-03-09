@@ -1,13 +1,11 @@
 package pipe.actions.gui;
 
 import pipe.controllers.application.PipeApplicationController;
+import pipe.ucl.constructor.controllers.Constructor;
 import pipe.utilities.gui.GuiUtils;
-import pipe.gui.imperial.pipe.parsers.UnparsableException;
 
 import javax.swing.*;
-
-import java.awt.FileDialog;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
@@ -46,18 +44,32 @@ public class OpenAction extends GuiAction {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        fileChooser.setVisible(true);
-        for (File file : fileChooser.getFiles()) {
-            if (file.exists() && file.isFile() && file.canRead()) {
-                try {
-                    applicationController.createNewTabFromFile(file);
-                } catch (UnparsableException e1) {
-                    GuiUtils.displayErrorMessage(null, e1.getMessage());
-                }
+//UCL
+        try {
+            fileChooser.setVisible(true);
+            fileChooser.setMode(FileDialog.LOAD);
+            fileChooser.setMultipleMode(false);
+            File[] files = fileChooser.getFiles();
+            if(files.length < 1) {
+              return;
+            }
+            File file = files[0];
+
+            if (file.exists() &&
+                    file.isFile() &&
+                    file.canRead()) {
+//                applicationController.createNewTabFromFile(file);
+//                String filePath = file.getAbsolutePath();
+//                applicationController.createEmptyPetriNet();
+                Constructor.LoadContractFile(file.toURI());
             } else {
                 String message = "File \"" + file.getName() + "\" does not exist.";
                 JOptionPane.showMessageDialog(null, message, "Warning", JOptionPane.WARNING_MESSAGE);
             }
+        } catch (Exception err) {
+            System.out.println("File could not be loaded due to error: " + err);
+            GuiUtils.displayErrorMessage(null, "File could not be loaded due to error: " + err);
         }
+
     }
 }

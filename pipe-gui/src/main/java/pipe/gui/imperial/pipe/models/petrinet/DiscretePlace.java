@@ -248,7 +248,9 @@ public final class DiscretePlace extends AbstractConnectable implements Place {
 
    @Override
    public String toLongString() {
-      return stateElement.toLongString();
+      if(stateElement != null)
+         return stateElement.toLongString();
+      else return "";
    }
 
    public void removeAllTokens(String token) {

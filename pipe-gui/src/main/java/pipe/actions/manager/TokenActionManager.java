@@ -56,7 +56,12 @@ public class TokenActionManager implements ActionManager {
      */
     @Override
     public Iterable<GuiAction> getActions() {
-        return Arrays.asList(tokenAction, deleteTokenAction, specifyTokenClasses);
+
+
+        return Arrays.asList();
+
+        //UCL removes:
+//        return Arrays.asList(tokenAction, deleteTokenAction, specifyTokenClasses);
     }
 
     /**

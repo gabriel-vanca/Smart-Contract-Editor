@@ -1,5 +1,6 @@
 package pipe.ucl.contract.models;
 
+import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.constructor.controllers.LineParser;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
@@ -17,6 +18,8 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
     public final static String MainLabel = "DT";
     public final static String[] Labels = {"DT", "DISCRETE-TIME"};
     public final static String MainFullLabel = "DISCRETE-TIME";
+    public final static String CONTRACT_START = "CONTRACT_START";
+    public final static String CONTRACT_TERMINATION = "CONTRACT_TERMINATION";
 
     public static final List<String> DATE_FORMAT =
             Arrays.asList(
@@ -38,6 +41,11 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
 
     public DiscreteTimeElement(String id, String name) {
         super(id, name);
+    }
+
+    public DiscreteTimeElement() {
+        super();
+        discreteTime = null;
     }
 
     public DiscreteTimeElement(GregorianCalendar gregorianCalendar) {
@@ -69,7 +77,24 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
             discreteTime.getTime();
             elementCorrectness = Boolean.TRUE;
             return;
-        } catch (Exception e)        {
+        } catch (Exception e) {
+            elementCorrectness = Boolean.FALSE;
+        }
+
+        //Now we check for a time keyword
+        try {
+            if (parameters[2].toUpperCase().equals(CONTRACT_START)) {
+                this.discreteTime = Constructor.MainContract.getContractStartTime().GetCalendarTime();
+                elementCorrectness = Boolean.TRUE;
+                return;
+            }
+            if (parameters[2].toUpperCase().equals(CONTRACT_TERMINATION)) {
+                this.discreteTime = Constructor.MainContract.getContractEndTime().GetCalendarTime();
+                elementCorrectness = Boolean.TRUE;
+                return;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
             elementCorrectness = Boolean.FALSE;
         }
 
@@ -81,6 +106,7 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
             elementCorrectness = Boolean.TRUE;
         } catch (Exception e) {
             e.printStackTrace();
+            elementCorrectness = Boolean.FALSE;
         }
     }
 

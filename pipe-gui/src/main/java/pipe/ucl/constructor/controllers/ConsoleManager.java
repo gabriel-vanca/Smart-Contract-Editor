@@ -4,7 +4,10 @@ import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.contract.models.*;
 import pipe.ucl.gui.ConsoleFrameManager;
 
+import java.awt.*;
 import java.util.*;
+import java.util.List;
+import java.util.Queue;
 
 import static pipe.ucl.constructor.controllers.LineParser.*;
 
@@ -15,6 +18,9 @@ public class ConsoleManager {
                 parseConsoleInput(consoleFrameManager.getTextFromConsoleInput(),
                 consoleFrameManager.getContract().getContractElementsList());
 
+        Constructor.getPetriNetController().clearMarks();
+
+        Constructor.getPipeApplicationBuilder().selectActionButton.doClick();
 
         String results = "Parsing finalised. \n";
 
@@ -44,12 +50,15 @@ public class ConsoleManager {
 
             switch (stateType) {
                 case START: {
+                    stateElement.Mark(Color.CYAN);
                     break;
                 }
                 case INTERMEDIARY: {
+                    stateElement.Mark(Color.CYAN);
                     break;
                 }
                 case PAUSE: {
+                    stateElement.Mark(Color.ORANGE);
                     results += "Contract branch paused for external input at the following state: "
                             + stateElement.getId()
                             + " : "
@@ -59,6 +68,7 @@ public class ConsoleManager {
                 }
 
                 case DEFAULT: {
+                    stateElement.Mark(Color.RED);
                     results += "Contract default at the following state: "
                             + stateElement.getId()
                             + " : "
@@ -68,6 +78,7 @@ public class ConsoleManager {
                 }
 
                 case END: {
+                    stateElement.Mark(Color.CYAN);
                     results += "Contract ended due to reaching the following end state: "
                             + stateElement.getId()
                             + " : "
@@ -209,12 +220,18 @@ public class ConsoleManager {
 
         Map<Object, DiscreteTimeElement> eventTimeMap = new HashMap<Object, DiscreteTimeElement>();
 
+        if(inputString.length()<2)
+            return eventTimeMap;
+
         inputString = NormaliseQuotes(inputString);
         inputString = RemoveWhiteSpacesAndCommentExceptInsideQuotes(inputString);
 
         String[] inputEvents = SplitByCommasExceptQuotesAndParentheses(inputString);
 
         for (String inputEvent: inputEvents) {
+
+            if(inputEvent.length()<2)
+                continue;
 
             inputEvent = inputEvent.substring(1, inputEvent.length()-1);
 

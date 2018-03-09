@@ -5,8 +5,8 @@ import pipe.controllers.PetriNetController;
 import pipe.controllers.SelectionManager;
 import pipe.controllers.application.PipeApplicationController;
 import pipe.gui.PetriNetTab;
-import pipe.views.PipeApplicationView;
 import pipe.gui.imperial.pipe.models.petrinet.Connectable;
+import pipe.views.PipeApplicationView;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
@@ -23,6 +23,7 @@ public class SelectAction extends CreateAction {
         super("Select", "Select components (alt-S)", KeyEvent.VK_S, InputEvent.ALT_DOWN_MASK, applicationModel);
         this.pipeApplicationView = pipeApplicationView;
         this.pipeApplicationController = pipeApplicationController;
+
     }
 
     @Override

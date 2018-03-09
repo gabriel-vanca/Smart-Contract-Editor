@@ -64,8 +64,12 @@ public class ComponentCreatorManager implements ActionManager {
 
     @Override
     public Iterable<GuiAction> getActions() {
-        return Arrays.asList(placeAction, transAction, timedtransAction, arcAction, inhibarcAction, annotationAction,
-                rateParameterAction);
+
+        return Arrays.asList(placeAction, transAction, timedtransAction, arcAction, inhibarcAction, annotationAction);
+
+        //UCL removes:
+//        return Arrays.asList(placeAction, transAction, timedtransAction, arcAction, inhibarcAction, annotationAction,
+//                rateParameterAction);
     }
 
     @Override

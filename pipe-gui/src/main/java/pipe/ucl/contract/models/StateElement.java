@@ -1,6 +1,7 @@
 package pipe.ucl.contract.models;
 
 import pipe.controllers.PetriNetController;
+import pipe.controllers.SelectionManager;
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
@@ -9,6 +10,7 @@ import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -43,6 +45,16 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         elementCorrectness = Boolean.TRUE;
 
         graphicObject = instantiateGraphicObject();
+
+    }
+
+    public void Mark(Color color) {
+        PetriNetController petriNetController = Constructor.getPetriNetController();
+        petriNetController.mark(graphicObject, color);
+//        CreateAction selectedAction = Constructor.getApplicationModel().getSelectedAction();
+        SelectionManager selectionManager =
+                Constructor.getApplicationController().getActivePetriNetController().getSelectionManager();
+        selectionManager.repaint();
     }
 
     protected DiscretePlace instantiateGraphicObject() {
@@ -66,6 +78,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
 
             PetriNet petriNet = petriNetController.getPetriNet ();
             petriNet.addPlace (place);
+
         } catch (Exception e) {
             System.out.println ("ERROR: Could not add new state due to following error: " + e.toString ());
         }

@@ -1,12 +1,5 @@
 package pipe.gui.imperial.pipe.models.manager;
 
-import java.awt.Color;
-import java.beans.PropertyChangeListener;
-import java.beans.PropertyChangeSupport;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import javax.xml.bind.JAXBException;
 import pipe.gui.imperial.pipe.io.PetriNetIOImpl;
 import pipe.gui.imperial.pipe.io.PetriNetReader;
 import pipe.gui.imperial.pipe.io.PetriNetWriter;
@@ -17,9 +10,16 @@ import pipe.gui.imperial.pipe.models.petrinet.Token;
 import pipe.gui.imperial.pipe.models.petrinet.name.NormalPetriNetName;
 import pipe.gui.imperial.pipe.models.petrinet.name.PetriNetFileName;
 import pipe.gui.imperial.pipe.models.petrinet.name.PetriNetName;
-import pipe.gui.imperial.pipe.models.manager.PetriNetManager;
 import pipe.gui.imperial.pipe.naming.PetriNetNamer;
 import pipe.gui.imperial.pipe.parsers.UnparsableException;
+
+import javax.xml.bind.JAXBException;
+import java.awt.*;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public final class PetriNetManagerImpl implements PetriNetManager {
    public static final String NEW_PETRI_NET_MESSAGE = "New Petri net!";
@@ -46,7 +46,7 @@ public final class PetriNetManagerImpl implements PetriNetManager {
 
    public void createFromFile(File file) throws JAXBException, UnparsableException, FileNotFoundException {
       PetriNetReader petriNetIO = new PetriNetIOImpl();
-      PetriNet petriNet = petriNetIO.read(file.getAbsolutePath());
+      PetriNet petriNet = new PetriNet();//petriNetIO.read(file.getAbsolutePath());
       this.namePetriNetFromFile(petriNet, file);
       this.changeSupport.firePropertyChange("New Petri net!", (Object)null, petriNet);
    }

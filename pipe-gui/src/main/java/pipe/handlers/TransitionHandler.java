@@ -2,13 +2,12 @@ package pipe.handlers;
 
 import pipe.actions.gui.PipeApplicationModel;
 import pipe.controllers.PetriNetController;
+import pipe.gui.imperial.pipe.models.petrinet.Transition;
 import pipe.gui.widgets.EscapableDialog;
 import pipe.gui.widgets.TransitionEditorPanel;
-import pipe.gui.imperial.pipe.models.petrinet.Transition;
 
 import javax.swing.*;
-import java.awt.Container;
-import java.awt.Window;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -53,6 +52,7 @@ public class TransitionHandler extends ConnectableHandler<Transition> {
     protected JPopupMenu getPopup(MouseEvent e) {
         int index = 0;
         JPopupMenu popup = super.getPopup(e);
+        //UCL removed
         JMenuItem menuItem = new JMenuItem("Edit Transition");
         menuItem.addActionListener(new ActionListener() {
             @Override

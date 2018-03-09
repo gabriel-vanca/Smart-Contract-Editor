@@ -3,11 +3,9 @@ package pipe.views;
 import pipe.actions.gui.PipeApplicationModel;
 import pipe.constants.GUIConstants;
 import pipe.controllers.PetriNetController;
-import pipe.gui.imperial.pipe.exceptions.PetriNetComponentNotFoundException;
 import pipe.gui.imperial.pipe.models.petrinet.Arc;
 import pipe.gui.imperial.pipe.models.petrinet.ArcPoint;
 import pipe.gui.imperial.pipe.models.petrinet.Connectable;
-import pipe.gui.imperial.pipe.models.petrinet.Token;
 
 import javax.swing.event.MouseInputAdapter;
 import java.awt.*;
@@ -16,8 +14,6 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.Collection;
 import java.util.LinkedList;
-import java.util.Map;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
@@ -145,6 +141,7 @@ public class NormalArcView<S extends Connectable, T extends Connectable> extends
         updateWeights();
     }
 
+
     /**
      * Creates and paints the weights in the center of the arc
      */
@@ -170,21 +167,22 @@ public class NormalArcView<S extends Connectable, T extends Connectable> extends
      * Creates token weight labels
      */
     private void createWeightLabels() {
-        Map<String, String> weights = model.getTokenWeights();
-        for (Map.Entry<String, String> entry : weights.entrySet()) {
-            String weight = entry.getValue();
-            String tokenId = entry.getKey();
-            TextLabel label = new TextLabel(weight);
-            try {
-                Token token = petriNetController.getToken(tokenId);
-                label.setColor(token.getColor());
-            } catch (PetriNetComponentNotFoundException e) {
-                LOGGER.log(Level.SEVERE, e.getMessage());
-                label.setColor(Color.BLACK);
-            }
-            label.updateSize();
-            weightLabel.add(label);
-        }
+        //UCL removes
+//        Map<String, String> weights = model.getTokenWeights();
+//        for (Map.Entry<String, String> entry : weights.entrySet()) {
+//            String weight = entry.getValue();
+//            String tokenId = entry.getKey();
+//            TextLabel label = new TextLabel(weight);
+//            try {
+//                Token token = petriNetController.getToken(tokenId);
+//                label.setColor(token.getColor());
+//            } catch (PetriNetComponentNotFoundException e) {
+//                LOGGER.log(Level.SEVERE, e.getMessage());
+//                label.setColor(Color.BLACK);
+//            }
+//            label.updateSize();
+//            weightLabel.add(label);
+//        }
     }
 
     /**
@@ -214,9 +212,11 @@ public class NormalArcView<S extends Connectable, T extends Connectable> extends
      * @param container
      */
     private void addWeightLabelsToContainer(Container container) {
-        for (TextLabel label : weightLabel) {
-            container.add(label);
-        }
+        return;
+        // Deactivated feature
+//        for (TextLabel label : weightLabel) {
+//            container.add(label);
+//        }
     }
 
 

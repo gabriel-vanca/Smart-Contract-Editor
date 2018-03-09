@@ -1,6 +1,6 @@
 package pipe.views;
 
-import java.awt.Container;
+import java.awt.*;
 
 /**
  * Interface for all Petri net view components
@@ -16,6 +16,5 @@ public interface PetriNetViewComponent {
      * @param container to add itself to
      */
     void addToContainer(Container container);
-
 
 }

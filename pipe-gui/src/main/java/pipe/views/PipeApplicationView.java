@@ -79,9 +79,9 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
     private final PipeApplicationModel applicationModel;
 
-    public JComboBox<String> zoomComboBox;
+//    public JComboBox<String> zoomComboBox;
 
-    public JComboBox<String> tokenClassComboBox;
+//    public JComboBox<String> tokenClassComboBox;
 
     private UndoableEditListener undoListener;
 
@@ -269,7 +269,7 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
         if (areAnyTabsDisplayed()) {
             String[] tokenClassChoices = buildTokenClassChoices();
             ComboBoxModel<String> model = new DefaultComboBoxModel<>(tokenClassChoices);
-            tokenClassComboBox.setModel(model);
+//            tokenClassComboBox.setModel(model);
 
             if (tokenClassChoices.length > 0) {
                 try {
@@ -280,14 +280,15 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
                 }
             }
         } else {
-            tokenClassComboBox.setModel(new DefaultComboBoxModel<String>());
+//            tokenClassComboBox.setModel(new DefaultComboBoxModel<String>());
         }
     }
 
     public String getSelectedTokenName() {
-        ComboBoxModel<String> model = tokenClassComboBox.getModel();
-        Object selected = model.getSelectedItem();
-        return selected.toString();
+//        ComboBoxModel<String> model = tokenClassComboBox.getModel();
+//        Object selected = model.getSelectedItem();
+//        return selected.toString();
+        return "";
     }
 
     /**
@@ -321,12 +322,12 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
      * called from other sources, a duplicate ZoomAction is not called
      */
     public void updateZoomCombo() {
-        ActionListener zoomComboListener = zoomComboBox.getActionListeners()[0];
-        zoomComboBox.removeActionListener(zoomComboListener);
-
-        String zoomPercentage = zoomManager.getPercentageZoom() + "%";
-        zoomComboBox.setSelectedItem(zoomPercentage);
-        zoomComboBox.addActionListener(zoomComboListener);
+//        ActionListener zoomComboListener = zoomComboBox.getActionListeners()[0];
+//        zoomComboBox.removeActionListener(zoomComboListener);
+//
+//        String zoomPercentage = zoomManager.getPercentageZoom() + "%";
+//        zoomComboBox.setSelectedItem(zoomPercentage);
+//        zoomComboBox.addActionListener(zoomComboListener);
     }
 
     public void setAnimationMode(boolean animateMode) {
@@ -373,16 +374,18 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
      * @param action  the action that the tokenClassComboBox performs when selected
      */
     protected void addTokenClassComboBox(JToolBar toolBar, Action action) {
-        String[] tokenClassChoices = new String[]{"Default"};
-        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(tokenClassChoices);
-        tokenClassComboBox = new JComboBox<>(model);
-        tokenClassComboBox.setEditable(true);
-        tokenClassComboBox.setSelectedItem(tokenClassChoices[0]);
-        tokenClassComboBox.setMaximumRowCount(100);
-        //        tokenClassComboBox.setMaximumSize(new Dimension(125, 100));
-        tokenClassComboBox.setEditable(false);
-        tokenClassComboBox.setAction(action);
-        toolBar.add(tokenClassComboBox);
+
+        //UCL removes
+//        String[] tokenClassChoices = new String[]{"Default"};
+//        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(tokenClassChoices);
+//        tokenClassComboBox = new JComboBox<>(model);
+//        tokenClassComboBox.setEditable(true);
+//        tokenClassComboBox.setSelectedItem(tokenClassChoices[0]);
+//        tokenClassComboBox.setMaximumRowCount(100);
+//        //        tokenClassComboBox.setMaximumSize(new Dimension(125, 100));
+//        tokenClassComboBox.setEditable(false);
+//        tokenClassComboBox.setAction(action);
+//        toolBar.add(tokenClassComboBox);
     }
 
     /**
@@ -555,11 +558,12 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
     }
 
     public void register(JComboBox<String> tokenClassComboBox) {
-        this.tokenClassComboBox = tokenClassComboBox;
+        //UCL removes
+//        this.tokenClassComboBox = tokenClassComboBox;
     }
 
     public void registerZoom(JComboBox<String> zoomComboBox) {
-        this.zoomComboBox = zoomComboBox;
+//        this.zoomComboBox = zoomComboBox;
     }
 
     public void setComponentCreatorManager(ComponentCreatorManager componentCreatorManager) {

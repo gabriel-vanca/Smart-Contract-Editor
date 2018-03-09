@@ -25,6 +25,7 @@ public class PlaceView extends ConnectableView<Place> {
      * Class logger
      */
     private static final Logger LOGGER = Logger.getLogger(PlaceView.class.getName());
+    private Graphics2D graphics2DObject;
 
     /**
      * Constructor
@@ -80,13 +81,16 @@ public class PlaceView extends ConnectableView<Place> {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g.create();
+        graphics2DObject = g2;
 
         Rectangle bounds = shape.getBounds();
         g2.translate(bounds.getWidth()/2, bounds.getHeight()/2);
 
         //Tool tip for states
         g2.setStroke(new BasicStroke(1.2f));
-        setToolTipText(model.toLongString());
+
+        if(model != null)
+            setToolTipText(model.toLongString());
 
 //        if (hasCapacity()) {
 //            g2.setStroke(new BasicStroke(2.0f));
@@ -98,21 +102,35 @@ public class PlaceView extends ConnectableView<Place> {
 
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        if (isSelected() && !ignoreSelection) {
-            g2.setColor(GUIConstants.SELECTION_FILL_COLOUR);
+
+
+        Color mark = getMark();
+        if(mark == null) {
+            if (isSelected() && !ignoreSelection) {
+                g2.setColor(GUIConstants.SELECTION_FILL_COLOUR);
+            } else {
+                g2.setColor(GUIConstants.ELEMENT_FILL_COLOUR);
+            }
         } else {
-            g2.setColor(GUIConstants.ELEMENT_FILL_COLOUR);
+            g2.setColor(mark);
         }
+
         g2.fill(shape);
 
+        if(mark == null) {
         if (isSelected() && !ignoreSelection) {
             g2.setPaint(GUIConstants.SELECTION_LINE_COLOUR);
         } else {
             g2.setPaint(GUIConstants.ELEMENT_LINE_COLOUR);
         }
+        } else {
+            g2.setPaint(mark);
+        }
+//        g2.setPaint(GUIConstants.SELECTION_LINE_COLOUR);
         g2.draw(shape);
 
-        g2.setStroke(new BasicStroke(1.0f));
+        g2.setStroke(new BasicStroke(1.2f));
+
 
         // Paints border round a tagged place - paint component is called after any action on the place, so this bit
         // of code doesn't have to be called specially
@@ -134,10 +152,15 @@ public class PlaceView extends ConnectableView<Place> {
             g2.setTransform(oldTransform);
         }
 
+
+
         g2 = (Graphics2D) g.create();
         paintTokens(g2);
 
         g2.dispose();
+
+
+
     }
 
     /**
@@ -306,6 +329,7 @@ public class PlaceView extends ConnectableView<Place> {
     public void addToContainer(Container container) {
         addLabelToContainer(container);
     }
+
 
 }
 

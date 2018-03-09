@@ -6,7 +6,9 @@ import pipe.actions.manager.ComponentCreatorManager;
 import pipe.controllers.PetriNetController;
 import pipe.controllers.application.PipeApplicationController;
 import pipe.gui.imperial.pipe.layout.Layout;
-import pipe.gui.imperial.pipe.models.petrinet.*;
+import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
+import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
+import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.models.Contract;
 import pipe.ucl.contract.models.ContractElement;
@@ -14,15 +16,29 @@ import pipe.views.PipeApplicationBuilder;
 import pipe.views.PipeApplicationView;
 
 import javax.swing.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class Constructor {
 
-    PipeApplicationController applicationController;
+
+    static PipeApplicationController applicationController;
     static PetriNetController petriNetController;
-    PipeApplicationModel applicationModel;
-    PipeApplicationView applicationView;
-    PipeApplicationBuilder pipeApplicationBuilder;
+
+    static PipeApplicationModel applicationModel;
+
+    public static PipeApplicationView getApplicationView() {
+        return applicationView;
+    }
+
+    static PipeApplicationView applicationView;
+
+    public static PipeApplicationBuilder getPipeApplicationBuilder() {
+        return pipeApplicationBuilder;
+    }
+
+    static PipeApplicationBuilder pipeApplicationBuilder;
     static ComponentCreatorManager componentCreatorManager;
 
     public static Contract MainContract;
@@ -35,9 +51,24 @@ public class Constructor {
         this.applicationView = applicationView;
         this.componentCreatorManager = applicationView.getComponentCreatorManager();
 
-        String inputFileLocation = "Contracts/input_washer_January18.txt";
+//        LoadDefaultContractExample();
+    }
 
-        InputFileParser inputFileParser = new InputFileParser(inputFileLocation);
+    public static void LoadDefaultContractExample() {
+        String inputFileLocation = "Contracts/input_washer_January18.txt";
+        try {
+            URI inputFileURI = ClassLoader.getSystemResource(inputFileLocation).toURI();
+            LoadContractFile(inputFileURI);
+        } catch (URISyntaxException e) {
+            System.out.println("ERROR while reading input file: " + e);
+        }
+    }
+
+    public static void LoadContractFile(URI inputFileURI) {
+
+//        petriNetController.getPetriNet().ReInitialisePetriNet();
+
+        InputFileParser inputFileParser = new InputFileParser(inputFileURI);
         inputFileParser.ParseInputFile();
         ArrayList<InputLine> ParsedReadDataLinesList = inputFileParser.getParsedReadDataLinesList();
 
@@ -73,7 +104,6 @@ public class Constructor {
         Layout();
 
         inputFileParser.EmptyParsedReadDataLinesList();
-
     }
 
     public static PetriNetController getPetriNetController() {
@@ -135,6 +165,10 @@ public class Constructor {
         return gate;
     }
 
+    public static PipeApplicationModel getApplicationModel() {
+        return applicationModel;
+    }
+
 //    public static DiscreteTransition AddGate(String id, String name, Boolean sign, String actor, String time, String action) {
 //        try{
 //            int randomX, randomY;
@@ -157,6 +191,10 @@ public class Constructor {
 //        }
 //        return null;
 //    }
+
+    public static PipeApplicationController getApplicationController() {
+        return applicationController;
+    }
 
     public static void AddArc(AbstractConnectable connectableSource, AbstractConnectable connectableDestination) {
 

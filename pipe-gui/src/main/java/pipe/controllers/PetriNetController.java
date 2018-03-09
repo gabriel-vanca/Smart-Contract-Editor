@@ -56,6 +56,8 @@ public class PetriNetController implements Serializable {
      */
     private final Set<PetriNetComponent> selectedComponents = new HashSet<>();
 
+    private final Map<PetriNetComponent, Color> markedComponents = new HashMap<PetriNetComponent, Color>();
+
     /**
      * Responsible for copy and pasting of selected components
      */
@@ -264,6 +266,14 @@ public class PetriNetController implements Serializable {
      */
     public void select(PetriNetComponent component) {
         selectedComponents.add(component);
+    }
+
+    public void mark(PetriNetComponent component, Color colour) {
+        markedComponents.putIfAbsent(component, colour);
+    }
+
+    public void clearMarks() {
+        markedComponents.clear();
     }
 
     /**
@@ -586,5 +596,16 @@ public class PetriNetController implements Serializable {
      */
     public SelectionManager getSelectionManager() {
         return selectionManager;
+    }
+
+    public PetriNetTab getMainTab() {
+        return petriNetTab;
+    }
+
+    public  Color getMark(PetriNetComponent model) {
+        if(markedComponents.containsKey(model)) {
+            return markedComponents.get(model);
+        }
+        return null;
     }
 }

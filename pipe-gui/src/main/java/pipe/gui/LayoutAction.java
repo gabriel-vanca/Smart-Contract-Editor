@@ -3,16 +3,15 @@ package pipe.gui;
 import pipe.actions.gui.GuiAction;
 import pipe.controllers.PetriNetController;
 import pipe.controllers.application.PipeApplicationController;
-import pipe.gui.widgets.EscapableDialog;
-import pipe.historyActions.LayoutPetriNetEvent;
-import pipe.views.PipeApplicationView;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.gui.imperial.pipe.models.petrinet.Place;
 import pipe.gui.imperial.pipe.models.petrinet.Transition;
+import pipe.gui.widgets.EscapableDialog;
+import pipe.ucl.constructor.controllers.Constructor;
+import pipe.views.PipeApplicationView;
 
 import javax.swing.*;
-import java.awt.Container;
-import java.awt.Point;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -36,7 +35,8 @@ public class LayoutAction extends GuiAction {
     public void actionPerformed(ActionEvent e) {
         PetriNetController petriNetController = pipeApplicationController.getActivePetriNetController();
         PetriNet petriNet = petriNetController.getPetriNet();
-        showLayoutEditor(petriNet);
+        Constructor.Layout();
+//        showLayoutEditor(petriNet);
     }
 
     public void showLayoutEditor(PetriNet petriNet) {
@@ -46,13 +46,13 @@ public class LayoutAction extends GuiAction {
 
         final Map<String, Point> previousLocations = getLocations(petriNet);
 
-        LayoutForm formLayout = new LayoutForm(petriNet, new LayoutForm.ChangeAction() {
-            @Override
-            public void changed(PetriNet petriNet) {
-                registerUndoEvent(new LayoutPetriNetEvent(petriNet, previousLocations, getLocations(petriNet)));
-            }
-        });
-        contentPane.add(formLayout.getMainPanel());
+//        LayoutForm formLayout = new LayoutForm(petriNet, new LayoutForm.ChangeAction() {
+//            @Override
+//            public void changed(PetriNet petriNet) {
+//                registerUndoEvent(new LayoutPetriNetEvent(petriNet, previousLocations, getLocations(petriNet)));
+//            }
+//        });
+//        contentPane.add(formLayout.getMainPanel());
         guiDialog.setResizable(false);
         guiDialog.pack();
         guiDialog.setLocationRelativeTo(null);

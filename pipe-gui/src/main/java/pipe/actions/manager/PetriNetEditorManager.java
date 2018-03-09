@@ -20,6 +20,8 @@ public class PetriNetEditorManager implements ActionManager {
      */
     private final GuiAction newPetriNetAction;
 
+    private final GuiAction openDefaultAction;
+
     /**
      * Loads a Petri net from an XML file
      */
@@ -58,15 +60,16 @@ public class PetriNetEditorManager implements ActionManager {
         });
 
         FileDialog loadFileDialog = new FileDialog(view, "Open Petri Net", FileDialog.LOAD);
-        fileDialog.setFilenameFilter(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.endsWith(".xml");
-            }
-        });
+//        fileDialog.setFilenameFilter(new FilenameFilter() {
+//            @Override
+//            public boolean accept(File dir, String name) {
+//                return name.endsWith(".xml");
+//            }
+//        });
         saveAction = new SaveAction(applicationController, fileDialog);
         saveAsAction = new SaveAsAction(applicationController, fileDialog);
         openAction = new OpenAction(applicationController, loadFileDialog);
+        openDefaultAction = new OpenDefaultAction(applicationController);
     }
 
     /**
@@ -75,8 +78,11 @@ public class PetriNetEditorManager implements ActionManager {
      */
     @Override
     public Iterable<GuiAction> getActions() {
-        return Arrays.asList(newPetriNetAction, openAction, saveAction, saveAsAction,
-                closeAction);
+        //UCL removes the following:
+//        return Arrays.asList(newPetriNetAction, openAction, saveAction, saveAsAction,
+//                closeAction);
+
+        return Arrays.asList(newPetriNetAction, openAction, openDefaultAction);
 
     }
 

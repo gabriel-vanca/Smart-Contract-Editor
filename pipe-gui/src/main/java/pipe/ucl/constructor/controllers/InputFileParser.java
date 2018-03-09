@@ -3,7 +3,7 @@ package pipe.ucl.constructor.controllers;
 import pipe.ucl.constructor.models.InputLine;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
+import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -14,21 +14,15 @@ import java.util.stream.Stream;
 
 public class InputFileParser {
 
-    private final String inputFileLocation;
     private Path fileName;
     private Path filePath;
     private ArrayList<InputLine> ParsedReadDataLinesList = new ArrayList<>();
 
     private List<String> readDataLinesList;
 
-    public InputFileParser(String inputFileLocation) {
-        this.inputFileLocation = inputFileLocation;
-        try {
-            filePath = Paths.get(ClassLoader.getSystemResource(inputFileLocation).toURI());
+    public InputFileParser(URI inputFileURI) {
+            filePath = Paths.get(inputFileURI);
             fileName = filePath.getFileName();
-        } catch (URISyntaxException e) {
-            System.out.println("ERROR while reading input file: " + e);
-        }
     }
 
     public ArrayList<InputLine> getParsedReadDataLinesList() {

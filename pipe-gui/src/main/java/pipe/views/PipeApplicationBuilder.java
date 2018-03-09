@@ -42,6 +42,7 @@ public final class PipeApplicationBuilder {
      * Class logger
      */
     private static final Logger LOGGER = Logger.getLogger(PipeApplicationBuilder.class.getName());
+    public ToggleButton selectActionButton;
 
     /**
      *
@@ -125,7 +126,20 @@ public final class PipeApplicationBuilder {
         JToolBar drawingToolBar = new JToolBar();
         drawingToolBar.setFloatable(false);
 
-        addButton(drawingToolBar, pipeComponents.selectAction);
+         selectActionButton = addButton(drawingToolBar, pipeComponents.selectAction);
+
+        SwingUtilities.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
+//                        querryPane.setDividerLocation(0.65);
+                if(selectActionButton != null)
+                    selectActionButton.doClick();
+            }
+        });
+
+
+
         drawingToolBar.addSeparator();
         for (GuiAction action : pipeComponents.componentCreatorManager.getActions()) {
             addButton(drawingToolBar, action);
@@ -136,10 +150,12 @@ public final class PipeApplicationBuilder {
             addButton(drawingToolBar, action);
         }
 
-        addTokenClassComboBox(drawingToolBar, pipeComponents.chooseTokenClassAction, view);
-        addButton(drawingToolBar, pipeComponents.unfoldAction);
+        //UCL removes
+//        addTokenClassComboBox(drawingToolBar, pipeComponents.chooseTokenClassAction, view);
+        //UCL removes
+//        addButton(drawingToolBar, pipeComponents.unfoldAction);
         addButton(drawingToolBar, pipeComponents.layoutAction);
-        drawingToolBar.addSeparator();
+//        drawingToolBar.addSeparator();
         return drawingToolBar;
     }
 
@@ -181,17 +197,21 @@ public final class PipeApplicationBuilder {
         }
 
         toolBar.addSeparator();
-        addButton(toolBar, pipeComponents.printAction);
-        toolBar.addSeparator();
+
+        //UCL removes
+//        addButton(toolBar, pipeComponents.printAction);
+//        toolBar.addSeparator();
         for (GuiAction action : pipeComponents.componentEditorManager.getActions()) {
             addButton(toolBar, action);
         }
         toolBar.addSeparator();
 
-        addButton(toolBar, pipeComponents.zoomOutAction);
-        addZoomComboBox(toolBar, pipeComponents.zoomAction, examples, view);
-        addButton(toolBar, pipeComponents.zoomInAction);
-        toolBar.addSeparator();
+        //UCL removes
+//        addButton(toolBar, pipeComponents.zoomOutAction);
+//        addZoomComboBox(toolBar, pipeComponents.zoomAction, examples, view);
+//        addButton(toolBar, pipeComponents.zoomInAction);
+//        toolBar.addSeparator();
+
         addButton(toolBar, pipeComponents.toggleGrid);
         for (GuiAction action : pipeComponents.animateActionManager.getEditActions()) {
             addButton(toolBar, action);
@@ -231,26 +251,30 @@ public final class PipeApplicationBuilder {
             addMenuItem(fileMenu, action);
         }
 
-        fileMenu.addSeparator();
-        addMenuItem(fileMenu, pipeComponents.importAction);
+        //UCL removes:
+
+//        fileMenu.addSeparator();
+//        addMenuItem(fileMenu, pipeComponents.importAction);
+
+        //UCL removes:
 
         // Export menu
 
+//        JMenu exportMenu = new JMenu("Export");
+//        exportMenu.setIcon(new ImageIcon(getImageURL("Export")));
+//        addMenuItem(exportMenu, pipeComponents.exportPNGAction);
+//        addMenuItem(exportMenu, pipeComponents.exportPSAction);
+//        addMenuItem(exportMenu, pipeComponents.exportTNAction);
+//        fileMenu.add(exportMenu);
+//        fileMenu.addSeparator();
+//        addMenuItem(fileMenu, pipeComponents.printAction);
+//        fileMenu.addSeparator();
 
-        JMenu exportMenu = new JMenu("Export");
-        exportMenu.setIcon(new ImageIcon(getImageURL("Export")));
-        addMenuItem(exportMenu, pipeComponents.exportPNGAction);
-        addMenuItem(exportMenu, pipeComponents.exportPSAction);
-        addMenuItem(exportMenu, pipeComponents.exportTNAction);
-        fileMenu.add(exportMenu);
-        fileMenu.addSeparator();
-        addMenuItem(fileMenu, pipeComponents.printAction);
-        fileMenu.addSeparator();
-
+        //UCL removes:
         // Example files menu
-        JMenu exampleMenu = createExampleFileMenu(view, controller);
-
-        fileMenu.add(exampleMenu);
+//        JMenu exampleMenu = createExampleFileMenu(view, controller);
+//
+//        fileMenu.add(exampleMenu);
         fileMenu.addSeparator();
 
         addMenuItem(fileMenu, pipeComponents.exitAction);
@@ -276,34 +300,37 @@ public final class PipeApplicationBuilder {
         for (GuiAction action : pipeComponents.componentCreatorManager.getActions()) {
             addMenuItem(drawMenu, action);
         }
-        drawMenu.addSeparator();
-        for (Action action : pipeComponents.tokenActionManager.getActions()) {
-            addMenuItem(drawMenu, action);
-        }
-        addMenuItem(drawMenu, pipeComponents.unfoldAction);
-        drawMenu.addSeparator();
+        //UCL removes
+//        drawMenu.addSeparator();
+//        for (Action action : pipeComponents.tokenActionManager.getActions()) {
+//            addMenuItem(drawMenu, action);
+//        }
+//        addMenuItem(drawMenu, pipeComponents.unfoldAction);
+//        drawMenu.addSeparator();
 
         JMenu viewMenu = new JMenu("View");
         viewMenu.setMnemonic('V');
 
-        JMenu zoomMenu = new JMenu("Zoom");
-        zoomMenu.setIcon(new ImageIcon(getImageURL("Zoom")));
-        addZoomMenuItems(zoomMenu, zoomActions);
+        //UCL removes:
+//        JMenu zoomMenu = new JMenu("Zoom");
+//        zoomMenu.setIcon(new ImageIcon(getImageURL("Zoom")));
+//        addZoomMenuItems(zoomMenu, zoomActions);
+//
+//        addMenuItem(viewMenu, pipeComponents.zoomOutAction);
+//
+//        addMenuItem(viewMenu, pipeComponents.zoomInAction);
+//        viewMenu.add(zoomMenu);
+//        viewMenu.addSeparator();
 
-        addMenuItem(viewMenu, pipeComponents.zoomOutAction);
-
-        addMenuItem(viewMenu, pipeComponents.zoomInAction);
-        viewMenu.add(zoomMenu);
-
-        viewMenu.addSeparator();
         addMenuItem(viewMenu, pipeComponents.toggleGrid);
 
-        JMenu animateMenu = new JMenu("Animate");
-        animateMenu.setMnemonic('A');
-
-        for (GuiAction action : pipeComponents.animateActionManager.getActions()) {
-            addMenuItem(animateMenu, action);
-        }
+        //UCL removes:
+//        JMenu animateMenu = new JMenu("Animate");
+//        animateMenu.setMnemonic('A');
+//
+//        for (GuiAction action : pipeComponents.animateActionManager.getActions()) {
+//            addMenuItem(animateMenu, action);
+//        }
 
         JMenu helpMenu = new JMenu("Help");
         helpMenu.setMnemonic('H');
@@ -318,7 +345,8 @@ public final class PipeApplicationBuilder {
         menuBar.add(editMenu);
         menuBar.add(viewMenu);
         menuBar.add(drawMenu);
-        menuBar.add(animateMenu);
+        //UCL removes:
+//        menuBar.add(animateMenu);
         menuBar.add(helpMenu);
         return menuBar;
     }
@@ -387,12 +415,15 @@ public final class PipeApplicationBuilder {
      * @param toolBar tool bar to add the button to
      * @param action button to add to the tool bar
      */
-    private void addButton(JToolBar toolBar, GuiAction action) {
-        if (action.getValue("selected") != null) {
-            toolBar.add(new ToggleButton(action));
-        } else {
-            toolBar.add(action);
-        }
+    private ToggleButton addButton(JToolBar toolBar, GuiAction action) {
+//        if (action.getValue("selected") != null) {
+            ToggleButton button = new ToggleButton(action);
+            toolBar.add(button);
+            return button;
+//        } else {
+//            toolBar.add(action);
+//        }
+//        return null;
     }
 
     /**
@@ -403,16 +434,17 @@ public final class PipeApplicationBuilder {
      * @param view  application view 
      */
     private void addTokenClassComboBox(JToolBar toolBar, Action action, PipeApplicationView view) {
-        String[] tokenClassChoices = new String[]{"Default"};
-        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(tokenClassChoices);
-        JComboBox<String> tokenClassComboBox = new JComboBox<>(model);
-        tokenClassComboBox.setEditable(true);
-        tokenClassComboBox.setSelectedItem(tokenClassChoices[0]);
-        tokenClassComboBox.setMaximumRowCount(100);
-        tokenClassComboBox.setEditable(false);
-        tokenClassComboBox.setAction(action);
-        view.register(tokenClassComboBox);
-        toolBar.add(tokenClassComboBox);
+     //UCL removes
+//        String[] tokenClassChoices = new String[]{"Default"};
+//        DefaultComboBoxModel<String> model = new DefaultComboBoxModel<>(tokenClassChoices);
+//        JComboBox<String> tokenClassComboBox = new JComboBox<>(model);
+//        tokenClassComboBox.setEditable(true);
+//        tokenClassComboBox.setSelectedItem(tokenClassChoices[0]);
+//        tokenClassComboBox.setMaximumRowCount(100);
+//        tokenClassComboBox.setEditable(false);
+//        tokenClassComboBox.setAction(action);
+//        view.register(tokenClassComboBox);
+//        toolBar.add(tokenClassComboBox);
     }
 
     /**

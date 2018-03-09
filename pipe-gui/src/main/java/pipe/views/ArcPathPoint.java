@@ -10,10 +10,7 @@ import pipe.constants.GUIConstants;
 import pipe.controllers.PetriNetController;
 import pipe.gui.imperial.pipe.models.petrinet.ArcPoint;
 
-import java.awt.Container;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
+import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
@@ -166,6 +163,8 @@ public class ArcPathPoint extends AbstractPetriNetViewComponent<ArcPoint> {
     public void addToContainer(Container container) {
         // Nothing needed
     }
+
+
 
     @Override
     public String getName() {

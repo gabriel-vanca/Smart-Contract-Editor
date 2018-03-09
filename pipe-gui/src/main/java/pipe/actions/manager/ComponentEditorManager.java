@@ -77,7 +77,11 @@ public class ComponentEditorManager implements ActionManager {
     @Override
     public final Iterable<GuiAction> getActions() {
         editEnabledStatus.keySet();
-        return Arrays.asList(cutAction, copyAction, pasteAction, deleteAction, undoAction, redoAction);
+
+        return Arrays.asList(undoAction, redoAction);
+
+        //UCL removes:
+//        return Arrays.asList(cutAction, copyAction, pasteAction, deleteAction, undoAction, redoAction);
     }
 
     /**

@@ -57,7 +57,10 @@ public final class AnimateActionManager implements ActionManager {
      */
     @Override
     public Iterable<GuiAction> getActions() {
-        return Arrays.asList(toggleAnimationAction, stepbackwardAction, stepforwardAction, randomAction, multipleRandomAction);
+
+        return Arrays.asList();
+        //UCL removes
+//        return Arrays.asList(toggleAnimationAction, stepbackwardAction, stepforwardAction, randomAction, multipleRandomAction);
     }
 
     /**
@@ -83,10 +86,14 @@ public final class AnimateActionManager implements ActionManager {
     }
 
     public Iterable<GuiAction> getEditActions() {
-        return Arrays.asList(toggleAnimationAction);
+        return Arrays.asList();
+        //UCL removes
+//   return Arrays.asList(toggleAnimationAction);
     }
 
     public Iterable<GuiAction> getAnimateActions() {
-        return Arrays.asList(stepbackwardAction, stepforwardAction, randomAction, multipleRandomAction);
+        return Arrays.asList();
+        //UCL removes
+//   return Arrays.asList(stepbackwardAction, stepforwardAction, randomAction, multipleRandomAction);
     }
 }
