@@ -1,5 +1,6 @@
 package pipe.actions.gui;
 
+import pipe.controllers.PetriNetController;
 import pipe.controllers.application.PipeApplicationController;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.ucl.constructor.controllers.Constructor;
@@ -72,7 +73,11 @@ public class OpenAction extends GuiAction {
 //                manager.changeSupport.firePropertyChange("New Petri net!", (Object)null, petriNet);
 
 
-                PetriNet petriNet = applicationController.createNewTabFromFile(file);
+                PetriNetController currentPetriNetController = applicationController.getActivePetriNetController();
+                PetriNet petriNet = currentPetriNetController.getPetriNet();
+                if(!petriNet.isEmpty())
+                    petriNet = applicationController.createNewTabFromFile(file);
+
 //                String filePath = file.getAbsolutePath();
 //                applicationController.createEmptyPetriNet();
                 Constructor.LoadContractFile(file.toURI(), petriNet);

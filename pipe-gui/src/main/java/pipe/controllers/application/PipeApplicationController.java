@@ -31,7 +31,7 @@ public class PipeApplicationController {
     /**
      * Controllers for each tab
      */
-    private final Map<PetriNetTab, PetriNetController> netControllers = new HashMap<>();
+    public final Map<PetriNetTab, PetriNetController> netControllers = new HashMap<>();
 
     /**
      * Main PIPE application model
@@ -98,6 +98,8 @@ public class PipeApplicationController {
         PetriNetController petriNetController =
                 new PetriNetController(net, undoListener, animator, copyPasteManager, zoomController, tab);
         netControllers.put(tab, petriNetController);
+        net.setTab(tab);
+        net.setPetriNetController(petriNetController);
         tab.updatePreferredSize();
 
         PropertyChangeListener changeListener =

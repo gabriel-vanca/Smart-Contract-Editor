@@ -10,6 +10,7 @@ import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
+import pipe.gui.imperial.pipe.parsers.UnparsableException;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.models.Contract;
 import pipe.ucl.contract.models.ContractElement;
@@ -17,6 +18,7 @@ import pipe.views.PipeApplicationBuilder;
 import pipe.views.PipeApplicationView;
 
 import javax.swing.*;
+import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -25,29 +27,19 @@ public class Constructor {
 
 
     static PipeApplicationController applicationController;
-    static PetriNetController petriNetController;
+//    static PetriNetController petriNetController;
 
     static PipeApplicationModel applicationModel;
 
-    public static PipeApplicationView getApplicationView() {
-        return applicationView;
-    }
-
     static PipeApplicationView applicationView;
-
-    public static PipeApplicationBuilder getPipeApplicationBuilder() {
-        return pipeApplicationBuilder;
-    }
 
     static PipeApplicationBuilder pipeApplicationBuilder;
     static ComponentCreatorManager componentCreatorManager;
 
-//    public static Contract MainContract;
-
     public Constructor(PipeApplicationController applicationController, PipeApplicationModel applicationModel, PipeApplicationBuilder pipeApplicationBuilder, PipeApplicationView applicationView) {
         this.applicationController = applicationController;
         this.applicationModel = applicationModel;
-        this.petriNetController = applicationController.getActivePetriNetController();
+//        this.petriNetController = applicationController.getActivePetriNetController();
         this.pipeApplicationBuilder = pipeApplicationBuilder;
         this.applicationView = applicationView;
         this.componentCreatorManager = applicationView.getComponentCreatorManager();
@@ -55,20 +47,90 @@ public class Constructor {
 //        LoadDefaultContractExample();
     }
 
+    public static PipeApplicationView getApplicationView() {
+        return applicationView;
+    }
+
+    public static PipeApplicationBuilder getPipeApplicationBuilder() {
+        return pipeApplicationBuilder;
+    }
+
     public static void LoadDefaultContractExample() {
         String inputFileLocation = "Contracts/input_washer_January18.txt";
 
         try {
             URI inputFileURI = ClassLoader.getSystemResource(inputFileLocation).toURI();
-            LoadContractFile(inputFileURI, petriNetController.getPetriNet());
+            File file = new File(inputFileURI);
+            if (file.exists() &&
+                    file.isFile() &&
+                    file.canRead()) {
+
+                PetriNetController currentPetriNetController = applicationController.getActivePetriNetController();
+                PetriNet petriNet = currentPetriNetController.getPetriNet();
+                if (!petriNet.isEmpty()) {
+                    petriNet = applicationController.createNewTabFromFile(file);
+                }
+
+                LoadContractFile(inputFileURI, petriNet);
+            }
         } catch (URISyntaxException e) {
             System.out.println("ERROR while reading input file: " + e);
+        } catch (UnparsableException e) {
+            System.out.println("ERROR while reading input file: " + e);
         }
+    }
+
+    public static void UpdateApplicationViewPanes(PetriNetController petriNetController) {
+        if(petriNetController == null)
+            return;
+        if(petriNetController.getPetriNet() == null)
+            return;
+        try{
+            Contract currentContract = petriNetController.getPetriNet().getContract();
+            UpdateApplicationViewPanes(currentContract);
+        }
+        catch (Exception err) {
+            System.out.print(err);
+        }
+    }
+
+    private static void UpdateApplicationViewPanes(Contract currentContract) {
+
+        if(applicationView == null)
+            return;
+
+        try {
+            if(currentContract == null) {
+
+                applicationView.getMainPaneLeft().setLeftComponent(null);
+                applicationView.setMainPaneRight(null);
+
+            } else {
+
+                applicationView.getMainPaneLeft().setLeftComponent(currentContract.getContractTreeManager().getModuleTree());
+                applicationView.setMainPaneRight(currentContract.getConsoleFrameManager().getQuerryPane());
+
+                UpdateApplicationViewPaneSizes();
+
+            }
+        } catch (Exception err) {
+            System.out.print(err);
+        }
+    }
+
+    private static void UpdateApplicationViewPaneSizes() {
+        applicationView.getMainPane().setDividerLocation(0.8);
+        applicationView.getMainPaneLeft().setDividerLocation(0.14);
+        applicationView.getMainPaneRight().setDividerLocation(0.70);
+        ((JSplitPane) applicationView.getMainPaneRight().getBottomComponent()).setDividerLocation(applicationView.getMainPaneRight().getBottomComponent().getSize().height - 40);
+
     }
 
     public static void LoadContractFile(URI inputFileURI, PetriNet petriNet) {
 
 //        petriNetController.getPetriNet().ReInitialisePetriNet();
+
+//        PetriNetController petriNetController = applicationController.netControllers.get(petriNet.);
 
         InputFileParser inputFileParser = new InputFileParser(inputFileURI);
         inputFileParser.ParseInputFile();
@@ -76,8 +138,7 @@ public class Constructor {
 
         Contract currentContract = new Contract(inputFileParser.getFileNameWithoutExtension(), petriNet);
 
-        applicationView.getMainPaneLeft().setLeftComponent(currentContract.getContractTreeManager().getModuleTree());
-        applicationView.setMainPaneRight(currentContract.getConsoleFrameManager().getQuerryPane());
+        UpdateApplicationViewPanes(currentContract);
 
         currentContract.getConsoleFrameManager().addLineToLabel("");
         currentContract.getConsoleFrameManager().addLineToLabel("Contract parsing has started");
@@ -103,17 +164,13 @@ public class Constructor {
             }
         }
 
-        Layout();
+        Layout(petriNet);
 
         inputFileParser.EmptyParsedReadDataLinesList();
     }
 
-    public static PetriNetController getPetriNetController() {
-        return petriNetController;
-    }
-
-    public static void Layout() {
-        Layout.layoutHierarchical (petriNetController.getPetriNet (), 40,
+    public static void Layout(PetriNet petriNet) {
+        Layout.layoutHierarchical (petriNet, 40,
                 50,50, 350, SwingConstants.NORTH);
 //        componentCreatorManager..changed(petriNet);
     }
@@ -123,11 +180,11 @@ public class Constructor {
         //TODO
     }
 
-    private DiscretePlace GetState(String id) {
+    private DiscretePlace GetState(String id, PetriNet petriNet) {
         DiscretePlace place = null;
 
         try {
-            place = petriNetController.getPetriNet ().getPlace (id);
+            place = petriNet.getPlace (id);
         } catch (Exception e) {
             System.out.println ("ERROR: Could not get existing state due to following error: " + e.toString ());
         }
@@ -160,11 +217,11 @@ public class Constructor {
 //        return place;
 //    }
 
-    private DiscreteTransition GetGate(String id) {
+    private DiscreteTransition GetGate(String id, PetriNet petriNet) {
         DiscreteTransition gate = null;
 
         try {
-             gate = petriNetController.getPetriNet ().getTransition(id);
+             gate = petriNet.getTransition(id);
         } catch (Exception e) {
             System.out.println ("ERROR: Could not get existing state due to following error: " + e.toString ());
         }
@@ -203,7 +260,9 @@ public class Constructor {
         return applicationController;
     }
 
-    public static void AddArc(AbstractConnectable connectableSource, AbstractConnectable connectableDestination) {
+    public static void AddArc(AbstractConnectable connectableSource, AbstractConnectable connectableDestination, PetriNet petriNet) {
+
+        PetriNetController petriNetController = petriNet.getPetriNetController();
 
         CreateAction selectedAction = componentCreatorManager.getArcAction();
         selectedAction.doConnectableAction(connectableSource, petriNetController);

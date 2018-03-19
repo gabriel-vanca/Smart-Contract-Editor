@@ -5,7 +5,6 @@ import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
-import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
 
 import java.util.ArrayList;
@@ -83,7 +82,7 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
     protected DiscreteTransition instantiateGraphicObject() {
         try{
 
-            PetriNetController petriNetController = Constructor.getPetriNetController();
+            PetriNetController petriNetController = this.getParentContract().getPetriNet().getPetriNetController();
 
             String graphicalRepresentationId = petriNetController.getUniqueTransitionName ();
 
@@ -111,14 +110,16 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
         InitialStates.add(stateElement);
         stateElement.addDestinationGate(this);
         DiscretePlace beginStateObject = stateElement.getGraphicObject();
-        AddArc(beginStateObject, this.graphicObject);
+        PetriNet petriNet = this.getParentContract().getPetriNet();
+        AddArc(beginStateObject, this.graphicObject, petriNet);
     }
 
     public void addEndState(StateElement stateElement) {
         FinalStates.add(stateElement);
         stateElement.addSourceGate(this);
         DiscretePlace endStateObject = stateElement.getGraphicObject();
-        AddArc(this.graphicObject, endStateObject);
+        PetriNet petriNet = this.getParentContract().getPetriNet();
+        AddArc(this.graphicObject, endStateObject, petriNet);
     }
 
     public Boolean getSign() {

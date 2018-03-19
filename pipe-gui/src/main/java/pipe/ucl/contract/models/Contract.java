@@ -33,6 +33,7 @@ public class Contract {
     public Contract(String name, PetriNet petriNet) {
         this.name = name;
         this.petriNet = petriNet;
+        this.petriNet.setContract(this);
         ContractElementsList = new ArrayList<ContractElement>();
         contractTreeManager = new ContractTreeManager(this);
         consoleFrameManager = new ConsoleFrameManager(this);
@@ -45,7 +46,6 @@ public class Contract {
             return;
 
         name = inputParameters[0];
-
 
         String[] discreteTimeElementWrapper = new String[3];
         discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "CONTRACT";

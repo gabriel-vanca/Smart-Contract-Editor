@@ -18,7 +18,7 @@ public class ConsoleManager {
                 parseConsoleInput(consoleFrameManager.getTextFromConsoleInput(),
                 consoleFrameManager.getContract().getContractElementsList());
 
-        Constructor.getPetriNetController().clearMarks();
+        consoleFrameManager.getContract().getPetriNet().getPetriNetController().clearMarks();
 
         Constructor.getPipeApplicationBuilder().selectActionButton.doClick();
 

@@ -3,6 +3,8 @@ package pipe.gui.imperial.pipe.models.petrinet;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import org.apache.commons.collections.CollectionUtils;
+import pipe.controllers.PetriNetController;
+import pipe.gui.PetriNetTab;
 import pipe.gui.imperial.pipe.exceptions.InvalidRateException;
 import pipe.gui.imperial.pipe.exceptions.PetriNetComponentException;
 import pipe.gui.imperial.pipe.exceptions.PetriNetComponentNotFoundException;
@@ -52,6 +54,9 @@ public class PetriNet {
    private PetriNetName petriNetName;
    private boolean validated;
 
+   private PetriNetTab tab = null;
+   private PetriNetController petriNetController = null;
+
    private Contract contract = null;
 
    public PetriNet(PetriNetName name) {
@@ -95,6 +100,10 @@ public class PetriNet {
 //      this.validated = false;
 //      this.initialiseIdMap();
 //   }
+
+    public Boolean isEmpty() {
+       return placesMap.isEmpty() && transitionsMap.isEmpty();
+    }
 
    private void initialiseIdMap() {
       this.componentMaps.put(DiscretePlace.class, this.placesMap);
@@ -602,6 +611,22 @@ public class PetriNet {
    public boolean contains(String id) {
       return this.getComponentIds().contains(id);
    }
+
+   public void setTab(PetriNetTab tab) {
+      this.tab = tab;
+   }
+
+   public void setPetriNetController(PetriNetController petriNetController) {
+      this.petriNetController = petriNetController;
+   }
+
+    public PetriNetTab getTab() {
+        return tab;
+    }
+
+    public PetriNetController getPetriNetController() {
+        return petriNetController;
+    }
 
    // $FF: synthetic class
    static class SyntheticClass_1 {

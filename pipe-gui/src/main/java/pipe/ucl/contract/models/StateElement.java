@@ -49,7 +49,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     }
 
     public void Mark(Color color) {
-        PetriNetController petriNetController = Constructor.getPetriNetController();
+        PetriNetController petriNetController = this.getParentContract().getPetriNet().getPetriNetController();
         petriNetController.mark(graphicObject, color);
 //        CreateAction selectedAction = Constructor.getApplicationModel().getSelectedAction();
         SelectionManager selectionManager =
@@ -62,7 +62,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
 
         try {
 
-            PetriNetController petriNetController = Constructor.getPetriNetController();
+            PetriNetController petriNetController = this.getParentContract().getPetriNet().getPetriNetController();
 
             String graphicalRepresentationId = petriNetController.getUniquePlaceName();
 

@@ -35,7 +35,7 @@ public class LayoutAction extends GuiAction {
     public void actionPerformed(ActionEvent e) {
         PetriNetController petriNetController = pipeApplicationController.getActivePetriNetController();
         PetriNet petriNet = petriNetController.getPetriNet();
-        Constructor.Layout();
+        Constructor.Layout(petriNet);
 //        showLayoutEditor(petriNet);
     }
 

@@ -17,6 +17,7 @@ import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.gui.imperial.pipe.models.petrinet.Token;
 import pipe.gui.imperial.pipe.models.petrinet.name.PetriNetName;
 import pipe.handlers.PetriNetMouseHandler;
+import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.gui.ContractTreeManager;
 import pipe.ucl.gui.ConsoleFrameManager;
 import pipe.utilities.gui.GuiUtils;
@@ -199,6 +200,9 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
         getContentPane().add(mainPane);
 
+        getMainPaneLeft().setLeftComponent(null);
+        setMainPaneRight(null);
+
         setVisible(true);
         applicationModel.setMode(GUIConstants.SELECT);
         //TODO: DO YOU NEED TO DO THIS?
@@ -231,14 +235,17 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
                 if (areAnyTabsDisplayed()) {
                     PetriNetController controller = applicationController.getActivePetriNetController();
+
                     if (controller.isCopyInProgress()) {
                         controller.cancelPaste();
                     }
+
                     petriNetTab.setVisible(true);
                     petriNetTab.repaint();
                     updateZoomCombo();
                     setTitle(petriNetTab.getName());
                     applicationModel.setInAnimationMode(controller.isInAnimationMode());
+                    Constructor.UpdateApplicationViewPanes(controller);
                 }
                 refreshTokenClassChoices();
             }
@@ -588,6 +595,10 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
 
     public void setMainPane(JSplitPane mainPane) {
         this.mainPane = mainPane;
+    }
+
+    public JSplitPane getMainPane() {
+        return mainPane;
     }
 }
 
