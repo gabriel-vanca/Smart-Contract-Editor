@@ -15,8 +15,8 @@ public class PartyElement extends ContractElement {
         super(id, name);
     }
 
-    public PartyElement(String[] parameters) {
-        super(parameters);
+    public PartyElement(String[] parameters, Contract parentContract) {
+        super(parameters, parentContract);
         elementCorrectness = Boolean.TRUE;
     }
 

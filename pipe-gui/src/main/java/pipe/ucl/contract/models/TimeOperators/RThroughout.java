@@ -1,6 +1,7 @@
 package pipe.ucl.contract.models.TimeOperators;
 
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
+import pipe.ucl.contract.models.Contract;
 
 public class RThroughout  extends TimeOperator {
 
@@ -11,8 +12,8 @@ public class RThroughout  extends TimeOperator {
         super(initialDate, finalDate);
     }
 
-    public RThroughout(String[] parameters) {
-        super(parameters);
+    public RThroughout(String[] parameters, Contract currentContract) {
+        super(parameters, currentContract);
     }
 
     @Override

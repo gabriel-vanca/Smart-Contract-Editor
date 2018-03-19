@@ -1,6 +1,5 @@
 package pipe.ucl.contract.models;
 
-import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.constructor.controllers.LineParser;
 
 import java.util.List;
@@ -11,7 +10,11 @@ public class TransAssertion {
     public final static String[] Labels = {"TA", "TRANS-ASSERTION"};
     public final static String MainFullLabel = "TRANS-ASSERTION";
 
-    public TransAssertion (String[] parameters) {
+    private Contract parentContract = null;
+
+    public TransAssertion (String[] parameters, Contract parentContract) {
+
+        this.parentContract = parentContract;
 
         if (parameters.length != 3) {
             System.out.println("ERROR: Token < " + MainLabel + " > has an incompatible number of parameters. Line was ignored.");
@@ -23,7 +26,7 @@ public class TransAssertion {
 
         GateElement gateElement = null ;
 
-        List<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+        List<ContractElement> contractElements = parentContract.getContractElementsList();
         for (ContractElement currentContractElement : contractElements) {
             if (currentContractElement.id.equals(parameters[2])) {
                 gateElement = (GateElement) currentContractElement;

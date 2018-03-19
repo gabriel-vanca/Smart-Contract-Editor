@@ -1,5 +1,7 @@
 package pipe.gui.imperial.pipe.models.petrinet;
 
+import pipe.ucl.contract.models.ContractElement;
+
 import java.util.HashMap;
 
 public abstract class AbstractConnectable extends AbstractPetriNetPubSub implements Connectable {
@@ -12,6 +14,8 @@ public abstract class AbstractConnectable extends AbstractPetriNetPubSub impleme
 
    protected HashMap<Connectable, AbstractArc> InboundConnectables = new HashMap<> ();
    protected HashMap<Connectable, AbstractArc> OutboundConnectables = new HashMap<> ();
+
+   public abstract ContractElement getAttachedContractElement();
 
    protected AbstractConnectable(String id, String name) {
       this.id = id;

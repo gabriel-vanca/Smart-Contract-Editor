@@ -5,6 +5,7 @@ import pipe.gui.imperial.pipe.parsers.PetriNetWeightParser;
 import pipe.gui.imperial.pipe.parsers.StateEvalVisitor;
 import pipe.gui.imperial.pipe.visitor.component.PetriNetComponentVisitor;
 import pipe.gui.imperial.state.State;
+import pipe.ucl.contract.models.ContractElement;
 import pipe.ucl.contract.models.GateElement;
 
 import java.awt.geom.AffineTransform;
@@ -63,6 +64,11 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
         this.rate = transition.rate;
         this.priority = transition.priority;
         this.gateElement = transition.gateElement;
+    }
+
+    @Override
+    public ContractElement getAttachedContractElement() {
+        return gateElement;
     }
 
     public GateElement getGateElement() {

@@ -2,6 +2,7 @@ package pipe.gui.imperial.pipe.models.petrinet;
 
 import pipe.gui.imperial.pipe.exceptions.PetriNetComponentException;
 import pipe.gui.imperial.pipe.visitor.component.PetriNetComponentVisitor;
+import pipe.ucl.contract.models.ContractElement;
 import pipe.ucl.contract.models.StateElement;
 
 import java.util.HashMap;
@@ -24,6 +25,11 @@ public final class DiscretePlace extends AbstractConnectable implements Place {
 
    public DiscretePlace(String id) {
       super(id, id);
+   }
+
+   @Override
+   public ContractElement getAttachedContractElement() {
+      return stateElement;
    }
 
    public DiscretePlace(String id, String name) {

@@ -1,6 +1,5 @@
 package pipe.ucl.contract.models;
 
-import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 
 import java.util.List;
@@ -42,11 +41,11 @@ public class EventElement extends ContractElement implements GetDiscreteTime {
         this.action = action;
     }
 
-    public EventElement(String[] parameters) {
-        super(parameters);
+    public EventElement(String[] parameters, Contract parentContract) {
+        super(parameters, parentContract);
         if(parameters.length < 4) return;
 
-        List<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+        List<ContractElement> contractElements = parentContract.getContractElementsList();
 
         for (ContractElement currentContractElement : contractElements) {
             if (currentContractElement.id.equals(parameters[2])) {

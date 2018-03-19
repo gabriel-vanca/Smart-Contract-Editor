@@ -266,7 +266,7 @@ public class ConsoleManager {
             discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "CONSOLE";
             discreteTimeElementWrapper[2] = eventInfo[1];
 
-            discreteTimeElement = new DiscreteTimeElement(discreteTimeElementWrapper);
+            discreteTimeElement = new DiscreteTimeElement(discreteTimeElementWrapper, Constructor.getSelectedContract());
 
             eventTimeMap.putIfAbsent(eventElement, discreteTimeElement);
 

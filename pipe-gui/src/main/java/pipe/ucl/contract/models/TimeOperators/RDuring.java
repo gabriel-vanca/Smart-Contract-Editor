@@ -1,6 +1,7 @@
 package pipe.ucl.contract.models.TimeOperators;
 
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
+import pipe.ucl.contract.models.Contract;
 
 public class RDuring extends TimeOperator {
 
@@ -11,8 +12,8 @@ public class RDuring extends TimeOperator {
         super(initialDate, finalDate);
     }
 
-    public RDuring(String[] parameters) {
-        super(parameters);
+    public RDuring(String[] parameters, Contract currentContract) {
+        super(parameters, currentContract);
     }
 
     @Override

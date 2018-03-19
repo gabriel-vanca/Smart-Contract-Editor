@@ -22,10 +22,10 @@ public class TimeSpanElement extends ContractElement {
         this.timeReference = timeReference;
     }
 
-    public TimeSpanElement(String[] parameters) {
-        super(parameters);
+    public TimeSpanElement(String[] parameters, Contract parentContract) {
+        super(parameters, parentContract);
         if(parameters.length < 3) return;
-        this.timeReference = (TimeOperator) LineParser.GetToken(LineParser.ParseLine(parameters[2]));
+        this.timeReference = (TimeOperator) LineParser.GetToken(LineParser.ParseLine(parameters[2]), parentContract);
         elementCorrectness = Boolean.TRUE;
     }
 

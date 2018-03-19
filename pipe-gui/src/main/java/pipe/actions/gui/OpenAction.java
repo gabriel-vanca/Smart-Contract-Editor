@@ -1,6 +1,7 @@
 package pipe.actions.gui;
 
 import pipe.controllers.application.PipeApplicationController;
+import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.ucl.constructor.controllers.Constructor;
 import pipe.utilities.gui.GuiUtils;
 
@@ -58,10 +59,23 @@ public class OpenAction extends GuiAction {
             if (file.exists() &&
                     file.isFile() &&
                     file.canRead()) {
-//                applicationController.createNewTabFromFile(file);
+
+//                PetriNetReader petriNetIO = new PetriNetIOImpl();
+//                PetriNet petriNet = new PetriNet();
+////      petriNetIO.read(file.getAbsolutePath());
+//
+//                PetriNetManager manager = Constructor.getApplicationController().getManager();
+//
+//                manager.createFromFile(file);
+
+//                manager.namePetriNetFromFile(petriNet, file);
+//                manager.changeSupport.firePropertyChange("New Petri net!", (Object)null, petriNet);
+
+
+                PetriNet petriNet = applicationController.createNewTabFromFile(file);
 //                String filePath = file.getAbsolutePath();
 //                applicationController.createEmptyPetriNet();
-                Constructor.LoadContractFile(file.toURI());
+                Constructor.LoadContractFile(file.toURI(), petriNet);
             } else {
                 String message = "File \"" + file.getName() + "\" does not exist.";
                 JOptionPane.showMessageDialog(null, message, "Warning", JOptionPane.WARNING_MESSAGE);

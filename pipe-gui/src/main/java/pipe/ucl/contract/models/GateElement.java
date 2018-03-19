@@ -46,8 +46,8 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
         this.timeSpanElement = timeSpanElement;
     }
 
-    public GateElement(String[] parameters) {
-        super(parameters);
+    public GateElement(String[] parameters, Contract parentContract) {
+        super(parameters, parentContract);
 
         if (parameters.length > 2) {
 
@@ -56,7 +56,7 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
 
             if (parameters.length > 3) {
                 elementCorrectness = Boolean.FALSE;
-                List<ContractElement> contractElements = Constructor.MainContract.getContractElementsList();
+                List<ContractElement> contractElements = parentContract.getContractElementsList();
                 for (ContractElement currentContractElement : contractElements) {
                     if (currentContractElement.id.equals(parameters[3])) {
                         this.eventElement = (EventElement) currentContractElement;
@@ -85,10 +85,12 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
 
             PetriNetController petriNetController = Constructor.getPetriNetController();
 
-            if(id == null || id == "") {
-                id = petriNetController.getUniqueTransitionName ();
-            }
-            DiscreteTransition transition = new DiscreteTransition (id, name, this);
+            String graphicalRepresentationId = petriNetController.getUniqueTransitionName ();
+
+//            if(id == null || id == "") {
+////                id = petriNetController.getUniqueTransitionName ();
+////            }
+            DiscreteTransition transition = new DiscreteTransition (graphicalRepresentationId, name, this);
 
             int randomX = ThreadLocalRandom.current ().nextInt (10, 1270);
             int randomY = ThreadLocalRandom.current ().nextInt (10, 675);
@@ -96,7 +98,7 @@ public class GateElement extends ContractElement implements GraphicalRepresentat
             transition.setY(randomY);
             transition.setTimed(Boolean.TRUE);
 
-            PetriNet petriNet = petriNetController.getPetriNet();
+            PetriNet petriNet = parentContract.getPetriNet();
             petriNet.addTransition(transition);
             return transition;
         } catch(Exception e) {

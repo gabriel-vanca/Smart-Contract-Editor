@@ -126,7 +126,7 @@ public class LineParser {
         return new InputLine(inputString, null);
     }
 
-    public static Object GetToken (InputLine inputLine) {
+    public static Object GetToken(InputLine inputLine, Contract currentContract) {
 
         if(inputLine == null)
             return null;
@@ -144,16 +144,16 @@ public class LineParser {
         inputType = inputType.toUpperCase();
 
         if(Arrays.asList(Contract.Labels).contains(inputType)) return new Contract(inputParameters);
-        if(Arrays.asList(ActionElement.Labels).contains(inputType)) return new ActionElement(inputParameters);
-        if(Arrays.asList(DiscreteTimeElement.Labels).contains(inputType)) return new DiscreteTimeElement(inputParameters);
-        if(Arrays.asList(EventElement.Labels).contains(inputType)) return new EventElement(inputParameters);
-        if(Arrays.asList(GateElement.Labels).contains(inputType)) return new GateElement(inputParameters);
-        if(Arrays.asList(PartyElement.Labels).contains(inputType)) return new PartyElement(inputParameters);
-        if(Arrays.asList(StateElement.Labels).contains(inputType)) return new StateElement(inputParameters);
-        if(Arrays.asList(TimeSpanElement.Labels).contains(inputType)) return new TimeSpanElement(inputParameters);
-        if(Arrays.asList(RDuring.Labels).contains(inputType)) return new RDuring(inputParameters);
-        if(Arrays.asList(RThroughout.Labels).contains(inputType)) return new RThroughout(inputParameters);
-        if(Arrays.asList(TransAssertion.Labels).contains(inputType)) return new TransAssertion(inputParameters);
+        if(Arrays.asList(ActionElement.Labels).contains(inputType)) return new ActionElement(inputParameters, currentContract);
+        if(Arrays.asList(DiscreteTimeElement.Labels).contains(inputType)) return new DiscreteTimeElement(inputParameters, currentContract);
+        if(Arrays.asList(EventElement.Labels).contains(inputType)) return new EventElement(inputParameters, currentContract);
+        if(Arrays.asList(GateElement.Labels).contains(inputType)) return new GateElement(inputParameters, currentContract);
+        if(Arrays.asList(PartyElement.Labels).contains(inputType)) return new PartyElement(inputParameters, currentContract);
+        if(Arrays.asList(StateElement.Labels).contains(inputType)) return new StateElement(inputParameters, currentContract);
+        if(Arrays.asList(TimeSpanElement.Labels).contains(inputType)) return new TimeSpanElement(inputParameters, currentContract);
+        if(Arrays.asList(RDuring.Labels).contains(inputType)) return new RDuring(inputParameters, currentContract);
+        if(Arrays.asList(RThroughout.Labels).contains(inputType)) return new RThroughout(inputParameters, currentContract);
+        if(Arrays.asList(TransAssertion.Labels).contains(inputType)) return new TransAssertion(inputParameters, currentContract);
 
         return inputType;
     }

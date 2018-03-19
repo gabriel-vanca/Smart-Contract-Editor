@@ -35,8 +35,8 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
         // todo it will need to generate a discrete date
     }
 
-    public StateElement(String[] parameters) {
-        super(parameters);
+    public StateElement(String[] parameters, Contract parentContract) {
+        super(parameters, parentContract);
         if(parameters.length < 3) return;
         this.type = StateType.valueOf(parameters[2]);
         
@@ -64,19 +64,16 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
 
             PetriNetController petriNetController = Constructor.getPetriNetController();
 
-            if(id == null || id == "")
-            {
-                id = petriNetController.getUniquePlaceName ();
-            }
+            String graphicalRepresentationId = petriNetController.getUniquePlaceName();
 
-            place = new DiscretePlace (id, name, this);
+            place = new DiscretePlace (graphicalRepresentationId, name, this);
 
             int randomX = ThreadLocalRandom.current ().nextInt (10, 1270);
             int randomY = ThreadLocalRandom.current ().nextInt (10, 675);
             place.setX (randomX);
             place.setY (randomY);
 
-            PetriNet petriNet = petriNetController.getPetriNet ();
+            PetriNet petriNet = parentContract.getPetriNet();
             petriNet.addPlace (place);
 
         } catch (Exception e) {

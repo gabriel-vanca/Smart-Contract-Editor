@@ -112,6 +112,11 @@ public final class ArcAction extends CreateAction {
             connectable.accept(visitor);
             PetriNetController petriNetController = controller.getActivePetriNetController();
             PetriNet net = petriNetController.getPetriNet();
+
+            try{
+               net = ((AbstractConnectable) connectable).getAttachedContractElement().getParentContract().getPetriNet();
+            } catch(Exception err) {};
+
             Arc arc;
             if (inbound) {
                 arc = arcCreator.createInboundArc(visitor.place, visitor.transition,

@@ -1,6 +1,5 @@
 package pipe.ucl.contract.models;
 
-import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.constructor.controllers.LineParser;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
@@ -48,13 +47,18 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
         discreteTime = null;
     }
 
+    public DiscreteTimeElement(Contract contract) {
+        super(new String[0], contract);
+    }
+
+
     public DiscreteTimeElement(GregorianCalendar gregorianCalendar) {
         super();
         discreteTime = gregorianCalendar;
     }
 
-    public DiscreteTimeElement(String[] parameters) {
-        super(parameters);
+    public DiscreteTimeElement(String[] parameters, Contract parentContract) {
+        super(parameters, parentContract);
         if (parameters.length < 3) return;
 
         // First we check for a discrete date (GregorianCalendar)
@@ -84,12 +88,12 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
         //Now we check for a time keyword
         try {
             if (parameters[2].toUpperCase().equals(CONTRACT_START)) {
-                this.discreteTime = Constructor.MainContract.getContractStartTime().GetCalendarTime();
+                this.discreteTime = parentContract.getContractStartTime().GetCalendarTime();
                 elementCorrectness = Boolean.TRUE;
                 return;
             }
             if (parameters[2].toUpperCase().equals(CONTRACT_TERMINATION)) {
-                this.discreteTime = Constructor.MainContract.getContractEndTime().GetCalendarTime();
+                this.discreteTime = parentContract.getContractEndTime().GetCalendarTime();
                 elementCorrectness = Boolean.TRUE;
                 return;
             }
@@ -102,13 +106,14 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
         discreteTime = null;
         try {
             InputLine parsedObject = LineParser.ParseLine(parameters[2]);
-            this.dateOperator = (GetDiscreteTime) LineParser.GetToken(parsedObject);
+            this.dateOperator = (GetDiscreteTime) LineParser.GetToken(parsedObject, parentContract);
             elementCorrectness = Boolean.TRUE;
         } catch (Exception e) {
             e.printStackTrace();
             elementCorrectness = Boolean.FALSE;
         }
     }
+
 
     @Override
     public DiscreteTimeElement GetDiscreteTime() {

@@ -38,6 +38,10 @@ public class PipeApplicationController {
      */
     private final PipeApplicationModel applicationModel;
 
+    public PetriNetManager getManager() {
+        return manager;
+    }
+
     /**
      * Manages creation/deletion of Petri net models
      */
@@ -163,12 +167,14 @@ public class PipeApplicationController {
      * @param file location of the XML file which contains a PNML representation of a Petri net
      * @throws UnparsableException if the file cannot be parsed 
      */
-    public void createNewTabFromFile(File file) throws UnparsableException {
+    public PetriNet createNewTabFromFile(File file) throws UnparsableException {
         try {
-            manager.createFromFile(file);
+            return manager.createFromFile(file);
         } catch (FileNotFoundException | JAXBException e) {
-            throw new UnparsableException("Could not initialise Petri net reader!", e);
+            System.out.println(e);
         }
+        return null;
+
     }
 
     /**

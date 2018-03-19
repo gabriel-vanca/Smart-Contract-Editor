@@ -21,8 +21,8 @@ public class ActionElement extends ContractElement {
         this.parameterList = new ArrayList<>();
     }
 
-    public ActionElement(String[] parameters) {
-        super(parameters);
+    public ActionElement(String[] parameters, Contract parentContract) {
+        super(parameters, parentContract);
         this.parameterList = new ArrayList<>();
         for(int index=2; index<parameters.length;index++) {
             parameterList.add(parameters[index]);

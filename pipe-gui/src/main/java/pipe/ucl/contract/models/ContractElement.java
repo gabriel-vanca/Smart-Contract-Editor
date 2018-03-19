@@ -7,6 +7,8 @@ public abstract class ContractElement {
 
     protected Boolean elementCorrectness;
 
+    protected Contract parentContract = null;
+
     public ContractElement() {
         String unique = getUniqueId();
         id = name = unique;
@@ -25,7 +27,9 @@ public abstract class ContractElement {
         elementCorrectness = Boolean.TRUE;
     }
 
-    public ContractElement(String[] parameters) {
+    public ContractElement(String[] parameters, Contract parentContract) {
+        this.parentContract = parentContract;
+
         if(parameters.length < 2)
             return;
         this.id = parameters[0];
@@ -54,5 +58,12 @@ public abstract class ContractElement {
 
     public abstract String getMainFullLabel();
 
+    public Contract getParentContract() {
+        return parentContract;
+    }
+
+    public void setParentContract(Contract parentContract) {
+        this.parentContract = parentContract;
+    }
 
 }

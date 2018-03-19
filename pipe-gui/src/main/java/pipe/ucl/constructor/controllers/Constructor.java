@@ -9,6 +9,7 @@ import pipe.gui.imperial.pipe.layout.Layout;
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
+import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.models.Contract;
 import pipe.ucl.contract.models.ContractElement;
@@ -41,7 +42,7 @@ public class Constructor {
     static PipeApplicationBuilder pipeApplicationBuilder;
     static ComponentCreatorManager componentCreatorManager;
 
-    public static Contract MainContract;
+//    public static Contract MainContract;
 
     public Constructor(PipeApplicationController applicationController, PipeApplicationModel applicationModel, PipeApplicationBuilder pipeApplicationBuilder, PipeApplicationView applicationView) {
         this.applicationController = applicationController;
@@ -56,15 +57,16 @@ public class Constructor {
 
     public static void LoadDefaultContractExample() {
         String inputFileLocation = "Contracts/input_washer_January18.txt";
+
         try {
             URI inputFileURI = ClassLoader.getSystemResource(inputFileLocation).toURI();
-            LoadContractFile(inputFileURI);
+            LoadContractFile(inputFileURI, petriNetController.getPetriNet());
         } catch (URISyntaxException e) {
             System.out.println("ERROR while reading input file: " + e);
         }
     }
 
-    public static void LoadContractFile(URI inputFileURI) {
+    public static void LoadContractFile(URI inputFileURI, PetriNet petriNet) {
 
 //        petriNetController.getPetriNet().ReInitialisePetriNet();
 
@@ -72,32 +74,32 @@ public class Constructor {
         inputFileParser.ParseInputFile();
         ArrayList<InputLine> ParsedReadDataLinesList = inputFileParser.getParsedReadDataLinesList();
 
-        MainContract = new Contract(inputFileParser.getFileNameWithoutExtension());
+        Contract currentContract = new Contract(inputFileParser.getFileNameWithoutExtension(), petriNet);
 
-        applicationView.getMainPaneLeft().setLeftComponent(MainContract.getContractTreeManager().getModuleTree());
-        applicationView.setMainPaneRight(MainContract.getConsoleFrameManager().getQuerryPane());
+        applicationView.getMainPaneLeft().setLeftComponent(currentContract.getContractTreeManager().getModuleTree());
+        applicationView.setMainPaneRight(currentContract.getConsoleFrameManager().getQuerryPane());
 
-        MainContract.getConsoleFrameManager().addLineToLabel("");
-        MainContract.getConsoleFrameManager().addLineToLabel("Contract parsing has started");
-        MainContract.getConsoleFrameManager().addLineToLabel("");
+        currentContract.getConsoleFrameManager().addLineToLabel("");
+        currentContract.getConsoleFrameManager().addLineToLabel("Contract parsing has started");
+        currentContract.getConsoleFrameManager().addLineToLabel("");
 
         for (String readLine :inputFileParser.getReadDataLinesList()) {
-            MainContract.getConsoleFrameManager().addLineToLabel(readLine);
+            currentContract.getConsoleFrameManager().addLineToLabel(readLine);
         }
 
-        MainContract.getConsoleFrameManager().addLineToLabel("");
-        MainContract.getConsoleFrameManager().addLineToLabel("Contract parsing is complete");
-        MainContract.getConsoleFrameManager().addLineToLabel("");
+        currentContract.getConsoleFrameManager().addLineToLabel("");
+        currentContract.getConsoleFrameManager().addLineToLabel("Contract parsing is complete");
+        currentContract.getConsoleFrameManager().addLineToLabel("");
 
         for (InputLine parsedReadDataLine : ParsedReadDataLinesList) {
-            Object token = LineParser.GetToken(parsedReadDataLine);
+            Object token = LineParser.GetToken(parsedReadDataLine, currentContract);
             if (token == null || token.equals(""))
                 continue;
             if (Contract.class.isInstance(token)) {
-                MainContract.setContractProperties((Contract) token);
+                currentContract.setContractProperties((Contract) token);
             }
             if (ContractElement.class.isInstance(token)) {
-                MainContract.addContractElement((ContractElement) token);
+                currentContract.addContractElement((ContractElement) token);
             }
         }
 
@@ -114,6 +116,11 @@ public class Constructor {
         Layout.layoutHierarchical (petriNetController.getPetriNet (), 40,
                 50,50, 350, SwingConstants.NORTH);
 //        componentCreatorManager..changed(petriNet);
+    }
+
+    public static Contract getSelectedContract() {
+        return null;
+        //TODO
     }
 
     private DiscretePlace GetState(String id) {

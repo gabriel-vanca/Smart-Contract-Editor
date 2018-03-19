@@ -1,5 +1,6 @@
 package pipe.ucl.contract.models;
 
+import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.gui.ConsoleFrameManager;
 import pipe.ucl.gui.ContractTreeManager;
@@ -27,8 +28,11 @@ public class Contract {
     private DiscreteTimeElement contractStartTime;
     private DiscreteTimeElement contractEndTime;
 
-    public Contract(String name) {
+    private PetriNet petriNet;
+
+    public Contract(String name, PetriNet petriNet) {
         this.name = name;
+        this.petriNet = petriNet;
         ContractElementsList = new ArrayList<ContractElement>();
         contractTreeManager = new ContractTreeManager(this);
         consoleFrameManager = new ConsoleFrameManager(this);
@@ -47,13 +51,13 @@ public class Contract {
         discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "CONTRACT";
 
         discreteTimeElementWrapper[2] = inputParameters[1];
-        contractStartTime = new DiscreteTimeElement(discreteTimeElementWrapper);
+        contractStartTime = new DiscreteTimeElement(discreteTimeElementWrapper, this);
 
         if (inputParameters[2].toUpperCase().equals("N/A")) {
-            contractEndTime = new DiscreteTimeElement();
+            contractEndTime = new DiscreteTimeElement(this);
         } else {
             discreteTimeElementWrapper[2] = inputParameters[2];
-            contractEndTime = new DiscreteTimeElement(discreteTimeElementWrapper);
+            contractEndTime = new DiscreteTimeElement(discreteTimeElementWrapper, this);
         }
     }
 
@@ -113,5 +117,13 @@ public class Contract {
 
     public void setContractEndTime(DiscreteTimeElement contractEndTime) {
         this.contractEndTime = contractEndTime;
+    }
+
+    public PetriNet getPetriNet() {
+        return petriNet;
+    }
+
+    public void setPetriNet(PetriNet petriNet) {
+        this.petriNet = petriNet;
     }
 }

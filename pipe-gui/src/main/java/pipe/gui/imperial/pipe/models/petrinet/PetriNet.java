@@ -12,6 +12,7 @@ import pipe.gui.imperial.pipe.parsers.FunctionalResults;
 import pipe.gui.imperial.pipe.parsers.FunctionalWeightParser;
 import pipe.gui.imperial.pipe.parsers.PetriNetWeightParser;
 import pipe.gui.imperial.pipe.visitor.component.PetriNetComponentVisitor;
+import pipe.ucl.contract.models.Contract;
 
 import javax.xml.bind.annotation.XmlTransient;
 import java.beans.PropertyChangeEvent;
@@ -50,6 +51,8 @@ public class PetriNet {
    public String pnmlName;
    private PetriNetName petriNetName;
    private boolean validated;
+
+   private Contract contract = null;
 
    public PetriNet(PetriNetName name) {
       this();
@@ -113,6 +116,14 @@ public class PetriNet {
       result = 31 * result + this.rateParameters.hashCode();
       result = 31 * result + (this.petriNetName != null ? this.petriNetName.hashCode() : 0);
       return result;
+   }
+
+   public Contract getContract() {
+      return contract;
+   }
+
+   public void setContract(Contract contract) {
+      this.contract = contract;
    }
 
    public boolean equals(Object o) {

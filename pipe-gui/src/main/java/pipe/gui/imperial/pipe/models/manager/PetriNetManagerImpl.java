@@ -44,11 +44,13 @@ public final class PetriNetManagerImpl implements PetriNetManager {
       }
    }
 
-   public void createFromFile(File file) throws JAXBException, UnparsableException, FileNotFoundException {
+   public PetriNet createFromFile(File file) throws JAXBException, UnparsableException, FileNotFoundException {
       PetriNetReader petriNetIO = new PetriNetIOImpl();
-      PetriNet petriNet = new PetriNet();//petriNetIO.read(file.getAbsolutePath());
+      PetriNet petriNet = new PetriNet();
+//      petriNetIO.read(file.getAbsolutePath());
       this.namePetriNetFromFile(petriNet, file);
       this.changeSupport.firePropertyChange("New Petri net!", (Object)null, petriNet);
+      return petriNet;
    }
 
    public void savePetriNet(PetriNet petriNet, File outFile) throws JAXBException, IOException {
