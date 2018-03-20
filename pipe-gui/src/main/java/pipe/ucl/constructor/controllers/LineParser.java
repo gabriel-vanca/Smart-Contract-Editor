@@ -2,6 +2,9 @@ package pipe.ucl.constructor.controllers;
 
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.models.*;
+import pipe.ucl.contract.models.DateOperators.AfterTime;
+import pipe.ucl.contract.models.DateOperators.BeforeTime;
+import pipe.ucl.contract.models.DateOperators.DateOperator;
 import pipe.ucl.contract.models.TimeOperators.RDuring;
 import pipe.ucl.contract.models.TimeOperators.RThroughout;
 
@@ -156,6 +159,31 @@ public class LineParser {
         if(Arrays.asList(TransAssertion.Labels).contains(inputType)) return new TransAssertion(inputParameters, currentContract);
 
         return inputType;
+
+    }
+
+    public static DateOperator GetDateOperatorToken(InputLine inputLine, Contract currentContract) {
+
+        if (inputLine == null)
+            return null;
+
+        String inputType = inputLine.getType().substring(0);
+        String[] inputParameters = inputLine.getParameterList();
+
+        if (inputType == null || inputLine.equals("") || inputLine.equals(" "))
+            return null;
+
+        if (inputParameters == null || inputParameters.length < 2)
+            return null;
+
+        // Type should be upper case for easier checking
+        inputType = inputType.toUpperCase();
+
+        if (Arrays.asList(AfterTime.Labels).contains(inputType)) return new AfterTime(inputParameters, currentContract);
+        if (Arrays.asList(BeforeTime.Labels).contains(inputType)) return new BeforeTime(inputParameters, currentContract);
+//        if(Arrays.asList(ScheduleTime.Labels).contains(inputType)) return new ScheduleTime(inputParameters, currentContract);
+
+        return null;
     }
 
 }

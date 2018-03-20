@@ -3,6 +3,7 @@ package pipe.ucl.contract.models;
 import pipe.ucl.constructor.controllers.LineParser;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
+import pipe.ucl.contract.models.DateOperators.DateOperator;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -32,7 +33,7 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
             );
 
     protected GregorianCalendar discreteTime;
-    protected GetDiscreteTime dateOperator;
+    protected DateOperator dateOperator;
 
     public DiscreteTimeElement(String name) {
         super(name);
@@ -106,7 +107,8 @@ public class DiscreteTimeElement extends ContractElement implements GetDiscreteT
         discreteTime = null;
         try {
             InputLine parsedObject = LineParser.ParseLine(parameters[2]);
-            this.dateOperator = (GetDiscreteTime) LineParser.GetToken(parsedObject, parentContract);
+//            Object tempDateOperator =
+            this.dateOperator = LineParser.GetDateOperatorToken(parsedObject, parentContract);
             elementCorrectness = Boolean.TRUE;
         } catch (Exception e) {
             e.printStackTrace();

@@ -1,0 +1,42 @@
+CONTRACT("Washer Acquisition Contract", 1987-04-27, 1987-05-15)
+
+PARTY(P1, "Jones")
+PARTY(P2, "Smith")
+
+STATE(S1, 'START', START)
+STATE(S2, '2', INTERMEDIARY)
+STATE(S3, 'Jones paid £500', INTERMEDIARY)
+STATE(S4, 'DEFAULT: Jones did not pay £500', DEFAULT)
+STATE(S5, 'Smith delivered washer', INTERMEDIARY);
+STATE(S6, 'DEFAULT: Smith did not deliver washer', DEFAULT)
+STATE(S7, 'END', END);
+
+DISCRETE-TIME(DT1, "Payment due date", AFT(1987-05-03, 10))
+DISCRETE-TIME(DT2, "Delivery due date", 1987-05-15)
+
+ACTION(A1, "PAY", SMITH, £500)
+ACTION(A2, "DELIVER", Jones, Washer)
+
+EVENT(E1, "Pay for Washer", P1, A1)
+EVENT(E2, "Deliver Washer", P2, A2)
+
+/*
+   We will consider the beginning of the contract
+   as need the purchase date
+ */
+TIME-SPAN(TS1, "Payment Deadline", RD(S1,DT1))
+TIME-SPAN(TS2, "Delivery Deadline", RD(E1,DT2))
+
+GATE(G1, "True Gate", TRUE)
+GATE(G2, "Pay for Washer", TRUE, E1, TS1)
+GATE(G3, "Pay for Washer", FALSE, E1, TS1)
+GATE(G4, "Deliver Washer", TRUE, E2, TS2)
+GATE(G5, "Deliver Washer", FALSE, E2, TS2)
+GATE(G6, "True Gate", TRUE)
+
+TA([S1], [S2], G1)
+TA([S2], [S3], G2)
+TA([S2], [S4], G3)
+TA([S3], [S5], G4)
+TA([S3], [S6], G5)
+TA([S5], [S7], G6)

@@ -1,13 +1,14 @@
 package pipe.ucl.contract.models.DateOperators;
 
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
+import pipe.ucl.contract.models.Contract;
 import pipe.ucl.contract.models.DiscreteTimeElement;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
-public class AfterTime implements GetDiscreteTime {
+public class AfterTime extends DateOperator {
 
     public final static String MainLabel = "AFT";
     public final static String[] Labels = {"AFT", "AFTER"};
@@ -15,20 +16,52 @@ public class AfterTime implements GetDiscreteTime {
     protected GetDiscreteTime referenceTime;
     protected GregorianCalendar differentialTime;
 
-    public AfterTime(GetDiscreteTime referenceTime, GregorianCalendar differentialTime) {
-        this.referenceTime = referenceTime;
-        this.differentialTime = differentialTime;
+    private Boolean computed = false;
+
+//    public AfterTime(GetDiscreteTime referenceTime, GregorianCalendar differentialTime) {
+//        this.referenceTime = referenceTime;
+//        this.differentialTime = differentialTime;
+//    }
+
+    public AfterTime(String[] inputParameters, Contract currentContract) {
+        super(currentContract);
+
+        if(inputParameters == null || inputParameters.length < 2)
+            return;
+
+        try {
+            String[] discreteTimeElementWrapper = new String[3];
+            discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = MainLabel;
+            discreteTimeElementWrapper[2] = inputParameters[0];
+            referenceTime = new DiscreteTimeElement(discreteTimeElementWrapper, currentContract);
+
+            discreteTimeElementWrapper[2] = inputParameters[1];
+            if(discreteTimeElementWrapper[2].contains("and")) {
+                discreteTimeElementWrapper[2] = discreteTimeElementWrapper[2].replace("and", "at");
+            }
+            differentialTime = new DiscreteTimeElement(discreteTimeElementWrapper, currentContract).GetCalendarTime();
+        }catch(Exception err) {
+            System.out.print(err);
+        }
+
     }
 
     @Override
     public DiscreteTimeElement GetDiscreteTime() {
+
         GregorianCalendar referenceTimeCal = null;
 
         try {
+
             referenceTimeCal = referenceTime.GetDiscreteTime().GetCalendarTime();
 
             if(referenceTimeCal == null)
                 return null;
+
+            if(differentialTime == null || computed == Boolean.TRUE)
+                return new DiscreteTimeElement(referenceTimeCal);
+
+            computed = Boolean.TRUE;
 
             referenceTimeCal.add(GregorianCalendar.YEAR, differentialTime.get(GregorianCalendar.YEAR));
             referenceTimeCal.add(GregorianCalendar.MONTH, differentialTime.get(GregorianCalendar.MONTH));
@@ -37,6 +70,7 @@ public class AfterTime implements GetDiscreteTime {
             referenceTimeCal.add(GregorianCalendar.MINUTE, differentialTime.get(GregorianCalendar.MINUTE));
             referenceTimeCal.add(GregorianCalendar.SECOND, differentialTime.get(GregorianCalendar.SECOND));
             referenceTimeCal.add(GregorianCalendar.MILLISECOND, differentialTime.get(GregorianCalendar.MILLISECOND));
+
         } catch (Exception err) {
             System.out.print("Error when getting " + MainLabel + " value: " + err);
         }
