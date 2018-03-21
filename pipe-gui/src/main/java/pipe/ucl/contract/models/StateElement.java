@@ -59,7 +59,7 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
 
         PetriNetTab currentTab = currentPetriNet.getTab();
         currentTab.repaint();
-        
+
     }
 
     protected DiscretePlace instantiateGraphicObject() {

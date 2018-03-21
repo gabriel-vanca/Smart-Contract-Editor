@@ -119,6 +119,8 @@ public class PetriNetChangeListener implements PropertyChangeListener {
     @EventAction(PetriNet.NEW_TRANSITION_CHANGE_MESSAGE)
     private void newTransition(PropertyChangeEvent propertyChangeEvent) {
         Transition transition = (Transition) propertyChangeEvent.getNewValue();
+
+//       transition.setWidth(20);
         TransitionViewBuilder builder = new TransitionViewBuilder(transition, controller);
         TransitionView view = builder.build(petriNetTab, applicationModel);
 

@@ -35,12 +35,12 @@ public class PlaceView extends ConnectableView<Place> {
      * @param placeHandler mouse input handler for describing how this view responds to mouse events
      */
     public PlaceView(Place model, Container parent, PetriNetController controller, MouseInputAdapter placeHandler) {
-        super(model.getId(), model, controller, controller.getPlaceController(model), parent, new Ellipse2D.Double(-model.getWidth()/2, -model.getHeight()/2, model.getWidth(), model.getHeight()));
+        super(model.getId(), model, controller, controller.getPlaceController(model), parent, new Ellipse2D.Double(-model.getWidth() / 2, -model.getHeight() / 2, model.getWidth(), model.getHeight()));
         setChangeListener();
         setMouseListener(placeHandler);
 
         Rectangle bounds = shape.getBounds();
-        Rectangle newBounds = new Rectangle((int)(model.getCentre().getX() + bounds.getX()), (int)(model.getCentre().getY() + bounds.getY()), (int) bounds.getWidth() + getComponentDrawOffset(), (int)bounds.getHeight() + getComponentDrawOffset());
+        Rectangle newBounds = new Rectangle((int) (model.getCentre().getX() + bounds.getX()), (int) (model.getCentre().getY() + bounds.getY()), (int) bounds.getWidth() + getComponentDrawOffset(), (int) bounds.getHeight() + getComponentDrawOffset());
         setBounds(newBounds);
     }
 

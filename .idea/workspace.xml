@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/ConsoleManager.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/ConsoleManager.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetChangeListener.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetChangeListener.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" />
       <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/Contracts/input_washer_January18 - Copy.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PlaceView.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PlaceView.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/TransitionView.java" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/TransitionView.java" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/resources/images/Timed transition.png" afterPath="$PROJECT_DIR$/pipe-gui/src/main/resources/images/Timed transition.png" />
+      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/images/Timed transition.png" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/images/Timed transition.png" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,110 +42,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AfterTime.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java">
+      <file leaf-file-name="TransitionView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/TransitionView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="96" column="49" lean-forward="false" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PipeApplicationView.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input_washer_January18.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/Contracts/input_washer_January18.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractTreeManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/gui/ContractTreeManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="48" column="16" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsoleFrameManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/gui/ConsoleFrameManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PetriNetController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="573" column="0" lean-forward="true" selection-start-line="573" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
-              <folding>
-                <element signature="e#17341#17342#0" expanded="true" />
-                <element signature="e#17380#17381#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsoleManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/ConsoleManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="217" column="8" lean-forward="false" selection-start-line="217" selection-start-column="8" selection-end-line="217" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StateElement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/awt/Component.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="3309" column="16" lean-forward="false" selection-start-line="3309" selection-start-column="16" selection-end-line="3309" selection-end-column="16" />
-              <folding>
-                <element signature="e#114480#114481#0" expanded="true" />
-                <element signature="e#114527#114528#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateOperator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/DateOperator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="576">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constructor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="219" column="12" lean-forward="false" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiscreteTransition.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="153" column="17" lean-forward="false" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransitionViewBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/TransitionViewBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Transition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connectable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Connectable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlaceablePetriNetComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PlaceablePetriNetComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PetriNetComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PetriNetChangeListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetChangeListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="123" column="19" lean-forward="false" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyChangeEvent.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/beans/PropertyChangeEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+              <folding>
+                <element signature="e#2470#2471#0" expanded="true" />
+                <element signature="e#2501#2502#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,19 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>class transitionhandler</find>
-      <find>GetToken</find>
-      <find>class PetriNet</find>
-      <find>new TransAss</find>
-      <find>DiscretePlace</find>
-      <find>petriNet</find>
-      <find>setContractProperties</find>
-      <find>petriNetController</find>
-      <find>new PetriNet(</find>
-      <find>petrinettab</find>
-      <find>new petrinettab</find>
-      <find>LoadContractFile</find>
-      <find>createfr</find>
       <find>isEmpty</find>
       <find>places</find>
       <find>ConsoleMana</find>
@@ -190,6 +177,19 @@
       <find>LineParser.GetToken</find>
       <find>and</find>
       <find>currentTab</find>
+      <find>drawT</find>
+      <find>draw</find>
+      <find>PLACE_TRANSITION</find>
+      <find>width</find>
+      <find>transition</find>
+      <find>PLACE_TRANSITION_HEIGHT</find>
+      <find>30</find>
+      <find>transition.set</find>
+      <find>size</find>
+      <find>recta</find>
+      <find>TRANSITION_WIDTH</find>
+      <find>30 10</find>
+      <find>discreteTra</find>
     </findStrings>
     <replaceStrings>
       <replace>import pipe.imperial.io</replace>
@@ -239,13 +239,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PetriNetViewComponent.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/ArcPathPoint.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/PetriNetTab.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/InhibitorArcView.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/NormalArcView.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/AnnotationView.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PlaceView.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/SelectAction.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationBuilder.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/gui/ContractTreeManager.java" />
@@ -254,7 +250,6 @@
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/OpenDefaultAction.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/EditAnnotationBorderAction.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetController.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/TransitionView.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/widgets/PlaceEditorPanel.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/handlers/PlaceHandler.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/handlers/TransitionHandler.java" />
@@ -273,7 +268,6 @@
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractConnectable.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/ArcAction.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java" />
-        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/application/PipeApplicationController.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/OpenAction.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java" />
@@ -290,6 +284,12 @@
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/ConsoleManager.java" />
         <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/StateElement.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PlaceView.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/constants/GUIConstants.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/TransitionView.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Transition.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetChangeListener.java" />
+        <option value="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java" />
       </list>
     </option>
   </component>
@@ -332,7 +332,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1273" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
@@ -440,6 +440,16 @@
               <item name="pipe" type="462c0819:PsiDirectoryNode" />
               <item name="actions" type="462c0819:PsiDirectoryNode" />
               <item name="petrinet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
@@ -692,6 +702,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="Contracts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smart-Contract-Editor" type="462c0819:PsiDirectoryNode" />
+              <item name="pipe-gui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="schema" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PetriNet Editor" type="b2602c69:ProjectViewProjectNode" />
@@ -1118,12 +1146,12 @@
       <workItem from="1520526096534" duration="16142000" />
       <workItem from="1520882434692" duration="11228000" />
       <workItem from="1521167996959" duration="2911000" />
-      <workItem from="1521426876413" duration="19907000" />
+      <workItem from="1521426876413" duration="23802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316911000" />
+    <option name="totallyTimeSpent" value="320806000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1135,11 +1163,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="2576" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17892426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17717391" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1151,7 +1180,7 @@
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20310016" sideWeight="0.4869565" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25283632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12400636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1159,7 +1188,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7285251" sideWeight="0.51304346" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3573132" sideWeight="0.51304346" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1233,7 +1262,7 @@
           <option name="timeStamp" value="305" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="308" />
+      <option name="time" value="319" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1241,6 +1270,10 @@
         <watch expression="eventTime.compareTo(endDate)" language="JAVA" />
         <watch expression="model" language="JAVA" />
         <watch expression="((AfterTime)tempDateOperator).referenceTime" custom="pipe.ucl.contract.models.DateOperators.AfterTime" />
+        <watch expression="model.getWidth()" language="JAVA" />
+        <watch expression="model.getHeight()" language="JAVA" />
+        <watch expression="place.getWidth()" language="JAVA" />
+        <watch expression="place.getHeight()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1250,6 +1283,26 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>place.getHeight()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>place.getWidth()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.getHeight()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>model.getWidth()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>model</expression-string>
         <language-id>JAVA</language-id>
@@ -1280,215 +1333,11 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscretePlace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/manager/ComponentCreatorManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-          <folding>
-            <element signature="e#3271#3272#0" expanded="false" />
-            <element signature="e#3303#3304#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/handlers/ConnectableHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="46" column="36" lean-forward="true" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/CreateAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Connectable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundNormalArc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/AbstractArc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponentAddVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="e#992#993#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/InboundArc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/ArcAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="129" column="27" lean-forward="false" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
-          <folding>
-            <element signature="e#5839#5840#0" expanded="false" />
-            <element signature="e#5877#5878#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/TemporaryArcView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2788">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2757#2758#0" expanded="false" />
-            <element signature="e#2786#2787#0" expanded="false" />
-            <element signature="e#4681#4682#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TransAssertion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/arcCreator/NormalCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/manager/PetriNetManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="239" column="6" lean-forward="false" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/manager/PetriNetManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/PetriNetTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="103" column="15" lean-forward="true" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/OpenDefaultAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/OpenAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="61" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/SetZoomAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="64" column="63" lean-forward="false" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651">
-          <caret line="121" column="59" lean-forward="false" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/RandomAnimateAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="134" column="31" lean-forward="true" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
-          <folding>
-            <element signature="e#4540#4541#0" expanded="false" />
-            <element signature="e#4609#4610#0" expanded="false" />
-            <element signature="e#5741#5742#0" expanded="false" />
-            <element signature="e#5769#5770#0" expanded="false" />
-            <element signature="e#5818#5819#0" expanded="false" />
-            <element signature="e#5855#5856#0" expanded="false" />
-            <element signature="e#22058#22059#0" expanded="false" />
-            <element signature="e#22085#22086#0" expanded="false" />
-            <element signature="e#22256#22257#0" expanded="false" />
-            <element signature="e#22282#22283#0" expanded="false" />
-            <element signature="e#22339#22340#0" expanded="false" />
-            <element signature="e#22380#22381#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1590,14 +1439,6 @@
           <folding>
             <element signature="e#590#591#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1720,8 +1561,193 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PipeApplicationView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="229" column="0" lean-forward="false" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="557" column="39" lean-forward="false" selection-start-line="557" selection-start-column="35" selection-end-line="557" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/javafx-src.zip!/com/sun/prism/Graphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="155" column="16" lean-forward="false" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/ConnectableView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/actions/gui/PlaceAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/LayoutForm.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="89" column="53" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/constants/GUIConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="160" column="7" lean-forward="true" selection-start-line="160" selection-start-column="7" selection-end-line="160" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/GateElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="95" column="12" lean-forward="false" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/images/Immediate transition.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/images/Undo(1).png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/resources/images/Timed transition.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/PlaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-782">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PlaceViewBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/PetriNetTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="243" column="8" lean-forward="false" selection-start-line="243" selection-start-column="8" selection-end-line="243" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/views/TransitionView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Connectable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PetriNetComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/PlaceablePetriNetComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/beans/PropertyChangeEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+          <folding>
+            <element signature="e#2470#2471#0" expanded="true" />
+            <element signature="e#2501#2502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/Transition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/Constructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="219" column="12" lean-forward="false" selection-start-line="219" selection-start-column="12" selection-end-line="219" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/PetriNetChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="123" column="19" lean-forward="false" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/controllers/TransitionViewBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/models/petrinet/DiscreteTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="153" column="17" lean-forward="false" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -151,7 +151,7 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
     }
 
     public int getWidth() {
-        return 10;
+        return 14;
     }
 
     private boolean connectToTop(double angle) {
