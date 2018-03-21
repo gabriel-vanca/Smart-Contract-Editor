@@ -1,5 +1,6 @@
 package pipe.ucl.constructor.controllers;
 
+import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
 import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.contract.models.*;
 import pipe.ucl.gui.ConsoleFrameManager;
@@ -18,7 +19,8 @@ public class ConsoleManager {
                 parseConsoleInput(consoleFrameManager.getTextFromConsoleInput(),
                 consoleFrameManager.getContract().getContractElementsList());
 
-        consoleFrameManager.getContract().getPetriNet().getPetriNetController().clearMarks();
+        PetriNet currentPetriNet  = consoleFrameManager.getContract().getPetriNet();
+        currentPetriNet.getPetriNetController().clearMarks();
 
         Constructor.getPipeApplicationBuilder().selectActionButton.doClick();
 
@@ -194,7 +196,7 @@ public class ConsoleManager {
                                     continue;
                                 }
 
-                                // Remaining case: True gate, event accomplished withint timespan
+                                // Remaining case: True gate, event accomplished within timespan
                             }
                         }
 
@@ -212,6 +214,8 @@ public class ConsoleManager {
                 }
             }
         }
+
+        currentPetriNet.getTab().repaint();
 
         return results;
     }

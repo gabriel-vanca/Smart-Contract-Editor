@@ -2,10 +2,10 @@ package pipe.ucl.contract.models;
 
 import pipe.controllers.PetriNetController;
 import pipe.controllers.SelectionManager;
+import pipe.gui.PetriNetTab;
 import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
 import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
 import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
-import pipe.ucl.constructor.controllers.Constructor;
 import pipe.ucl.contract.enums.StateType;
 import pipe.ucl.contract.interfaces.GetDiscreteTime;
 import pipe.ucl.contract.interfaces.GraphicalRepresentation;
@@ -49,12 +49,17 @@ public class StateElement extends ContractElement implements GraphicalRepresenta
     }
 
     public void Mark(Color color) {
-        PetriNetController petriNetController = this.getParentContract().getPetriNet().getPetriNetController();
-        petriNetController.mark(graphicObject, color);
+        PetriNet currentPetriNet = this.getParentContract().getPetriNet();
+        PetriNetController currentPetriNetController = currentPetriNet.getPetriNetController();
+
+        currentPetriNetController.mark(graphicObject, color);
 //        CreateAction selectedAction = Constructor.getApplicationModel().getSelectedAction();
-        SelectionManager selectionManager =
-                Constructor.getApplicationController().getActivePetriNetController().getSelectionManager();
+        SelectionManager selectionManager = currentPetriNetController.getSelectionManager();
         selectionManager.repaint();
+
+        PetriNetTab currentTab = currentPetriNet.getTab();
+        currentTab.repaint();
+        
     }
 
     protected DiscretePlace instantiateGraphicObject() {

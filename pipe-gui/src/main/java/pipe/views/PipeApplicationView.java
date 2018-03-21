@@ -230,6 +230,7 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
         frameForPetriNetTabs.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
+
                 PetriNetTab petriNetTab = getCurrentTab();
                 applicationController.setActiveTab(petriNetTab);
 
