@@ -19,16 +19,6 @@ public class ChooseTokenClassAction extends GuiAction {
     private static final Logger LOGGER = Logger.getLogger(ChooseTokenClassAction.class.getName());
 
     /**
-     * Application view
-     */
-    private final PipeApplicationView pipeApplicationView;
-
-    /**
-     * Application controller, used to get the currently selected Petri net
-     */
-    private final PipeApplicationController applicationController;
-
-    /**
      * Constructor for the action
      * @param pipeApplicationView overall application view
      * @param applicationController overalll application controller
@@ -36,8 +26,6 @@ public class ChooseTokenClassAction extends GuiAction {
     public ChooseTokenClassAction(PipeApplicationView pipeApplicationView,
                                   PipeApplicationController applicationController) {
         super("chooseTokenClass", "Select current token");
-        this.pipeApplicationView = pipeApplicationView;
-        this.applicationController = applicationController;
     }
 
     /**

@@ -25,7 +25,6 @@ public class PlaceView extends ConnectableView<Place> {
      * Class logger
      */
     private static final Logger LOGGER = Logger.getLogger(PlaceView.class.getName());
-    private Graphics2D graphics2DObject;
 
     /**
      * Constructor
@@ -81,7 +80,6 @@ public class PlaceView extends ConnectableView<Place> {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g.create();
-        graphics2DObject = g2;
 
         Rectangle bounds = shape.getBounds();
         g2.translate(bounds.getWidth()/2, bounds.getHeight()/2);

@@ -1,5 +1,6 @@
 package pipe.gui.imperial.pipe.models.petrinet;
 
+import pipe.constants.GUIConstants;
 import pipe.gui.imperial.pipe.exceptions.PetriNetComponentException;
 import pipe.gui.imperial.pipe.visitor.component.PetriNetComponentVisitor;
 import pipe.ucl.contract.models.ContractElement;
@@ -230,11 +231,11 @@ public final class DiscretePlace extends AbstractConnectable implements Place {
    }
 
    public int getHeight() {
-      return 30;
+      return GUIConstants.PLACE_WIDTH_HEIGHT;
    }
 
    public int getWidth() {
-      return 30;
+      return GUIConstants.PLACE_WIDTH_HEIGHT;
    }
 
    public java.awt.geom.Point2D.Double getArcEdgePoint(double angle) {

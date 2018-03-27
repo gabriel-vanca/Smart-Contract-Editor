@@ -13,11 +13,6 @@ import java.awt.event.KeyEvent;
 @SuppressWarnings("serial")
 public class OpenDefaultAction extends GuiAction {
 
-    /**
-     * Main PIPE application controller
-     */
-    private final PipeApplicationController applicationController;
-
 
     /**
 
@@ -27,7 +22,6 @@ public class OpenDefaultAction extends GuiAction {
      */
     public OpenDefaultAction(PipeApplicationController applicationController) {
         super("Open Example Contract", "Open Example Contract", KeyEvent.VK_E, Toolkit.getDefaultToolkit().getMenuShortcutKeyMask());
-        this.applicationController = applicationController;
 
     }
 

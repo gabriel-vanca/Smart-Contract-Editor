@@ -1,5 +1,6 @@
 package pipe.gui.imperial.pipe.models.petrinet;
 
+import pipe.constants.GUIConstants;
 import pipe.gui.imperial.pipe.parsers.FunctionalResults;
 import pipe.gui.imperial.pipe.parsers.PetriNetWeightParser;
 import pipe.gui.imperial.pipe.parsers.StateEvalVisitor;
@@ -147,11 +148,11 @@ public final class DiscreteTransition extends AbstractConnectable implements Tra
     }
 
     public int getHeight() {
-        return 30;
+        return GUIConstants.TRANSITION_HEIGHT;
     }
 
     public int getWidth() {
-        return 14;
+        return GUIConstants.TRANSITION_WIDTH;
     }
 
     private boolean connectToTop(double angle) {

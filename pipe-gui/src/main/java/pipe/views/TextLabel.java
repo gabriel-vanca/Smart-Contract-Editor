@@ -1,11 +1,10 @@
 package pipe.views;
 
 import pipe.constants.GUIConstants;
+import pipe.ucl.constructor.controllers.Constructor;
 
 import javax.swing.*;
-
-import java.awt.Color;
-import java.awt.Font;
+import java.awt.*;
 
 /**
  * Text label for displaying component information on the canvas
@@ -15,11 +14,6 @@ import java.awt.Font;
  */
 @SuppressWarnings("serial")
 public class TextLabel extends JTextArea {
-
-    /**
-     * Label name
-     */
-    private String name;
 
     /**
      * Label text, i.e. the components id
@@ -35,6 +29,8 @@ public class TextLabel extends JTextArea {
      * y location
      */
     private double positionY;
+
+    public static Font font = new Font("Dialog", Font.BOLD, GUIConstants.LABEL_FONT_SIZE.getValue());
 
     /**
      * Default constructor setting x, y to (0,0)
@@ -54,19 +50,24 @@ public class TextLabel extends JTextArea {
      */
     public TextLabel(String text, double nameOffsetX, double nameOffsetY) {
         super(text);
-        this.name = text;
         positionX = nameOffsetX;
         positionY = nameOffsetY;
         this.text = "";
-        Font font = new Font("Dialog", Font.BOLD, 10);
-        setFont(getFont().deriveFont(GUIConstants.LABEL_DEFAULT_FONT_SIZE));
+
         setFont(font);
+//        setFont(getFont().deriveFont(8));
         setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
         setEditable(false);
         setFocusable(false);
         setOpaque(false);
         setBackground(GUIConstants.BACKGROUND_COLOR);
 
+        Constructor.TextLabels.add(this);
+
+    }
+
+    public void UpdateFont() {
+        setFont(font);
     }
 
     /**

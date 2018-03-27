@@ -25,26 +25,27 @@ public abstract class ConnectableView<T extends Connectable> extends AbstractPet
      */
     protected TextLabel textLabel;
 
-        private final AbstractConnectableController<T> componentController;
+    private final AbstractConnectableController<T> componentController;
 
-        /**
-         * Shape of the place on the Petri net
-         */
-        protected Shape shape;
+    /**
+     * Shape of the place on the Petri net
+     */
+    protected Shape shape;
 
-        /**
-         * Constructor
-         * @param id
-         * @param model
-         * @param controller
-         * @param parent
-         * @param shape
-         */
-        ConnectableView(String id, T model, PetriNetController controller, AbstractConnectableController<T> componentController, Container parent, Shape shape) {
-            super(id, model, controller, parent);
-            this.componentController = componentController;
-            this.shape = shape;
-            setLocation(model.getX(), model.getY());
+    /**
+     * Constructor
+     *
+     * @param id
+     * @param model
+     * @param controller
+     * @param parent
+     * @param shape
+     */
+    ConnectableView(String id, T model, PetriNetController controller, AbstractConnectableController<T> componentController, Container parent, Shape shape) {
+        super(id, model, controller, parent);
+        this.componentController = componentController;
+        this.shape = shape;
+        setLocation(model.getX(), model.getY());
 
         int x = (int) (model.getX() + model.getNameXOffset());
         int y = (int) (model.getX() + model.getNameXOffset());
@@ -87,13 +88,12 @@ public abstract class ConnectableView<T extends Connectable> extends AbstractPet
 
     /**
      * Changes the displayed bounds of the object relative to its x,y width and height
-     *
+     * <p>
      * Implemented because the canvas has no layout manager
-     *
      */
     protected final void updateBounds() {
         Rectangle bounds = shape.getBounds();
-        Rectangle newBounds = new Rectangle((int)(model.getCentre().getX() + bounds.getX()), (int)(model.getCentre().getY() + bounds.getY()), (int) bounds.getWidth() + getComponentDrawOffset(), (int)bounds.getHeight() + getComponentDrawOffset()) ;
+        Rectangle newBounds = new Rectangle((int) (model.getCentre().getX() + bounds.getX()), (int) (model.getCentre().getY() + bounds.getY()), (int) bounds.getWidth() + getComponentDrawOffset(), (int) bounds.getHeight() + getComponentDrawOffset());
         setBounds(newBounds);
 //        setBounds(model.getX(), model.getY(), model.getWidth() + getComponentDrawOffset(), model.getHeight() + getComponentDrawOffset());
 
@@ -116,7 +116,8 @@ public abstract class ConnectableView<T extends Connectable> extends AbstractPet
 
     /**
      * Adds the name label to the container
-     * @param container to add label to 
+     *
+     * @param container to add label to
      */
     protected final void addLabelToContainer(Container container) {
         container.add(textLabel);

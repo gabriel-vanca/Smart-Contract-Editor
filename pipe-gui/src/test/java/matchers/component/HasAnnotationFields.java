@@ -6,8 +6,6 @@ import pipe.gui.imperial.pipe.models.petrinet.Annotation;
 public class HasAnnotationFields implements Has<Annotation> {
     private String text;
 
-    private int x;
-
     private int y;
 
     private int width;
@@ -16,7 +14,6 @@ public class HasAnnotationFields implements Has<Annotation> {
 
     public HasAnnotationFields(String text, int x, int y, int width, int height) {
         this.text = text;
-        this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;

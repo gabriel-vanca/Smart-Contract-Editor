@@ -94,8 +94,12 @@ public final class GUIConstants {
     /**
      * Default place/transition height
      */
-    @Deprecated
-    public static final int PLACE_TRANSITION_HEIGHT = 30;
+
+    public static final int PLACE_WIDTH_HEIGHT = 30;
+
+    public static final int TRANSITION_HEIGHT = 30;
+
+    public static final int TRANSITION_WIDTH = 14;
 
     /**
      * Enabled transition color
@@ -207,8 +211,8 @@ public final class GUIConstants {
     /**
      * Label default font size
      */
-    @Deprecated
-    public static final int LABEL_DEFAULT_FONT_SIZE = 10;
+
+    public static FontSizeEnum LABEL_FONT_SIZE = FontSizeEnum.NORMAL;
 
     /**
      * Default name label offset
@@ -245,5 +249,6 @@ public final class GUIConstants {
      */
     private GUIConstants() {
     }
+
 
 }

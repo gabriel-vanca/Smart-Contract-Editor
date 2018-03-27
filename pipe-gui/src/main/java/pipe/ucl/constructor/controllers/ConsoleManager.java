@@ -15,11 +15,14 @@ import static pipe.ucl.constructor.controllers.LineParser.*;
 public class ConsoleManager {
     public static String Compute(ConsoleFrameManager consoleFrameManager) {
 
+        Contract currentContract = consoleFrameManager.getContract();
+
         Map<Object, DiscreteTimeElement> eventTimeMap =
                 parseConsoleInput(consoleFrameManager.getTextFromConsoleInput(),
-                consoleFrameManager.getContract().getContractElementsList());
+                consoleFrameManager.getContract().getContractElementsList(),
+                        currentContract);
 
-        PetriNet currentPetriNet  = consoleFrameManager.getContract().getPetriNet();
+        PetriNet currentPetriNet  = currentContract.getPetriNet();
         currentPetriNet.getPetriNetController().clearMarks();
 
         Constructor.getPipeApplicationBuilder().selectActionButton.doClick();
@@ -220,7 +223,7 @@ public class ConsoleManager {
         return results;
     }
 
-    private static Map<Object, DiscreteTimeElement> parseConsoleInput(String inputString, List<ContractElement> contractElements) {
+    private static Map<Object, DiscreteTimeElement> parseConsoleInput(String inputString, List<ContractElement> contractElements, Contract currentContract) {
 
         Map<Object, DiscreteTimeElement> eventTimeMap = new HashMap<Object, DiscreteTimeElement>();
 
@@ -270,7 +273,7 @@ public class ConsoleManager {
             discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "CONSOLE";
             discreteTimeElementWrapper[2] = eventInfo[1];
 
-            discreteTimeElement = new DiscreteTimeElement(discreteTimeElementWrapper, Constructor.getSelectedContract());
+            discreteTimeElement = new DiscreteTimeElement(discreteTimeElementWrapper, currentContract);
 
             eventTimeMap.putIfAbsent(eventElement, discreteTimeElement);
 

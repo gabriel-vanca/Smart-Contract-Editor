@@ -24,7 +24,7 @@ public class Grid {
     /**
      * Spacing between grid items
      */
-    private float gridSpacing = GUIConstants.PLACE_TRANSITION_HEIGHT / 2;
+    private float gridSpacing = GUIConstants.PLACE_WIDTH_HEIGHT / 2;
 
     /**
      * Graphical grid display
@@ -87,7 +87,7 @@ public class Grid {
      * @param spacing
      */
     private void setGridSpacing(double spacing) {
-        gridSpacing = (float) (spacing * GUIConstants.PLACE_TRANSITION_HEIGHT);
+        gridSpacing = (float) (spacing * GUIConstants.PLACE_WIDTH_HEIGHT);
     }
 
     /**

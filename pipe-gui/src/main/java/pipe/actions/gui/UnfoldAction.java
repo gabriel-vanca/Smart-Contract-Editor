@@ -15,18 +15,12 @@ import java.awt.event.KeyEvent;
 public class UnfoldAction extends GuiAction {
 
     /**
-     * Main PIPE application controller
-     */
-    private final PipeApplicationController pipeApplicationController;
-
-    /**
      * Constructor
      * @param pipeApplicationController main PIPE application controller
      */
     public UnfoldAction(PipeApplicationController pipeApplicationController) {
         super("unfoldAction", "Unfold Petri Net", KeyEvent.VK_U,
                 Toolkit.getDefaultToolkit().getMenuShortcutKeyMask() | InputEvent.SHIFT_DOWN_MASK);
-        this.pipeApplicationController = pipeApplicationController;
     }
 
     /**

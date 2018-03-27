@@ -102,6 +102,7 @@ public final class PipeApplicationBuilder {
         ExportPSAction exportPSAction = new ExportPSAction();
         ImportAction importAction = new ImportAction();
         GridAction toggleGrid = new GridAction(controller);
+        FontSizeAction fontSize = new FontSizeAction(controller);
         ZoomOutAction zoomOutAction = new ZoomOutAction(zoomUI);
         ZoomInAction zoomInAction = new ZoomInAction(zoomUI);
         SetZoomAction zoomAction = new SetZoomAction("Zoom", "Select zoom percentage ", "", controller, view);
@@ -112,7 +113,7 @@ public final class PipeApplicationBuilder {
         ChooseTokenClassAction chooseTokenClassAction = new ChooseTokenClassAction(view, controller);
         return new PIPEComponents(chooseTokenClassAction, componentEditorManager, undoListener, componentCreatorManager,
                 animateActionManager, editorManager, tokenActionManager, printAction, exportPNGAction, selectAction,
-                exitAction, zoomAction, unfoldAction, zoomOutAction, zoomInAction, toggleGrid, importAction,
+                exitAction, zoomAction, unfoldAction, zoomOutAction, zoomInAction, toggleGrid, fontSize, importAction,
                 exportPSAction, exportTNAction, layoutAction);
     }
 
@@ -212,7 +213,9 @@ public final class PipeApplicationBuilder {
 //        addButton(toolBar, pipeComponents.zoomInAction);
 //        toolBar.addSeparator();
 
+        addButton(toolBar, pipeComponents.fontSize);
         addButton(toolBar, pipeComponents.toggleGrid);
+
         for (GuiAction action : pipeComponents.animateActionManager.getEditActions()) {
             addButton(toolBar, action);
         }
@@ -323,6 +326,7 @@ public final class PipeApplicationBuilder {
 //        viewMenu.addSeparator();
 
         addMenuItem(viewMenu, pipeComponents.toggleGrid);
+        addMenuItem(viewMenu, pipeComponents.fontSize);
 
         //UCL removes:
 //        JMenu animateMenu = new JMenu("Animate");
@@ -670,6 +674,8 @@ public final class PipeApplicationBuilder {
          */
         public final SelectAction selectAction;
 
+        public final FontSizeAction fontSize;
+
         /**
          * Exit action, for quitting PIPE
          */
@@ -746,7 +752,7 @@ public final class PipeApplicationBuilder {
                                TokenActionManager tokenActionManager, PrintAction printAction,
                                ExportPNGAction exportPNGAction, SelectAction selectAction, ExitAction exitAction,
                                SetZoomAction zoomAction, UnfoldAction unfoldAction, ZoomOutAction zoomOutAction,
-                               ZoomInAction zoomInAction, GridAction toggleGrid, ImportAction importAction,
+                               ZoomInAction zoomInAction, GridAction toggleGrid, FontSizeAction fontSize, ImportAction importAction,
                                ExportPSAction exportPSAction, ExportTNAction exportTNAction, LayoutAction layoutAction) {
             this.chooseTokenClassAction = chooseTokenClassAction;
             this.componentEditorManager = componentEditorManager;
@@ -768,6 +774,7 @@ public final class PipeApplicationBuilder {
             this.exportPSAction = exportPSAction;
             this.exportTNAction = exportTNAction;
             this.layoutAction = layoutAction;
+            this.fontSize = fontSize;
         }
     }
 }

@@ -82,7 +82,7 @@ public class PetriNetEditorManager implements ActionManager {
 //        return Arrays.asList(newPetriNetAction, openAction, saveAction, saveAsAction,
 //                closeAction);
 
-        return Arrays.asList(newPetriNetAction, openAction, openDefaultAction);
+        return Arrays.asList(newPetriNetAction, openAction/*, openDefaultAction*/);
 
     }
 

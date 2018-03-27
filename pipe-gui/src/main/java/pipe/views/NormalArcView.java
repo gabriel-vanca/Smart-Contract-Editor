@@ -44,12 +44,6 @@ public class NormalArcView<S extends Connectable, T extends Connectable> extends
     private ArcHead arcHead = new NormalHead();
 
     /**
-     * joined if it displays two directional arcs sharing the opposite source and targets
-     */
-    @Deprecated
-    private boolean joined = false;
-
-    /**
      * Constructor
      * @param model underlying normal arc
      * @param controller Petri ent controller for the Petri net that houses the arc
@@ -242,6 +236,10 @@ public class NormalArcView<S extends Connectable, T extends Connectable> extends
             g2.setPaint(GUIConstants.ELEMENT_LINE_COLOUR);
         }
 
+        /*
+      joined if it displays two directional arcs sharing the opposite source and targets
+     */
+        boolean joined = false;
         if (joined) {
             g2.translate(arcPath.getPoint(0).getX(), arcPath.getPoint(0).getY());
             g2.rotate(arcPath.getStartAngle() + Math.PI);

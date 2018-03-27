@@ -5,6 +5,7 @@ import pipe.ucl.contract.models.*;
 import pipe.ucl.contract.models.DateOperators.AfterTime;
 import pipe.ucl.contract.models.DateOperators.BeforeTime;
 import pipe.ucl.contract.models.DateOperators.DateOperator;
+import pipe.ucl.contract.models.DateOperators.ScheduleTime;
 import pipe.ucl.contract.models.TimeOperators.RDuring;
 import pipe.ucl.contract.models.TimeOperators.RThroughout;
 
@@ -131,32 +132,43 @@ public class LineParser {
 
     public static Object GetToken(InputLine inputLine, Contract currentContract) {
 
-        if(inputLine == null)
+        if (inputLine == null)
             return null;
 
         String inputType = inputLine.getType().substring(0);
         String[] inputParameters = inputLine.getParameterList();
 
-        if(inputType == null || inputLine.equals("") || inputLine.equals(" "))
+        if (inputType == null || inputLine.equals("") || inputLine.equals(" "))
             return null;
 
-        if(inputParameters == null || inputParameters.length < 2)
+        if (inputParameters == null || inputParameters.length < 2)
             return inputType;
 
         // Type should be upper case for easier checking
         inputType = inputType.toUpperCase();
 
-        if(Arrays.asList(Contract.Labels).contains(inputType)) return new Contract(inputParameters);
-        if(Arrays.asList(ActionElement.Labels).contains(inputType)) return new ActionElement(inputParameters, currentContract);
-        if(Arrays.asList(DiscreteTimeElement.Labels).contains(inputType)) return new DiscreteTimeElement(inputParameters, currentContract);
-        if(Arrays.asList(EventElement.Labels).contains(inputType)) return new EventElement(inputParameters, currentContract);
-        if(Arrays.asList(GateElement.Labels).contains(inputType)) return new GateElement(inputParameters, currentContract);
-        if(Arrays.asList(PartyElement.Labels).contains(inputType)) return new PartyElement(inputParameters, currentContract);
-        if(Arrays.asList(StateElement.Labels).contains(inputType)) return new StateElement(inputParameters, currentContract);
-        if(Arrays.asList(TimeSpanElement.Labels).contains(inputType)) return new TimeSpanElement(inputParameters, currentContract);
-        if(Arrays.asList(RDuring.Labels).contains(inputType)) return new RDuring(inputParameters, currentContract);
-        if(Arrays.asList(RThroughout.Labels).contains(inputType)) return new RThroughout(inputParameters, currentContract);
-        if(Arrays.asList(TransAssertion.Labels).contains(inputType)) return new TransAssertion(inputParameters, currentContract);
+        if (Arrays.asList(Contract.Labels).contains(inputType))
+            return new Contract(inputParameters);
+        if (Arrays.asList(ActionElement.Labels).contains(inputType))
+            return new ActionElement(inputParameters, currentContract);
+        if (Arrays.asList(DiscreteTimeElement.Labels).contains(inputType))
+            return new DiscreteTimeElement(inputParameters, currentContract);
+        if (Arrays.asList(EventElement.Labels).contains(inputType))
+            return new EventElement(inputParameters, currentContract);
+        if (Arrays.asList(GateElement.Labels).contains(inputType))
+            return new GateElement(inputParameters, currentContract);
+        if (Arrays.asList(PartyElement.Labels).contains(inputType))
+            return new PartyElement(inputParameters, currentContract);
+        if (Arrays.asList(StateElement.Labels).contains(inputType))
+            return new StateElement(inputParameters, currentContract);
+        if (Arrays.asList(TimeSpanElement.Labels).contains(inputType))
+            return new TimeSpanElement(inputParameters, currentContract);
+        if (Arrays.asList(RDuring.Labels).contains(inputType))
+            return new RDuring(inputParameters, currentContract);
+        if (Arrays.asList(RThroughout.Labels).contains(inputType))
+            return new RThroughout(inputParameters, currentContract);
+        if (Arrays.asList(TransAssertion.Labels).contains(inputType))
+            return new TransAssertion(inputParameters, currentContract);
 
         return inputType;
 
@@ -179,11 +191,13 @@ public class LineParser {
         // Type should be upper case for easier checking
         inputType = inputType.toUpperCase();
 
-        if (Arrays.asList(AfterTime.Labels).contains(inputType)) return new AfterTime(inputParameters, currentContract);
-        if (Arrays.asList(BeforeTime.Labels).contains(inputType)) return new BeforeTime(inputParameters, currentContract);
-//        if(Arrays.asList(ScheduleTime.Labels).contains(inputType)) return new ScheduleTime(inputParameters, currentContract);
+        if (Arrays.asList(AfterTime.Labels).contains(inputType))
+            return new AfterTime(inputParameters, currentContract);
+        if (Arrays.asList(BeforeTime.Labels).contains(inputType))
+            return new BeforeTime(inputParameters, currentContract);
+        if (Arrays.asList(ScheduleTime.Labels).contains(inputType))
+            return new ScheduleTime(inputParameters, currentContract);
 
         return null;
     }
-
 }

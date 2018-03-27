@@ -20,11 +20,6 @@ public class SetZoomAction extends GuiAction {
     private final PipeApplicationController applicationController;
 
     /**
-     * Main application view
-     */
-    private final PipeApplicationView applicationView;
-
-    /**
      * Controller
      * @param name image name
      * @param tooltip tooltip message
@@ -36,7 +31,6 @@ public class SetZoomAction extends GuiAction {
                          PipeApplicationView applicationView) {
         super(name, tooltip, keystroke);
         this.applicationController = applicationController;
-        this.applicationView = applicationView;
     }
 
     /**

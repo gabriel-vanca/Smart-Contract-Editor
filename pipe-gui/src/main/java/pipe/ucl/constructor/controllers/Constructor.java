@@ -3,19 +3,18 @@ package pipe.ucl.constructor.controllers;
 import pipe.actions.gui.CreateAction;
 import pipe.actions.gui.PipeApplicationModel;
 import pipe.actions.manager.ComponentCreatorManager;
+import pipe.constants.GUIConstants;
 import pipe.controllers.PetriNetController;
 import pipe.controllers.application.PipeApplicationController;
 import pipe.gui.imperial.pipe.layout.Layout;
-import pipe.gui.imperial.pipe.models.petrinet.AbstractConnectable;
-import pipe.gui.imperial.pipe.models.petrinet.DiscretePlace;
-import pipe.gui.imperial.pipe.models.petrinet.DiscreteTransition;
-import pipe.gui.imperial.pipe.models.petrinet.PetriNet;
+import pipe.gui.imperial.pipe.models.petrinet.*;
 import pipe.gui.imperial.pipe.parsers.UnparsableException;
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.models.Contract;
 import pipe.ucl.contract.models.ContractElement;
 import pipe.views.PipeApplicationBuilder;
 import pipe.views.PipeApplicationView;
+import pipe.views.TextLabel;
 
 import javax.swing.*;
 import java.io.File;
@@ -35,6 +34,8 @@ public class Constructor {
 
     static PipeApplicationBuilder pipeApplicationBuilder;
     static ComponentCreatorManager componentCreatorManager;
+
+    public static ArrayList<TextLabel> TextLabels = new ArrayList<>();
 
     public Constructor(PipeApplicationController applicationController, PipeApplicationModel applicationModel, PipeApplicationBuilder pipeApplicationBuilder, PipeApplicationView applicationView) {
         this.applicationController = applicationController;
@@ -171,14 +172,12 @@ public class Constructor {
 
     public static void Layout(PetriNet petriNet) {
         Layout.layoutHierarchical (petriNet, 40,
-                50,50, 350, SwingConstants.NORTH);
-//        componentCreatorManager..changed(petriNet);
+                50,50, 100 + GUIConstants.LABEL_FONT_SIZE.getValue()*25, SwingConstants.NORTH);
+
+//        Layout.layoutOrganic(petriNet, 100, 80);
+
     }
 
-    public static Contract getSelectedContract() {
-        return null;
-        //TODO
-    }
 
     private DiscretePlace GetState(String id, PetriNet petriNet) {
         DiscretePlace place = null;
