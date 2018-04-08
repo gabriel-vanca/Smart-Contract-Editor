@@ -1,7 +1,7 @@
 package pipe.ucl.contract.models;
 
 import pipe.ucl.constructor.controllers.LineParser;
-import pipe.ucl.contract.models.TimeOperators.TimeOperator;
+import pipe.ucl.contract.models.TimeSpanOperators.TimeSpanOperator;
 
 public class TimeSpanElement extends ContractElement {
 
@@ -10,14 +10,14 @@ public class TimeSpanElement extends ContractElement {
     public final static String[] Labels = {"TS", "TIME-SPAN"};
     public final static String MainFullLabel = "TIME-SPAN";
 
-    protected TimeOperator timeReference;
+    protected TimeSpanOperator timeReference;
 
-    public TimeSpanElement(String name, TimeOperator timeReference) {
+    public TimeSpanElement(String name, TimeSpanOperator timeReference) {
         super(name);
         this.timeReference = timeReference;
     }
 
-    public TimeSpanElement(String id, String name, TimeOperator timeReference) {
+    public TimeSpanElement(String id, String name, TimeSpanOperator timeReference) {
         super(id, name);
         this.timeReference = timeReference;
     }
@@ -25,7 +25,7 @@ public class TimeSpanElement extends ContractElement {
     public TimeSpanElement(String[] parameters, Contract parentContract) {
         super(parameters, parentContract);
         if(parameters.length < 3) return;
-        this.timeReference = (TimeOperator) LineParser.GetToken(LineParser.ParseLine(parameters[2]), parentContract);
+        this.timeReference = (TimeSpanOperator) LineParser.GetToken(LineParser.ParseLine(parameters[2]), parentContract);
         elementCorrectness = Boolean.TRUE;
     }
 
@@ -47,7 +47,7 @@ public class TimeSpanElement extends ContractElement {
         return MainFullLabel;
     }
 
-    public TimeOperator getTimeReference() {
+    public TimeSpanOperator getTimeReference() {
         return timeReference;
     }
 }

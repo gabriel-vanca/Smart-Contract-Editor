@@ -2,12 +2,12 @@ package pipe.ucl.constructor.controllers;
 
 import pipe.ucl.constructor.models.InputLine;
 import pipe.ucl.contract.models.*;
-import pipe.ucl.contract.models.DateOperators.AfterTime;
-import pipe.ucl.contract.models.DateOperators.BeforeTime;
-import pipe.ucl.contract.models.DateOperators.DateOperator;
-import pipe.ucl.contract.models.DateOperators.ScheduleTime;
-import pipe.ucl.contract.models.TimeOperators.RDuring;
-import pipe.ucl.contract.models.TimeOperators.RThroughout;
+import pipe.ucl.contract.models.TimeOperators.AfterTime;
+import pipe.ucl.contract.models.TimeOperators.BeforeTime;
+import pipe.ucl.contract.models.TimeOperators.TimeOperator;
+import pipe.ucl.contract.models.TimeOperators.ScheduleTime;
+import pipe.ucl.contract.models.TimeSpanOperators.RDuring;
+import pipe.ucl.contract.models.TimeSpanOperators.RThroughout;
 
 import java.util.Arrays;
 
@@ -174,7 +174,7 @@ public class LineParser {
 
     }
 
-    public static DateOperator GetDateOperatorToken(InputLine inputLine, Contract currentContract) {
+    public static TimeOperator GetDateOperatorToken(InputLine inputLine, Contract currentContract) {
 
         if (inputLine == null)
             return null;

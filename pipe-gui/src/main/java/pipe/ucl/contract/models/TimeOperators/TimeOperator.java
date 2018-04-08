@@ -7,80 +7,39 @@ import pipe.ucl.contract.models.DiscreteTimeElement;
 
 import java.util.List;
 
-public abstract class TimeOperator {
+public abstract class TimeOperator implements GetDiscreteTime {
 
-    protected GetDiscreteTime initialDate = null;
-    protected GetDiscreteTime finalDate = null;
+    protected Contract parentContract = null;
 
-    private Contract parentContract = null;
-
-    public TimeOperator(GetDiscreteTime initialDate, GetDiscreteTime finalDate) {
-        this.initialDate = initialDate;
-        this.finalDate = finalDate;
+    public TimeOperator(Contract currentContract) {
+        this.parentContract = currentContract;
     }
 
-    public TimeOperator(String[] parameters, Contract currentContract) {
-        if (parameters.length < 2)
-            return;
+    public GetDiscreteTime GetDiscreteTimeFromParameters(String inputParameter) {
 
-        List<ContractElement> contractElements = currentContract.getContractElementsList();
+
+        GetDiscreteTime discreteTime = null;
 
         try {
+
+            List<ContractElement> contractElements = parentContract.getContractElementsList();
             for (ContractElement currentContractElement : contractElements) {
-                if (currentContractElement.getId().equals(parameters[0])) {
-                    this.initialDate = (GetDiscreteTime) currentContractElement;
+                if (currentContractElement.getId().equals(inputParameter)) {
+                    discreteTime = (GetDiscreteTime) currentContractElement;
                     break;
                 }
             }
-        } catch (Exception err) {
 
-        }
-
-        if (this.initialDate == null) {
-            try {
+            if (discreteTime == null) {
                 String[] discreteTimeElementWrapper = new String[3];
-                discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "TIME_OPERATOR";
-                discreteTimeElementWrapper[2] = parameters[0];
-
-                this.initialDate = new DiscreteTimeElement(discreteTimeElementWrapper, currentContract);
-            } catch (Exception err2) {
-                System.out.println("TimeSpan initial DT not found");
-            }
-        }
-
-
-        try {
-            for (ContractElement currentContractElement : contractElements) {
-                if (currentContractElement.getId().equals(parameters[1])) {
-                    this.finalDate = (GetDiscreteTime) currentContractElement;
-                    break;
-                }
+                discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "GetDiscreteTimeFromParameters";
+                discreteTimeElementWrapper[2] = inputParameter;
+                discreteTime = new DiscreteTimeElement(discreteTimeElementWrapper, parentContract);
             }
         } catch (Exception err) {
+            System.out.print(err);
         }
 
-        if (this.finalDate == null) {
-            try {
-                String[] discreteTimeElementWrapper = new String[3];
-                discreteTimeElementWrapper[0] = discreteTimeElementWrapper[1] = "TIME_OPERATOR";
-                discreteTimeElementWrapper[2] = parameters[1];
-
-                this.finalDate = new DiscreteTimeElement(discreteTimeElementWrapper, currentContract);
-            } catch (Exception err2) {
-                System.out.println("TimeSpan final DT not found");
-            }
-        }
+        return discreteTime;
     }
-
-
-    public GetDiscreteTime getInitialDate() {
-        return initialDate;
-    }
-
-    public GetDiscreteTime getFinalDate() {
-        return finalDate;
-    }
-
-    public abstract String toString();
-
 }
