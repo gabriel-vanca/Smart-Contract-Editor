@@ -6,24 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/EarliestTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/LatestTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeSpanOperators/TimeSpanOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PetriNet_Editor_jar/PetriNet Editor.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PetriNet_Editor_jar/PetriNet Editor.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/constructor/controllers/LineParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/AfterTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/AfterTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/BeforeTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/BeforeTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/DateOperator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DateOperators/ScheduleTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/ScheduleTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/DiscreteTimeElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RDuring.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeSpanOperators/RDuring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/RThroughout.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeSpanOperators/RThroughout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/TimeOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/TimeOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeSpanElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeSpanElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipe-gui/target/classes/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" afterPath="$PROJECT_DIR$/pipe-gui/target/classes/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
-    </list>
+    <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/pipe-gui/target/" />
@@ -95,8 +78,8 @@
       <file leaf-file-name="EarliestTime.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/EarliestTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="581">
+              <caret line="66" column="41" lean-forward="true" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -945,12 +928,12 @@
       <workItem from="1522188956576" duration="45000" />
       <workItem from="1522189363944" duration="221000" />
       <workItem from="1522189615226" duration="196000" />
-      <workItem from="1522963529105" duration="6026000" />
+      <workItem from="1522963529105" duration="6632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359807000" />
+    <option name="totallyTimeSpent" value="360413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -963,6 +946,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="10" />
       <window_info anchor="right" id="TODO" order="13" weight="0.3298887" />
@@ -1508,8 +1492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/ucl/contract/models/TimeOperators/EarliestTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        <state relative-caret-position="581">
+          <caret line="66" column="41" lean-forward="true" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
         </state>
       </provider>
     </entry>
