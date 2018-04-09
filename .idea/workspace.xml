@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="" />
+    <list default="true" id="3a1da04f-1fbc-4343-9673-950cd64d6a36" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Contracts/Product_Purchase_Contract.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contracts/Product_Purchase_Contract.txt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/pipe-gui/target/" />
@@ -314,7 +316,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1294" />
     <option name="height" value="1047" />
@@ -928,12 +930,12 @@
       <workItem from="1522188956576" duration="45000" />
       <workItem from="1522189363944" duration="221000" />
       <workItem from="1522189615226" duration="196000" />
-      <workItem from="1522963529105" duration="6632000" />
+      <workItem from="1522963529105" duration="7830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360413000" />
+    <option name="totallyTimeSpent" value="361611000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,7 +962,7 @@
       <window_info anchor="right" id="Version Control" order="3" weight="0.3298217" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.10428101" />
       <window_info anchor="right" id="Spring" order="12" weight="0.3298887" />
-      <window_info active="true" anchor="right" id="Terminal" order="1" sideWeight="0.47712418" visible="true" weight="0.40023848" />
+      <window_info anchor="right" id="Terminal" order="1" sideWeight="0.47712418" visible="true" weight="0.40023848" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1291733" />
@@ -971,7 +973,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Debug" order="0" sideWeight="0.52287585" side_tool="true" visible="true" weight="0.40023848" />
+      <window_info active="true" anchor="right" id="Debug" order="0" sideWeight="0.52287585" side_tool="true" visible="true" weight="0.40023848" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
@@ -1048,13 +1050,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/javax/xml/bind/helpers/AbstractUnmarshallerImpl.java</url>
           <line>207</line>
           <properties />
           <option name="timeStamp" value="256" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url />
+          <url>file://$PROJECT_DIR$/pipe-gui/src/main/java/pipe/gui/imperial/pipe/io/PetriNetIOImpl.java</url>
           <line>72</line>
           <properties />
           <option name="timeStamp" value="257" />
