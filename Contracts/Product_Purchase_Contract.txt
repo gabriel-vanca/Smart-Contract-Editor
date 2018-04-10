@@ -3,7 +3,7 @@ CONTRACT("Washer Acquisition Contract", 1987-04-27, 1987-05-15)
 PARTY(P1, "Jones")
 PARTY(P2, "Smith")
 
-STATE(S1, 'START', START)
+STATE(S1, 'START', START) // )
 STATE(S2, 'Initiate obligation', INTERMEDIARY)
 STATE(S3, 'Jones paid £500', INTERMEDIARY)
 STATE(S4, 'DEFAULT: Jones did not pay £500', DEFAULT)

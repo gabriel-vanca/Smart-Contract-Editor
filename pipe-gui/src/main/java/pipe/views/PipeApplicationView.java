@@ -449,9 +449,9 @@ public class PipeApplicationView extends JFrame implements ActionListener, Obser
                         +
                         "2005: Nadeem Akharware\n"
                         +
-                        "????: Tim Kimber, Ben Kirby, Thomas Master, Matthew Worthington\n"
+                        "2007: Tim Kimber, Ben Kirby, Thomas Master, Matthew Worthington\n"
                         +
-                        "????: Pere Bonet Bonet, Marc Meli\u00E0 Aguil\u00F3 (Universitat de les Illes Balears)\n"
+                        "2009: Pere Bonet Bonet, Marc Meli\u00E0 Aguil\u00F3 (Universitat de les Illes Balears)\n"
                         +
                         "2010: Alex Charalambous (Imperial College London)\n"
                         +

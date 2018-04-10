@@ -16,7 +16,6 @@ import static java.lang.String.format;
 public class LineParser {
 
     // This functions splits a string by commas with the exception of commas inside quotes and in parentheses
-    // (https://stackoverflow.com/questions/1757065/java-splitting-a-comma-separated-string-but-ignoring-commas-in-quotes)
     private static String SplitByCommasExceptQuotesAndParentheses_otherThanQuote = " [^\"] ";
     private static String SplitByCommasExceptQuotesAndParentheses_quotedString = format(" \" %s* \" ", SplitByCommasExceptQuotesAndParentheses_otherThanQuote);
     private static String SplitByCommasExceptQuotesAndParentheses_regex = format("(?x) " + // enable comments, ignore white spaces
@@ -29,8 +28,9 @@ public class LineParser {
                     "  %s*                     " + //   match 'SplitByCommasExceptQuotesAndParentheses_otherThanQuote'
                     "  $                       " + // match the end of the string
                     ")                         " + // stop positive look ahead
-                    "(?![^\\(]*\\))            " + // ignore commas in parentheses as well
-                    "(?![^\\[]*\\])            ", // ignore commas in brackets as well
+                    "(?![^\\(]*\\))            " + // ignore commas in parentheses
+                    "(?![^\\[]*\\])            " + // ignore commas in brackets
+                    "(?![^\\{]*\\})            ", // ignore commas in braces
             SplitByCommasExceptQuotesAndParentheses_otherThanQuote, SplitByCommasExceptQuotesAndParentheses_quotedString, SplitByCommasExceptQuotesAndParentheses_otherThanQuote);
 
     public static String[] SplitByCommasExceptQuotesAndParentheses(String stringToSplit) {
